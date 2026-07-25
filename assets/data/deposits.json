@@ -1,0 +1,182 @@
+[
+  {
+    "type": "horizontal",
+    "category": "vklad",
+    "bank": "Т-Банк",
+    "product": "Вклад",
+    "logo": "t-bank.svg",
+    "rate": "18.01",
+    "page_url": "deposit-1.html",
+    "params": [
+      {
+        "value": "до 18.01%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 1 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Пополняемый",
+        "label": "Тип"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nakop",
+    "bank": "Яндекс Сейвы",
+    "product": "Накопительный счёт",
+    "logo": "yandex.svg",
+    "rate": "16",
+    "page_url": "deposit-2.html",
+    "params": [
+      {
+        "value": "до 16%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 1 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Снятие в любой день",
+        "label": "Условие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "vklad",
+    "bank": "Финуслуги",
+    "product": "Вклад",
+    "logo": "finuslugi.svg",
+    "rate": "22",
+    "page_url": "deposit-3.html",
+    "params": [
+      {
+        "value": "до 22%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 10 000 ₽",
+        "label": "Мин. сумма"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "vklad",
+    "bank": "Банки.ру",
+    "product": "Мастер подбора вкладов",
+    "logo": "bankiru.svg",
+    "rate": "20",
+    "page_url": "deposit-4.html",
+    "params": [
+      {
+        "value": "до 20%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 1 000 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "50+ банков",
+        "label": "Выбор"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "vklad",
+    "bank": "Альфа-Банк",
+    "product": "Вклад",
+    "logo": "alfa-bank.svg",
+    "rate": "19.61",
+    "page_url": "deposit-5.html",
+    "params": [
+      {
+        "value": "до 19.61%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 10 000 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Капитализация",
+        "label": "Тип"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "vklad",
+    "bank": "Сбербанк",
+    "product": "Вклад «Лучший %»",
+    "logo": "sber.svg",
+    "rate": "16.5",
+    "page_url": "deposit-6.html",
+    "params": [
+      {
+        "value": "до 16.5%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 1 000 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Пополняемый",
+        "label": "Тип"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nakop",
+    "bank": "Ozon Банк",
+    "product": "Накопительный счёт",
+    "logo": "ozon-bank.svg",
+    "rate": "17",
+    "page_url": "deposit-7.html",
+    "params": [
+      {
+        "value": "до 17%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 1 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Баллы Ozon",
+        "label": "Бонус"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nakop",
+    "bank": "Альфа-Банк",
+    "product": "Накопительный счёт",
+    "logo": "alfa-bank.svg",
+    "rate": "16.44",
+    "page_url": "deposit-8.html",
+    "params": [
+      {
+        "value": "до 16.44%",
+        "label": "Ставка"
+      },
+      {
+        "value": "От 1 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Без ограничений",
+        "label": "Условие"
+      }
+    ]
+  }
+]

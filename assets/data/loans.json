@@ -1,0 +1,377 @@
+[
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Vivus",
+    "product": "Займ онлайн",
+    "logo": "vivus.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 80 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "е Капуста",
+    "product": "Займ без отказа",
+    "logo": "ekapusta.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 21 дн.",
+      "Сумма": "100 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "MoneyMan",
+    "product": "MoneyMan VIP",
+    "logo": "moneyman.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 70 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "srochno",
+    "bank": "Быстроденьги",
+    "product": "Экспресс-займ",
+    "logo": "bystrodengi.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "1%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Займер",
+    "product": "Займер",
+    "logo": "zaimer.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 30 дн.",
+      "Сумма": "3 000 – 15 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Деньги Сразу",
+    "product": "Деньги Сразу",
+    "logo": "dengi-srazu.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Турбозайм",
+    "product": "Турбозайм",
+    "logo": "turbozaim.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 168 дн.",
+      "Сумма": "3 000 – 50 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "na-kartu",
+    "bank": "Webbankir",
+    "product": "Webbankir",
+    "logo": "webbankir.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0.9%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 100 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "OneClickMoney",
+    "product": "OneClickMoney",
+    "logo": "oneclickmoney.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "1 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "na-kartu",
+    "bank": "Деньга",
+    "product": "Деньга",
+    "logo": "denga.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "МигКредит",
+    "product": "МигКредит",
+    "logo": "migkredit.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Kviku",
+    "product": "Kviku",
+    "logo": "kviku.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "1 000 – 15 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "na-kartu",
+    "bank": "Банки.ру",
+    "product": "Мастер подбора займов",
+    "logo": "bankiru.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 365 дн.",
+      "Сумма": "1 000 – 100 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Hurmacredit",
+    "product": "Hurmacredit",
+    "logo": "hurmacredit.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Joymoney",
+    "product": "Joymoney",
+    "logo": "joymoney.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Krediska",
+    "product": "Krediska",
+    "logo": "krediska.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 30 дн.",
+      "Сумма": "1 000 – 20 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Кэшмагнит",
+    "product": "Кэшмагнит",
+    "logo": "cashmagnit.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 30 дн.",
+      "Сумма": "1 000 – 15 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "БериБеру",
+    "product": "БериБеру",
+    "logo": "beriberu.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 30 дн.",
+      "Сумма": "1 000 – 20 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Давака",
+    "product": "Давака",
+    "logo": "davaka.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 30 дн.",
+      "Сумма": "1 000 – 15 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Snapcredit",
+    "product": "Snapcredit",
+    "logo": "snapcredit.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "5 – 30 дн.",
+      "Сумма": "1 000 – 15 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Доброзайм",
+    "product": "Доброзайм",
+    "logo": "dobrozaim.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "na-kartu",
+    "bank": "Деньги Ок",
+    "product": "Деньги Ок",
+    "logo": "dengi-ok.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "na-kartu",
+    "bank": "СМС ФИНАНС",
+    "product": "СМС ФИНАНС",
+    "logo": "smsfinance.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0.9%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "1 000 – 50 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "perviy",
+    "bank": "Zaymigo",
+    "product": "Zaymigo",
+    "logo": "zaymigo.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "0%",
+      "Срок": "7 – 30 дн.",
+      "Сумма": "3 000 – 30 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  },
+  {
+    "type": "loan",
+    "category": "na-kartu",
+    "bank": "Банки.ру",
+    "product": "Выдача микрозайма",
+    "logo": "bankiru.svg",
+    "rate": "0",
+    "page_url": "",
+    "params": {
+      "Ставка (от)": "—",
+      "Срок": "—",
+      "Сумма": "до 50 000 ₽",
+      "Одобрение": "Высокое"
+    }
+  }
+]

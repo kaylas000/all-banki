@@ -1,0 +1,71 @@
+[
+  {
+    "type": "horizontal",
+    "category": "ipoteka",
+    "bank": "Альфа Банк",
+    "product": "Ипотека",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "mortgage-1.html",
+    "params": [
+      {
+        "value": "600 тыс.–5 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "—",
+        "label": "Ставка"
+      },
+      {
+        "value": "—",
+        "label": "Срок"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "ipoteka",
+    "bank": "Альфа Банк",
+    "product": "Ипотека",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "mortgage-2.html",
+    "params": [
+      {
+        "value": "5–10 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "—",
+        "label": "Ставка"
+      },
+      {
+        "value": "—",
+        "label": "Срок"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "ipoteka",
+    "bank": "Альфа Банк",
+    "product": "Ипотека",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "mortgage-3.html",
+    "params": [
+      {
+        "value": "свыше 10 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "—",
+        "label": "Ставка"
+      },
+      {
+        "value": "—",
+        "label": "Срок"
+      }
+    ]
+  }
+]

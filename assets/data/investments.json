@@ -1,0 +1,140 @@
+[
+  {
+    "type": "horizontal",
+    "category": "broker",
+    "bank": "Т-Банк",
+    "product": "Брокерский счёт",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "invest-1.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Открытие"
+      },
+      {
+        "value": "5 минут",
+        "label": "Оформление"
+      },
+      {
+        "value": "Без мин. остатка",
+        "label": "Условие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "iis",
+    "bank": "Альфа-Банк",
+    "product": "ИИС",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "invest-2.html",
+    "params": [
+      {
+        "value": "до 52 000 ₽",
+        "label": "Налоговый вычет"
+      },
+      {
+        "value": "От 1 000 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "type A",
+        "label": "Тип"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "obligacii",
+    "bank": "ВТБ",
+    "product": "Облигации ОФЗ",
+    "logo": "vtb.svg",
+    "rate": "12",
+    "page_url": "invest-3.html",
+    "params": [
+      {
+        "value": "до 12%",
+        "label": "Доходность"
+      },
+      {
+        "value": "От 1 000 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Государственные",
+        "label": "Тип"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "broker",
+    "bank": "Сбербанк",
+    "product": "Брокерский счёт",
+    "logo": "sber.svg",
+    "rate": "0",
+    "page_url": "invest-4.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Открытие"
+      },
+      {
+        "value": "От 1 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Широкий выбор",
+        "label": "Активы"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "iis",
+    "bank": "Т-Банк",
+    "product": "ИИС",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "invest-5.html",
+    "params": [
+      {
+        "value": "до 52 000 ₽",
+        "label": "Налоговый вычет"
+      },
+      {
+        "value": "От 1 000 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Онлайн",
+        "label": "Открытие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "obligacii",
+    "bank": "Альфа-Банк",
+    "product": "Корпоративные облигации",
+    "logo": "alfa-bank.svg",
+    "rate": "15",
+    "page_url": "invest-6.html",
+    "params": [
+      {
+        "value": "до 15%",
+        "label": "Доходность"
+      },
+      {
+        "value": "От 1 000 ₽",
+        "label": "Мин. сумма"
+      },
+      {
+        "value": "Корпоративные",
+        "label": "Тип"
+      }
+    ]
+  }
+]

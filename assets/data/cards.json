@@ -1,0 +1,197 @@
+[
+  {
+    "type": "horizontal",
+    "category": "debet",
+    "bank": "Т-Банк",
+    "product": "Black Дебетовая карта",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "card-1.html",
+    "params": [
+      {
+        "value": "до 15%",
+        "label": "Кешбэк"
+      },
+      {
+        "value": "5%",
+        "label": "На остаток"
+      },
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "kredit",
+    "bank": "Т-Банк",
+    "product": "Кредитная карта",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "card-2.html",
+    "params": [
+      {
+        "value": "55 дней",
+        "label": "Без процентов"
+      },
+      {
+        "value": "до 30%",
+        "label": "Кешбэк"
+      },
+      {
+        "value": "до 1 млн ₽",
+        "label": "Лимит"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "kredit",
+    "bank": "Сбербанк",
+    "product": "Кредитная карта",
+    "logo": "sber.svg",
+    "rate": "0",
+    "page_url": "card-3.html",
+    "params": [
+      {
+        "value": "55 дней",
+        "label": "Без процентов"
+      },
+      {
+        "value": "до 300 тыс.",
+        "label": "Лимит"
+      },
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "debet",
+    "bank": "Альфа Банк",
+    "product": "Альфа-Карта",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "card-4.html",
+    "params": [
+      {
+        "value": "до 15%",
+        "label": "Кешбэк"
+      },
+      {
+        "value": "до 17%",
+        "label": "На остаток"
+      },
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "debet",
+    "bank": "Ozon Банк",
+    "product": "Дебетовая карта",
+    "logo": "ozon-bank.svg",
+    "rate": "0",
+    "page_url": "card-5.html",
+    "params": [
+      {
+        "value": "до 5%",
+        "label": "Баллы Ozon"
+      },
+      {
+        "value": "Бесплатно",
+        "label": "Обслуживание"
+      },
+      {
+        "value": "Доставка",
+        "label": "Курьером"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "debet",
+    "bank": "ВТБ",
+    "product": "Дебетовая карта МИР",
+    "logo": "vtb.svg",
+    "rate": "0",
+    "page_url": "card-6.html",
+    "params": [
+      {
+        "value": "до 15%",
+        "label": "Кешбэк"
+      },
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "kredit",
+    "bank": "ВТБ",
+    "product": "Кредитная карта",
+    "logo": "vtb.svg",
+    "rate": "0",
+    "page_url": "card-7.html",
+    "params": [
+      {
+        "value": "55 дней",
+        "label": "Без процентов"
+      },
+      {
+        "value": "до 500 тыс.",
+        "label": "Лимит"
+      },
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "debet",
+    "bank": "Т-Банк",
+    "product": "Детская карта Джуниор",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "card-8.html",
+    "params": [
+      {
+        "value": "до 15%",
+        "label": "Кешбэк"
+      },
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "debet",
+    "bank": "Уралсиб",
+    "product": "Дебетовая карта",
+    "logo": "uralsib.svg",
+    "rate": "0",
+    "page_url": "card-9.html",
+    "params": [
+      {
+        "value": "до 5%",
+        "label": "Кешбэк"
+      },
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      }
+    ]
+  }
+]

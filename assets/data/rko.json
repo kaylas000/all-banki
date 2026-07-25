@@ -1,0 +1,116 @@
+[
+  {
+    "type": "horizontal",
+    "category": "ooo",
+    "bank": "Т-Банк",
+    "product": "Бизнес РКО",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "rko-1.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      },
+      {
+        "value": "От 1 дня",
+        "label": "Открытие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "ip ooo",
+    "bank": "Альфа Банк",
+    "product": "Альфа-Бизнес",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "rko-2.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      },
+      {
+        "value": "Онлайн",
+        "label": "Открытие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "ip",
+    "bank": "Точка",
+    "product": "РКО для бизнеса",
+    "logo": "tochka.svg",
+    "rate": "0",
+    "page_url": "rko-5.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      },
+      {
+        "value": "15 мин",
+        "label": "Открытие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "ooo startup",
+    "bank": "ВТБ",
+    "product": "РКО для бизнеса",
+    "logo": "vtb.svg",
+    "rate": "0",
+    "page_url": "rko-3.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      },
+      {
+        "value": "От 1 дня",
+        "label": "Открытие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "ip startup",
+    "bank": "Ozon Банк",
+    "product": "РКО для селлеров",
+    "logo": "ozon-bank.svg",
+    "rate": "0",
+    "page_url": "rko-4.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      },
+      {
+        "value": "Онлайн",
+        "label": "Открытие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "ooo",
+    "bank": "ЛОКО-Банк",
+    "product": "РКО для бизнеса",
+    "logo": "loko.svg",
+    "rate": "0",
+    "page_url": "rko-7.html",
+    "params": [
+      {
+        "value": "0 ₽",
+        "label": "Обслуживание"
+      },
+      {
+        "value": "От 1 дня",
+        "label": "Открытие"
+      }
+    ]
+  }
+]

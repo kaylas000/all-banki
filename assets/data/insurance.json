@@ -1,0 +1,1176 @@
+[
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Cherehapa",
+    "product": "ОСАГО онлайн",
+    "logo": "cherehapa.svg",
+    "description": "Сравнение цен 30+ страховщиков, экономия до 30%, полис на email",
+    "rate_value": "от 6 500",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы РФ",
+    "tags": [
+      "Сравнение",
+      "30+ страховщиков"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Т-Банк",
+    "product": "ОСАГО",
+    "logo": "t-bank.svg",
+    "description": "Полис онлайн за 5 минут, оплата картой, доставка на email",
+    "rate_value": "от 7 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "5 минут",
+      "Онлайн"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "kasko",
+    "bank": "Т-Банк",
+    "product": "КАСКО",
+    "logo": "t-bank.svg",
+    "description": "Полное страхование авто, каско от Т-Банка, годовой полис",
+    "rate_value": "от 25 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все марки авто",
+    "tags": [
+      "Полное",
+      "Годовой"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "АльфаСтрахование",
+    "product": "Страхование от НС",
+    "logo": "alfa-strah.svg",
+    "description": "Защита от несчастных случаев, покрытие до 3 000 000 ₽",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 3 млн ₽",
+    "tags": [
+      "НС",
+      "Защита"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "СК ПАРИ",
+    "product": "Страхование квартиры",
+    "logo": "sk_pari.png",
+    "description": "Полная защита квартиры: пожар, затопление, кража, стихия",
+    "rate_value": "от 2 200",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 5 млн ₽",
+    "tags": [
+      "360°",
+      "Комфорт"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "АльфаСтрахование",
+    "product": "ОСАГО",
+    "logo": "alfa-strah.svg",
+    "description": "Оформление онлайн, полис действителен во всех регионах РФ",
+    "rate_value": "от 7 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "Онлайн",
+      "Альфа"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "СК ПАРИ",
+    "product": "Страхование от НС",
+    "logo": "sk_pari.png",
+    "description": "Online-полис от несчастных случаев, оформление за 2 минуты",
+    "rate_value": "от 1 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 2 млн ₽",
+    "tags": [
+      "Онлайн",
+      "2 минуты"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "СК ПАРИ",
+    "product": "Страхование грузоперевозок",
+    "logo": "sk_pari.png",
+    "description": "Online-страхование грузов при перевозке, оформление за 5 минут",
+    "rate_value": "от 1 165",
+    "rate_label": "₽ за рейс",
+    "coverage": "Все виды грузов",
+    "tags": [
+      "Грузы",
+      "Онлайн"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "СК ПАРИ",
+    "product": "Полис «КлещOff»",
+    "logo": "sk_pari.png",
+    "description": "Защита от укуса клеща, онлайн-оформление, выплата при укусе",
+    "rate_value": "от 350",
+    "rate_label": "₽ в сезон",
+    "coverage": "Выплата до 50 000 ₽",
+    "tags": [
+      "Клещ",
+      "Сезонный"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "СК ПАРИ",
+    "product": "Страхование ипотеки",
+    "logo": "sk_pari.png",
+    "description": "Для клиентов других банков, онлайн-оформление, от 5 000 ₽",
+    "rate_value": "от 5 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Онлайн"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "СК ПАРИ",
+    "product": "Страхование ипотеки Сбер",
+    "logo": "sk_pari.png",
+    "description": "Для клиентов Сбербанка, специальные условия, онлайн-оформление",
+    "rate_value": "от 5 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Сбер"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "СК ПАРИ",
+    "product": "Полис ДМС",
+    "logo": "sk_pari.png",
+    "description": "Добровольное медицинское страхование, онлайн-оформление",
+    "rate_value": "от 15 000",
+    "rate_label": "₽ в год",
+    "coverage": "Поликлиники Москвы",
+    "tags": [
+      "ДМС",
+      "Медицина"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "СК ПАРИ",
+    "product": "Полис ВЗР",
+    "logo": "sk_pari.png",
+    "description": "Страхование выезжающих за рубеж, покрытие медицинских расходов",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница",
+      "Медицина"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Ингосстрах",
+    "product": "ОСАГО",
+    "logo": "ingosstrah.svg",
+    "description": "Полис от 2 000 ₽, крупнейший страховщик России",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "Надёжно",
+      "Лидер рынка"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Ингосстрах",
+    "product": "Страхование квартиры",
+    "logo": "ingosstrah.svg",
+    "description": "Полис от 2 200 ₽, пожар, затопление, кража, стихия",
+    "rate_value": "от 2 200",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 5 млн ₽",
+    "tags": [
+      "Квартира",
+      "Полная защита"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Ингосстрах",
+    "product": "Страхование ипотеки",
+    "logo": "ingosstrah.svg",
+    "description": "Полис от 2 200 ₽, обязательное страхование при ипотеке",
+    "rate_value": "от 2 200",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Обязательно"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Ингосстрах",
+    "product": "Страхование выезжающих",
+    "logo": "ingosstrah.svg",
+    "description": "Полис от 1 650 ₽, покрытие медицинских расходов за рубежом",
+    "rate_value": "от 1 650",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница",
+      "Медицина"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Ингосстрах",
+    "product": "Страхование от НС",
+    "logo": "ingosstrah.svg",
+    "description": "Полис от 350 ₽, выплата при несчастном случае",
+    "rate_value": "от 350",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 1 000 000 ₽",
+    "tags": [
+      "НС",
+      "Дёшево"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Ингосстрах",
+    "product": "Страхование от клеща",
+    "logo": "ingosstrah.svg",
+    "description": "Защита от укуса клеща на сезон",
+    "rate_value": "от 400",
+    "rate_label": "₽ в сезон",
+    "coverage": "Выплата до 50 000 ₽",
+    "tags": [
+      "Клещ",
+      "Сезонный"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Ингосстрах",
+    "product": "Страхование питомцев",
+    "logo": "ingosstrah.svg",
+    "description": "Страхование собак и кошек от болезней и несчастных случаев",
+    "rate_value": "от 2 200",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 100 000 ₽",
+    "tags": [
+      "Питомцы",
+      "Кошки/Собаки"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Ингосстрах",
+    "product": "Страхование от невыезда",
+    "logo": "ingosstrah.svg",
+    "description": "Полис от 3 500 ₽, возврат денег при отмене поездки",
+    "rate_value": "от 3 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Возврат до 100% стоимости",
+    "tags": [
+      "Отмена",
+      "Возврат"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "КАПИТАЛ LIFE",
+    "product": "ДМС для иностранных граждан",
+    "logo": "kapital_life.svg",
+    "description": "Медицинское страхование иностранцев онлайн",
+    "rate_value": "от 5 000",
+    "rate_label": "₽ в год",
+    "coverage": "Поликлиники Москвы",
+    "tags": [
+      "ДМС",
+      "Иностранцы"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "КАПИТАЛ LIFE",
+    "product": "Онкострахование",
+    "logo": "kapital_life.svg",
+    "description": "Страхование от онкологических заболеваний, выплата при диагнозе",
+    "rate_value": "от 3 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 1 000 000 ₽",
+    "tags": [
+      "Онкология",
+      "Выплата"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "КАПИТАЛ LIFE",
+    "product": "Страхование от НС для семьи",
+    "logo": "kapital_life.svg",
+    "description": "Коллективный полис на всю семью, покрытие для всех членов",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 500 000 ₽/чел.",
+    "tags": [
+      "Семья",
+      "Коллективный"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "КАПИТАЛ LIFE",
+    "product": "Стоп.Клещ",
+    "logo": "kapital_life.svg",
+    "description": "Защита от укуса клеща на сезон",
+    "rate_value": "от 350",
+    "rate_label": "₽ в сезон",
+    "coverage": "Выплата до 50 000 ₽",
+    "tags": [
+      "Клещ",
+      "Сезонный"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "КАПИТАЛ LIFE",
+    "product": "Страхование выезжающих",
+    "logo": "kapital_life.svg",
+    "description": "Полис ВЗР для поездок за рубеж",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "КАПИТАЛ LIFE",
+    "product": "Страхование путешествий по России",
+    "logo": "kapital_life.svg",
+    "description": "Полис для поездок по территории РФ",
+    "rate_value": "от 200",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 100 000 ₽",
+    "tags": [
+      "Россия",
+      "Путешествия"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "КАПИТАЛ LIFE",
+    "product": "Здоровая прививка",
+    "logo": "kapital_life.svg",
+    "description": "Страхование от осложнений после вакцинации",
+    "rate_value": "от 500",
+    "rate_label": "₽ за прививку",
+    "coverage": "Покрытие до 100 000 ₽",
+    "tags": [
+      "Прививки",
+      "Осложнения"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Полис812",
+    "product": "Страхование спортсменов",
+    "logo": "polis812.svg",
+    "description": "Защита при занятиях спортом, травмы и НС",
+    "rate_value": "от 1 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 500 000 ₽",
+    "tags": [
+      "Спорт",
+      "Травмы"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Полис812",
+    "product": "Страховка от невыезда",
+    "logo": "polis812.svg",
+    "description": "Возврат денег при отмене поездки",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ за поездку",
+    "coverage": "Возврат до 100%",
+    "tags": [
+      "Отмена",
+      "Возврат"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Полис812",
+    "product": "ВЗР",
+    "logo": "polis812.svg",
+    "description": "Страхование выезжающих за рубеж",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Полис812",
+    "product": "Страховка от клеща",
+    "logo": "polis812.svg",
+    "description": "Защита от укуса клеща на сезон",
+    "rate_value": "от 350",
+    "rate_label": "₽ в сезон",
+    "coverage": "Выплата до 50 000 ₽",
+    "tags": [
+      "Клещ",
+      "Сезонный"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Полис812",
+    "product": "Страхование ипотеки",
+    "logo": "polis812.svg",
+    "description": "Обязательное страхование при ипотеке, специальные условия для Сбер",
+    "rate_value": "от 3 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Сбер"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Полис812",
+    "product": "Страховка в Крым",
+    "logo": "polis812.svg",
+    "description": "Специальный полис для поездок в Крым",
+    "rate_value": "от 300",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 100 000 ₽",
+    "tags": [
+      "Крым",
+      "Туризм"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "kasko",
+    "bank": "Полис812",
+    "product": "Страховка авто за границу",
+    "logo": "polis812.svg",
+    "description": "Зелёная карта для выезда за рубеж на автомобиле",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ за поездку",
+    "coverage": "Все страны Европы",
+    "tags": [
+      "Авто",
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Полис812",
+    "product": "Страхование квартиры",
+    "logo": "polis812.svg",
+    "description": "Защита имущества: пожар, затопление, кража",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 3 млн ₽",
+    "tags": [
+      "Квартира"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Согласие",
+    "product": "ВЗР",
+    "logo": "soglasie.svg",
+    "description": "Страхование выезжающих за рубеж",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Согласие",
+    "product": "Страхование ипотеки",
+    "logo": "soglasie.svg",
+    "description": "Обязательное страхование, от 1 500 ₽/год",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Согласие",
+    "product": "Страхование квартиры",
+    "logo": "soglasie.svg",
+    "description": "Защита имущества, пожар, затопление, кража",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 5 млн ₽",
+    "tags": [
+      "Квартира"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Сравни",
+    "product": "ОСАГО",
+    "logo": "sravni.svg",
+    "description": "Сравнение цен от 20+ страховщиков, лучшая цена",
+    "rate_value": "от 6 500",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "Сравнение",
+      "Лучшая цена"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Сравни",
+    "product": "Страхование недвижимости",
+    "logo": "sravni.svg",
+    "description": "Защита квартиры, дома, дачи",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 5 млн ₽",
+    "tags": [
+      "Недвижимость"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Сравни",
+    "product": "Страхование ипотеки",
+    "logo": "sravni.svg",
+    "description": "Обязательное страхование при ипотеке",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Сравни",
+    "product": "Страхование от НС",
+    "logo": "sravni.svg",
+    "description": "Защита от несчастных случаев",
+    "rate_value": "от 1 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 1 000 000 ₽",
+    "tags": [
+      "НС"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Сравни",
+    "product": "ВЗР",
+    "logo": "sravni.svg",
+    "description": "Страхование выезжающих за рубеж",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Сравни",
+    "product": "Страховка от клеща",
+    "logo": "sravni.svg",
+    "description": "Защита от укуса клеща на сезон",
+    "rate_value": "от 350",
+    "rate_label": "₽ в сезон",
+    "coverage": "Выплата до 50 000 ₽",
+    "tags": [
+      "Клещ"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Банки.ру",
+    "product": "ОСАГО",
+    "logo": "bankiru.svg",
+    "description": "Сравнение цен от 20+ страховщиков, экономия до 30%",
+    "rate_value": "от 6 500",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "Сравнение",
+      "Экономия"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Банки.ру",
+    "product": "Ипотечное страхование",
+    "logo": "bankiru.svg",
+    "description": "Обязательное страхование при ипотеке, сравнение предложений",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Сравнение"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "kasko",
+    "bank": "Банки.ру",
+    "product": "КАСКО",
+    "logo": "bankiru.svg",
+    "description": "Полное страхование авто, сравнение предложений",
+    "rate_value": "от 25 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все марки авто",
+    "tags": [
+      "Сравнение",
+      "КАСКО"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Zetta",
+    "product": "Страхование квартиры",
+    "logo": "zetta.svg",
+    "description": "Надёжная защита имущества, выгодные тарифы",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 3 млн ₽",
+    "tags": [
+      "Выгодно",
+      "Надёжно"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Cherehapa",
+    "product": "ОСАГО",
+    "logo": "cherehapa.svg",
+    "description": "Крупнейший агрегатор, 30+ страховщиков, экономия до 30%",
+    "rate_value": "от 6 500",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "Агрегатор",
+      "30+ страховщиков"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Cherehapa",
+    "product": "Страхование ипотеки",
+    "logo": "cherehapa.svg",
+    "description": "Сравнение предложений по ипотечному страхованию",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Сравнение"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Cherehapa",
+    "product": "ВЗР",
+    "logo": "cherehapa.svg",
+    "description": "Страхование выезжающих за рубеж, сравнение цен",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Zetta",
+    "product": "Страхование спортсменов",
+    "logo": "zetta.svg",
+    "description": "Защита при занятиях спортом",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 500 000 ₽",
+    "tags": [
+      "Спорт"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Zetta",
+    "product": "Антиклещ",
+    "logo": "zetta.svg",
+    "description": "Защита от укуса клеща",
+    "rate_value": "от 350",
+    "rate_label": "₽ в сезон",
+    "coverage": "Выплата до 50 000 ₽",
+    "tags": [
+      "Клещ"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Zetta",
+    "product": "Ипотечное страхование Сбер",
+    "logo": "zetta.svg",
+    "description": "Для клиентов Сбербанка, специальные условия",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Сбер"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Zetta",
+    "product": "Ипотечное страхование ВТБ",
+    "logo": "zetta.svg",
+    "description": "Для клиентов ВТБ, специальные условия",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "ВТБ"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Zetta",
+    "product": "ВЗР",
+    "logo": "zetta.svg",
+    "description": "Страхование выезжающих за рубеж",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Zetta",
+    "product": "Страхование жизни и здоровья детей",
+    "logo": "zetta.svg",
+    "description": "Защита здоровья ребёнка",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 500 000 ₽",
+    "tags": [
+      "Дети",
+      "Жизнь"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Zetta",
+    "product": "ОСГОП",
+    "logo": "zetta.svg",
+    "description": "Обязательное страхование гражданской ответственности перевозчиков",
+    "rate_value": "от 500",
+    "rate_label": "₽ за рейс",
+    "coverage": "Все виды транспорта",
+    "tags": [
+      "ОСГОП",
+      "Перевозки"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "АльфаСтрахование",
+    "product": "ОСАГО",
+    "logo": "alfa-strah.svg",
+    "description": "Полис онлайн, быстрое оформление",
+    "rate_value": "от 7 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "Онлайн"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "АльфаСтрахование",
+    "product": "НС АльфаЗащита",
+    "logo": "alfa-strah.svg",
+    "description": "Страхование от несчастных случаев",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 3 000 000 ₽",
+    "tags": [
+      "НС"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "АльфаСтрахование",
+    "product": "НС Дети и спорт",
+    "logo": "alfa-strah.svg",
+    "description": "Защита детей при занятиях спортом",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 1 000 000 ₽",
+    "tags": [
+      "Дети",
+      "Спорт"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "АльфаСтрахование",
+    "product": "Квартира Добрые соседи",
+    "logo": "alfa-strah.svg",
+    "description": "Страхование квартиры от затопления соседями",
+    "rate_value": "от 1 500",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 1 000 000 ₽",
+    "tags": [
+      "Затопление"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "АльфаСтрахование",
+    "product": "Квартира Альфаремонт",
+    "logo": "alfa-strah.svg",
+    "description": "Страхование ремонта квартиры",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 2 000 000 ₽",
+    "tags": [
+      "Ремонт"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "АльфаСтрахование",
+    "product": "Онкострахование AlfaSynopsis",
+    "logo": "alfa-strah.svg",
+    "description": "Страхование от онкологических заболеваний",
+    "rate_value": "от 3 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 5 000 000 ₽",
+    "tags": [
+      "Онкология"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "АльфаСтрахование",
+    "product": "Ипотека Сбер",
+    "logo": "alfa-strah.svg",
+    "description": "Страхование ипотеки для клиентов Сбербанка",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека",
+      "Сбер"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Mafin",
+    "product": "ОСАГО",
+    "logo": "mafin.svg",
+    "description": "Агрегатор ОСАГО, сравнение цен, экономия до 30%",
+    "rate_value": "от 6 500",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "Агрегатор",
+      "Экономия"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "osago",
+    "bank": "Т-Банк",
+    "product": "ОСАГО",
+    "logo": "t-bank.svg",
+    "description": "Полис онлайн за 5 минут, оплата картой",
+    "rate_value": "от 7 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все регионы",
+    "tags": [
+      "5 минут",
+      "Онлайн"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "kasko",
+    "bank": "Т-Банк",
+    "product": "КАСКО",
+    "logo": "t-bank.svg",
+    "description": "Полное страхование авто, годовой полис",
+    "rate_value": "от 25 000",
+    "rate_label": "₽ в год",
+    "coverage": "Все марки авто",
+    "tags": [
+      "Полное",
+      "Годовой"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Т-Банк",
+    "product": "Страхование ипотеки",
+    "logo": "t-bank.svg",
+    "description": "Обязательное страхование при ипотеке",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до суммы кредита",
+    "tags": [
+      "Ипотека"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "property",
+    "bank": "Т-Банк",
+    "product": "Страхование недвижимости",
+    "logo": "t-bank.svg",
+    "description": "Защита квартиры, дома от пожара, затопления, кражи",
+    "rate_value": "от 2 000",
+    "rate_label": "₽ в год",
+    "coverage": "Покрытие до 5 млн ₽",
+    "tags": [
+      "Недвижимость"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "life",
+    "bank": "Т-Банк",
+    "product": "ВЗР",
+    "logo": "t-bank.svg",
+    "description": "Страхование выезжающих за рубеж",
+    "rate_value": "от 500",
+    "rate_label": "₽ за поездку",
+    "coverage": "Покрытие до 50 000 €",
+    "tags": [
+      "Заграница"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "ipoteka",
+    "bank": "СК ПАРИ",
+    "product": "Страхование ипотеки",
+    "logo": "sk_pari.png",
+    "description": "Для клиентов других банков, онлайн-оформление",
+    "rate_value": "от 5 000",
+    "rate_label": "₽",
+    "coverage": "Полис",
+    "tags": [
+      "Другие банки"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "ipoteka",
+    "bank": "СК ПАРИ",
+    "product": "Страхование ипотеки Сбер",
+    "logo": "sk_pari.png",
+    "description": "Для клиентов Сбербанка, специальные условия",
+    "rate_value": "от 5 000",
+    "rate_label": "₽",
+    "coverage": "Полис",
+    "tags": [
+      "Сбербанк"
+    ],
+    "page_url": ""
+  },
+  {
+    "type": "insurance",
+    "category": "ipoteka",
+    "bank": "Ингосстрах",
+    "product": "Страхование ипотеки",
+    "logo": "ingosstrah.svg",
+    "description": "Крупнейший страховщик, обязательное страхование",
+    "rate_value": "от 2 200",
+    "rate_label": "₽",
+    "coverage": "Полис",
+    "tags": [
+      "Крупнейший"
+    ],
+    "page_url": ""
+  }
+]

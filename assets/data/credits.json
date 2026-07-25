@@ -1,0 +1,334 @@
+[
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит наличными",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer.html",
+    "params": [
+      {
+        "value": "до 100 000 ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Т-Банк",
+    "product": "Кредит наличными",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "offer-2.html",
+    "params": [
+      {
+        "value": "до 5 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "2 минуты",
+        "label": "Решение"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Совком",
+    "product": "Прогресс",
+    "logo": "sovcombank-user.svg",
+    "rate": "0",
+    "page_url": "offer-3.html",
+    "params": [
+      {
+        "value": "50–250 тыс. ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Банки.ру",
+    "product": "Потребительский кредит",
+    "logo": "bankiru.svg",
+    "rate": "0",
+    "page_url": "offer-4.html",
+    "params": [
+      {
+        "value": "до 7 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "50+ банков",
+        "label": "Выбор"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "495 Кредит",
+    "product": "Потребительский кредит",
+    "logo": "495.svg",
+    "rate": "0",
+    "page_url": "offer-5.html",
+    "params": [
+      {
+        "value": "до 1 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "15 минут",
+        "label": "Решение"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Финуслуги",
+    "product": "Мастер подбора кредита",
+    "logo": "finuslugi.svg",
+    "rate": "0",
+    "page_url": "offer-6.html",
+    "params": [
+      {
+        "value": "до 5 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "50+ банков",
+        "label": "Выбор"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "avtokredit",
+    "bank": "ВТБ",
+    "product": "Автокредит",
+    "logo": "vtb.svg",
+    "rate": "0",
+    "page_url": "offer-7.html",
+    "params": [
+      {
+        "value": "до 10 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "5 лет",
+        "label": "Срок кредитования"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит наличными",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer-8.html",
+    "params": [
+      {
+        "value": "101–300 тыс. ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Т-Банк",
+    "product": "Кредит под залог авто",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "offer-9.html",
+    "params": [
+      {
+        "value": "до 10 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "Авто остаётся",
+        "label": "Условие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Совком",
+    "product": "Прогресс",
+    "logo": "sovcombank-user.svg",
+    "rate": "0",
+    "page_url": "offer-10.html",
+    "params": [
+      {
+        "value": "250–650 тыс. ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Банки.ру",
+    "product": "Кредитная карта",
+    "logo": "bankiru.svg",
+    "rate": "0",
+    "page_url": "offer-11.html",
+    "params": [
+      {
+        "value": "50+ банков",
+        "label": "Выбор"
+      },
+      {
+        "value": "Бесплатно",
+        "label": "Обслуживание"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит наличными",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer-12.html",
+    "params": [
+      {
+        "value": "301 тыс.–1 млн ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Т-Банк",
+    "product": "Кредит под залог недвижимости",
+    "logo": "t-bank.svg",
+    "rate": "0",
+    "page_url": "offer-13.html",
+    "params": [
+      {
+        "value": "до 100 млн ₽",
+        "label": "Сумма кредита"
+      },
+      {
+        "value": "Недвижимость остаётся",
+        "label": "Условие"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Совком",
+    "product": "Прогресс",
+    "logo": "sovcombank-user.svg",
+    "rate": "0",
+    "page_url": "offer-14.html",
+    "params": [
+      {
+        "value": "от 650 001 ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит наличными",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer-15.html",
+    "params": [
+      {
+        "value": "свыше 1 млн ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Совком",
+    "product": "Прогресс ДКПЗА",
+    "logo": "sovcombank-user.svg",
+    "rate": "0",
+    "page_url": "offer-16.html",
+    "params": [
+      {
+        "value": "от 650 001 ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит на ремонт",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer-17.html",
+    "params": [
+      {
+        "value": "до 100 000 ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит на ремонт",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer-18.html",
+    "params": [
+      {
+        "value": "101–300 тыс. ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит на ремонт",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer-19.html",
+    "params": [
+      {
+        "value": "301 тыс.–1 млн ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  },
+  {
+    "type": "horizontal",
+    "category": "nalichnye",
+    "bank": "Альфа Банк",
+    "product": "Кредит на ремонт",
+    "logo": "alfa-bank.svg",
+    "rate": "0",
+    "page_url": "offer-20.html",
+    "params": [
+      {
+        "value": "свыше 1 млн ₽",
+        "label": "Сумма кредита"
+      }
+    ]
+  }
+]
