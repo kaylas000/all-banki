@@ -1,0 +1,24 @@
+# Все-Банки
+
+## What is it
+Все-Банки — российский портал для сравнения финансовых продуктов: кредитов, дебетовых и кредитных карт, вкладов, микрозаймов, ипотеки и страхования. Сравнивает условия 30+ банков и МФО России.
+
+## Key pages
+- Кредиты банков: https://kaylas000.github.io/all-banki/pages/credits.html
+- Дебетовые карты: https://kaylas000.github.io/all-banki/pages/cards.html
+- Вклады: https://kaylas000.github.io/all-banki/pages/deposits.html
+- Займы онлайн: https://kaylas000.github.io/all-banki/pages/loans.html
+- Ипотека: https://kaylas000.github.io/all-banki/pages/mortgage.html
+- Страхование: https://kaylas000.github.io/all-banki/pages/insurance.html
+- Каталог: https://kaylas000.github.io/all-banki/pages/catalog.html
+- FAQ: https://kaylas000.github.io/all-banki/pages/faq.html
+- Блог: https://kaylas000.github.io/all-banki/pages/blog.html
+
+## Data
+- 183 страницы финансовых продуктов
+- 30+ банков в каталоге
+- Актуальные ставки на июль 2026
+- Сравнительные таблицы по всем категориям
+
+## Contact
+Сайт: https://kaylas000.github.io/all-banki
