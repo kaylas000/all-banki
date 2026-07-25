@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/components/
+Disallow: /pages/_card-data.js
+
+Sitemap: https://kaylas000.github.io/all-banki/sitemap.xml
