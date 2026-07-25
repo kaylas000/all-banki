@@ -3,4 +3,6 @@ Allow: /
 Disallow: /assets/components/
 Disallow: /pages/_card-data.js
 
+Crawl-delay: 0
+
 Sitemap: https://kaylas000.github.io/all-banki/sitemap.xml
