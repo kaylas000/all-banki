@@ -1,0 +1,12 @@
+<!-- ШАБЛОН: Карточка статьи в блоге -->
+<!-- Поля: {{category}}, {{title}}, {{description}}, {{date}}, {{read_time}}, {{page_url}} -->
+
+<a href="{{page_url}}" class="blog-card" data-category="{{category}}">
+  <div class="blog-card-body">
+    <span class="blog-card-tag">{{category_name}}</span>
+    <div class="blog-card-title">{{title}}</div>
+    <div class="blog-card-desc">{{description}}</div>
+    <div class="blog-card-meta"><span>{{date}}</span><span>·</span><span>{{read_time}}</span></div>
+  </div>
+  <div class="blog-card-footer"><span>Читать статью →</span></div>
+</a>
