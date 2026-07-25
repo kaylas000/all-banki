@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кредитный калькулятор — Все-Банки</title>
+  <link rel="stylesheet" href="../assets/css/main.css?v=7">
+</head>
+<body>
+
+<header class="header"><div class="header-inner"><a href="../index.html" class="logo"><img src="../assets/img/logo.svg" alt="ВСЕ-БАНКИ" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="../index.html" data-page="home">Главная</a><a href="catalog.html" data-page="catalog">Каталог</a><a href="credits.html" data-page="credits">Кредиты</a><a href="cards.html" data-page="cards">Карты</a><a href="deposits.html" data-page="deposits">Вклады</a><a href="investments.html" data-page="investments">Инвестиции</a><a href="loans.html" data-page="loans">Займы</a><a href="mortgage.html" data-page="mortgage">Ипотека</a><a href="insurance.html" data-page="insurance">Страхование</a><a href="faq.html" data-page="faq">FAQ</a><a href="blog.html" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+<div class="mobile-nav" id="mobileNav"><a href="../index.html" data-page="home">Главная</a><a href="catalog.html" data-page="catalog">Каталог</a><a href="credits.html" data-page="credits">Кредиты</a><a href="cards.html" data-page="cards">Карты</a><a href="deposits.html" data-page="deposits">Вклады</a><a href="investments.html" data-page="investments">Инвестиции</a><a href="loans.html" data-page="loans">Займы</a><a href="mortgage.html" data-page="mortgage">Ипотека</a><a href="insurance.html" data-page="insurance">Страхование</a><a href="faq.html" data-page="faq">FAQ</a><a href="blog.html" data-page="blog">Блог</a></div>
+
+<div class="page-content">
+  <div class="container"><nav class="breadcrumbs"><a href="../index.html">Главная</a><span class="separator">/</span><a href="catalog.html">Каталог</a><span class="separator">/</span><span class="current">Кредитный калькулятор</span></nav></div>
+
+  <section style="padding:32px 0;background:var(--bg-secondary)"><div class="container"><h1 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:8px"><img src="../assets/img/calc-credit.svg" alt="" style="width:32px;height:32px;vertical-align:middle;object-fit:contain"> Кредитный калькулятор</h1><p style="color:var(--text-secondary)">Рассчитайте ежемесячный платёж, переплату и полную стоимость кредита</p></div></section>
+
+  <section class="section"><div class="container" style="max-width:900px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+      <!-- Форма -->
+      <div>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px">
+          <h3 style="margin-bottom:20px">Параметры кредита</h3>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Сумма кредита</label>
+            <input type="range" id="amount" min="30000" max="10000000" step="10000" value="1000000" style="width:100%;accent-color:var(--bronze)">
+            <div style="display:flex;justify-content:space-between;margin-top:8px">
+              <span style="font-size:0.75rem;color:var(--text-muted)">30 000 ₽</span>
+              <span id="amountValue" style="font-size:1.125rem;font-weight:700;color:var(--bronze)">1 000 000 ₽</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">10 000 000 ₽</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Процентная ставка</label>
+            <input type="range" id="rate" min="5" max="50" step="0.1" value="19.9" style="width:100%;accent-color:var(--bronze)">
+            <div style="display:flex;justify-content:space-between;margin-top:8px">
+              <span style="font-size:0.75rem;color:var(--text-muted)">5%</span>
+              <span id="rateValue" style="font-size:1.125rem;font-weight:700;color:var(--bronze)">19.9%</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">50%</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Срок кредита</label>
+            <input type="range" id="term" min="1" max="84" step="1" value="36" style="width:100%;accent-color:var(--bronze)">
+            <div style="display:flex;justify-content:space-between;margin-top:8px">
+              <span style="font-size:0.75rem;color:var(--text-muted)">1 мес.</span>
+              <span id="termValue" style="font-size:1.125rem;font-weight:700;color:var(--bronze)">36 мес. (3 года)</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">84 мес.</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Первоначальный взнос</label>
+            <input type="number" id="downPayment" value="0" min="0" class="filter-search" style="max-width:none;width:100%">
+          </div>
+
+          <div>
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Тип платежа</label>
+            <div style="display:flex;gap:8px">
+              <button class="filter-pill active" id="annuitet" onclick="setPaymentType('annuitet')">Аннуитетный</button>
+              <button class="filter-pill" id="diff" onclick="setPaymentType('diff')">Дифференцированный</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Результат -->
+      <div>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px">
+          <h3 style="margin-bottom:20px">Результат расчёта</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="monthlyPayment" style="font-size:1.75rem;font-weight:700;color:var(--bronze)">37 900 ₽</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Ежемесячный платёж</div>
+            </div>
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="totalPayment" style="font-size:1.75rem;font-weight:700">1 364 400 ₽</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Общая выплата</div>
+            </div>
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="overpayment" style="font-size:1.75rem;font-weight:700;color:var(--error)">364 400 ₽</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Переплата</div>
+            </div>
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="effectiveRate" style="font-size:1.75rem;font-weight:700;color:var(--success)">19.9%</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Эффективная ставка</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px">
+          <h3 style="margin-bottom:16px">График платежей</h3>
+          <div id="schedule" style="max-height:300px;overflow-y:auto"></div>
+        </div>
+
+        <a href="credits.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:20px">Подобрать кредит</a>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><h4>Продукты</h4><ul><li><a href="credits.html">Кредиты</a></li><li><a href="cards.html">Карты</a></li><li><a href="deposits.html">Вклады</a></li><li><a href="investments.html">Инвестиции</a></li><li><a href="loans.html">Займы</a></li><li><a href="mortgage.html">Ипотека</a></li><li><a href="insurance.html">Страхование</a></li><li><a href="rko.html">РКО</a></li></ul></div><div><h4>Калькуляторы</h4><ul><li><a href="calc-credit.html">Кредитный</a></li><li><a href="calc-mortgage.html">Ипотечный</a></li><li><a href="calc-deposit.html">Депозитный</a></li></ul></div><div><h4>Информация</h4><ul><li><a href="catalog.html">Каталог</a></li><li><a href="faq.html">FAQ</a></li><li><a href="blog.html">Блог</a></li><li><a href="svg-icons-mfo.html">SVG иконки</a></li></ul></div><div><h4>Банки</h4><ul><li><a href="banks.html">Все лицензии</a></li><li><a href="#">Сбербанк</a></li><li><a href="#">Т-Банк</a></li><li><a href="#">Альфа-Банк</a></li><li><a href="#">ВТБ</a></li><li><a href="#">Совкомбанк</a></li><li><a href="#">Газпромбанк</a></li><li><a href="#">Росбанк</a></li><li><a href="#">ОТП Банк</a></li><li><a href="#">Райффайзенбанк</a></li><li><a href="#">МКБ</a></li><li><a href="#">АК БАРС</a></li><li><a href="#">Почта Банк</a></li><li><a href="#">Локо-Банк</a></li><li><a href="#">Точка</a></li></ul></div><div><h4>МФО</h4><ul><li><a href="mfo.html">Все лицензии</a></li><li><a href="#">Vivus</a></li><li><a href="#">е Капуста</a></li><li><a href="#">MoneyMan</a></li><li><a href="#">Быстроденьги</a></li><li><a href="#">Займер</a></li><li><a href="#">Деньги Сразу</a></li><li><a href="#">Турбозайм</a></li><li><a href="#">Webbankir</a></li><li><a href="#">OneClickMoney</a></li><li><a href="#">Деньга</a></li><li><a href="#">МигКредит</a></li><li><a href="#">Kviku</a></li><li><a href="#">Joymoney</a></li><li><a href="#">Krediska</a></li><li><a href="#">Кэшмагнит</a></li><li><a href="#">БериБеру</a></li><li><a href="#">Snapcredit</a></li><li><a href="#">Доброзайм</a></li><li><a href="#">Деньги Ок</a></li><li><a href="#">СМС ФИНАНС</a></li><li><a href="#">Zaymigo</a></li></ul></div><div><h4>Страховые</h4><ul><li><a href="insurance-companies.html">Все лицензии</a></li><li><a href="#">Ингосстрах</a></li><li><a href="#">АльфаСтрахование</a></li><li><a href="#">СК ПАРИ</a></li><li><a href="#">Согласие</a></li><li><a href="#">Т-Банк Страхование</a></li><li><a href="#">Зетта</a></li><li><a href="#">КАПИТАЛ LIFE</a></li><li><a href="#">Cherehapa</a></li><li><a href="#">Полис812</a></li><li><a href="#">Мафин</a></li></ul></div></div><div class="footer-bottom"><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%"><div class="footer-logo"><img src="../assets/img/logo.svg" alt="ВСЕ-БАНКИ" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">ВСЕ<span>-</span>БАНКИ</div><div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">Сайт не несёт ответственности за качество предоставляемых услуг организациями, представленными на сайте. Все организации имеют лицензии ЦБ РФ. Сайт оказывает рекламные услуги и не является офертой.</div><div class="footer-copyright" style="margin-left:auto">© 2026</div></div></div></div></footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+(function(){
+  const amount = document.getElementById('amount');
+  const rate = document.getElementById('rate');
+  const term = document.getElementById('term');
+  const downPayment = document.getElementById('downPayment');
+  const amountValue = document.getElementById('amountValue');
+  const rateValue = document.getElementById('rateValue');
+  const termValue = document.getElementById('termValue');
+  const monthlyPayment = document.getElementById('monthlyPayment');
+  const totalPayment = document.getElementById('totalPayment');
+  const overpayment = document.getElementById('overpayment');
+  const effectiveRate = document.getElementById('effectiveRate');
+  const schedule = document.getElementById('schedule');
+  let paymentType = 'annuitet';
+
+  function fmt(n) { return new Intl.NumberFormat('ru-RU').format(Math.round(n)) + ' ₽'; }
+
+  function getTermText(m) {
+    const y = Math.floor(m / 12);
+    const mo = m % 12;
+    if (y === 0) return m + ' мес.';
+    if (mo === 0) return y + ' год' + (y > 1 && y < 5 ? 'а' : y >= 5 ? 'ов' : '');
+    return y + ' г. ' + mo + ' мес.';
+  }
+
+  function calc() {
+    const P = parseFloat(amount.value) - parseFloat(downPayment.value || 0);
+    const r = parseFloat(rate.value) / 100 / 12;
+    const n = parseInt(term.value);
+
+    if (P <= 0 || n <= 0) { monthlyPayment.textContent = '—'; totalPayment.textContent = '—'; overpayment.textContent = '—'; return; }
+
+    let scheduleHTML = '<table style="width:100%;border-collapse:collapse;font-size:0.8125rem"><thead><tr style="border-bottom:1px solid var(--border)"><th style="padding:8px;text-align:left;color:var(--text-muted)">Месяц</th><th style="padding:8px;text-align:right;color:var(--text-muted)">Платёж</th><th style="padding:8px;text-align:right;color:var(--text-muted)">Проценты</th><th style="padding:8px;text-align:right;color:var(--text-muted)">Тело</th><th style="padding:8px;text-align:right;color:var(--text-muted)">Остаток</th></tr></thead><tbody>';
+
+    let total = 0, balance = P, firstPayment = 0;
+
+    if (paymentType === 'annuitet') {
+      const payment = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+      firstPayment = payment;
+      for (let i = 1; i <= n; i++) {
+        const intPart = balance * r;
+        const debtPart = payment - intPart;
+        balance -= debtPart;
+        total += payment;
+        if (balance < 0) balance = 0;
+        scheduleHTML += `<tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">${i}</td><td style="padding:6px 8px;text-align:right;color:var(--bronze)">${fmt(payment)}</td><td style="padding:6px 8px;text-align:right;color:var(--error)">${fmt(intPart)}</td><td style="padding:6px 8px;text-align:right">${fmt(debtPart)}</td><td style="padding:6px 8px;text-align:right;color:var(--text-muted)">${fmt(balance)}</td></tr>`;
+      }
+    } else {
+      const debtPart = P / n;
+      for (let i = 1; i <= n; i++) {
+        const intPart = balance * r;
+        const payment = debtPart + intPart;
+        balance -= debtPart;
+        total += payment;
+        if (i === 1) firstPayment = payment;
+        if (balance < 0) balance = 0;
+        scheduleHTML += `<tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">${i}</td><td style="padding:6px 8px;text-align:right;color:var(--bronze)">${fmt(payment)}</td><td style="padding:6px 8px;text-align:right;color:var(--error)">${fmt(intPart)}</td><td style="padding:6px 8px;text-align:right">${fmt(debtPart)}</td><td style="padding:6px 8px;text-align:right;color:var(--text-muted)">${fmt(balance)}</td></tr>`;
+      }
+    }
+
+    scheduleHTML += '</tbody></table>';
+
+    monthlyPayment.textContent = paymentType === 'annuitet' ? fmt(firstPayment) : fmt(firstPayment) + ' — ' + fmt(P / n + P * r);
+    totalPayment.textContent = fmt(total);
+    overpayment.textContent = fmt(total - P);
+    effectiveRate.textContent = ((total / P - 1) / (n / 12) * 100).toFixed(1) + '%';
+    schedule.innerHTML = scheduleHTML;
+  }
+
+  function update() {
+    amountValue.textContent = fmt(parseFloat(amount.value));
+    rateValue.textContent = parseFloat(rate.value).toFixed(1) + '%';
+    termValue.textContent = getTermText(parseInt(term.value));
+    calc();
+  }
+
+  amount.addEventListener('input', update);
+  rate.addEventListener('input', update);
+  term.addEventListener('input', update);
+  downPayment.addEventListener('input', calc);
+
+  window.setPaymentType = function(type) {
+    paymentType = type;
+    document.getElementById('annuitet').classList.toggle('active', type === 'annuitet');
+    document.getElementById('diff').classList.toggle('active', type === 'diff');
+    calc();
+  };
+
+  update();
+})();
+</script>
+</body>
+</html>

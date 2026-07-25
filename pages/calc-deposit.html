@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор вклада — Все-Банки</title>
+  <link rel="stylesheet" href="../assets/css/main.css?v=7">
+</head>
+<body>
+
+<header class="header"><div class="header-inner"><a href="../index.html" class="logo"><img src="../assets/img/logo.svg" alt="ВСЕ-БАНКИ" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="../index.html" data-page="home">Главная</a><a href="catalog.html" data-page="catalog">Каталог</a><a href="credits.html" data-page="credits">Кредиты</a><a href="cards.html" data-page="cards">Карты</a><a href="deposits.html" data-page="deposits">Вклады</a><a href="investments.html" data-page="investments">Инвестиции</a><a href="loans.html" data-page="loans">Займы</a><a href="mortgage.html" data-page="mortgage">Ипотека</a><a href="insurance.html" data-page="insurance">Страхование</a><a href="faq.html" data-page="faq">FAQ</a><a href="blog.html" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+<div class="mobile-nav" id="mobileNav"><a href="../index.html" data-page="home">Главная</a><a href="catalog.html" data-page="catalog">Каталог</a><a href="credits.html" data-page="credits">Кредиты</a><a href="cards.html" data-page="cards">Карты</a><a href="deposits.html" data-page="deposits">Вклады</a><a href="investments.html" data-page="investments">Инвестиции</a><a href="loans.html" data-page="loans">Займы</a><a href="mortgage.html" data-page="mortgage">Ипотека</a><a href="insurance.html" data-page="insurance">Страхование</a><a href="faq.html" data-page="faq">FAQ</a><a href="blog.html" data-page="blog">Блог</a></div>
+
+<div class="page-content">
+  <div class="container"><nav class="breadcrumbs"><a href="../index.html">Главная</a><span class="separator">/</span><a href="catalog.html">Каталог</a><span class="separator">/</span><span class="current">Калькулятор вклада</span></nav></div>
+
+  <section style="padding:32px 0;background:var(--bg-secondary)"><div class="container"><h1 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:8px"><img src="../assets/img/calc-deposit.svg" alt="" style="width:32px;height:32px;vertical-align:middle;object-fit:contain"> Калькулятор вклада</h1><p style="color:var(--text-secondary)">Рассчитайте доходность вклада с учётом капитализации и пополнений</p></div></section>
+
+  <section class="section"><div class="container" style="max-width:900px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+      <div>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px">
+          <h3 style="margin-bottom:20px">Параметры вклада</h3>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Сумма вклада</label>
+            <input type="range" id="depositAmount" min="1000" max="10000000" step="1000" value="500000" style="width:100%;accent-color:var(--bronze)">
+            <div style="display:flex;justify-content:space-between;margin-top:8px">
+              <span style="font-size:0.75rem;color:var(--text-muted)">1 000</span>
+              <span id="amountValue" style="font-size:1.125rem;font-weight:700;color:var(--bronze)">500 000 ₽</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">10 млн</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Процентная ставка</label>
+            <input type="range" id="depositRate" min="1" max="30" step="0.1" value="18" style="width:100%;accent-color:var(--bronze)">
+            <div style="display:flex;justify-content:space-between;margin-top:8px">
+              <span style="font-size:0.75rem;color:var(--text-muted)">1%</span>
+              <span id="rateValue" style="font-size:1.125rem;font-weight:700;color:var(--bronze)">18%</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">30%</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Срок вклада</label>
+            <input type="range" id="depositTerm" min="1" max="60" step="1" value="12" style="width:100%;accent-color:var(--bronze)">
+            <div style="display:flex;justify-content:space-between;margin-top:8px">
+              <span style="font-size:0.75rem;color:var(--text-muted)">1 мес.</span>
+              <span id="termValue" style="font-size:1.125rem;font-weight:700;color:var(--bronze)">12 мес. (1 год)</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">60 мес.</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Ежемесячное пополнение</label>
+            <input type="number" id="monthlyAdd" value="0" min="0" step="1000" class="filter-search" style="max-width:none;width:100%" placeholder="0 ₽">
+          </div>
+
+          <div>
+            <label style="display:block;font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">Капитализация процентов</label>
+            <div style="display:flex;gap:8px">
+              <button class="filter-pill active" id="capYes" onclick="setCapitalization(true)">Да</button>
+              <button class="filter-pill" id="capNo" onclick="setCapitalization(false)">Нет</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px">
+          <h3 style="margin-bottom:20px">Результат</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="finalAmount" style="font-size:1.75rem;font-weight:700;color:var(--bronze)">—</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Итого на счету</div>
+            </div>
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="totalIncome" style="font-size:1.75rem;font-weight:700;color:var(--success)">—</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Доход</div>
+            </div>
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="totalDeposited" style="font-size:1.75rem;font-weight:700">—</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Вложено</div>
+            </div>
+            <div style="background:var(--bg-secondary);border-radius:8px;padding:16px;text-align:center">
+              <div id="incomePercent" style="font-size:1.75rem;font-weight:700;color:var(--success)">—</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Доходность</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px">
+          <h3 style="margin-bottom:16px">График начислений</h3>
+          <div id="depositSchedule" style="max-height:300px;overflow-y:auto"></div>
+        </div>
+
+        <a href="deposits.html" class="btn-primary" style="width:100%;justify-content:center">Подобрать вклад</a>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><h4>Продукты</h4><ul><li><a href="credits.html">Кредиты</a></li><li><a href="cards.html">Карты</a></li><li><a href="deposits.html">Вклады</a></li><li><a href="investments.html">Инвестиции</a></li><li><a href="loans.html">Займы</a></li><li><a href="mortgage.html">Ипотека</a></li><li><a href="insurance.html">Страхование</a></li><li><a href="rko.html">РКО</a></li></ul></div><div><h4>Калькуляторы</h4><ul><li><a href="calc-credit.html">Кредитный</a></li><li><a href="calc-mortgage.html">Ипотечный</a></li><li><a href="calc-deposit.html">Депозитный</a></li></ul></div><div><h4>Информация</h4><ul><li><a href="catalog.html">Каталог</a></li><li><a href="faq.html">FAQ</a></li><li><a href="blog.html">Блог</a></li><li><a href="svg-icons-mfo.html">SVG иконки</a></li></ul></div><div><h4>Банки</h4><ul><li><a href="banks.html">Все лицензии</a></li><li><a href="#">Сбербанк</a></li><li><a href="#">Т-Банк</a></li><li><a href="#">Альфа-Банк</a></li><li><a href="#">ВТБ</a></li><li><a href="#">Совкомбанк</a></li><li><a href="#">Газпромбанк</a></li><li><a href="#">Росбанк</a></li><li><a href="#">ОТП Банк</a></li><li><a href="#">Райффайзенбанк</a></li><li><a href="#">МКБ</a></li><li><a href="#">АК БАРС</a></li><li><a href="#">Почта Банк</a></li><li><a href="#">Локо-Банк</a></li><li><a href="#">Точка</a></li></ul></div><div><h4>МФО</h4><ul><li><a href="mfo.html">Все лицензии</a></li><li><a href="#">Vivus</a></li><li><a href="#">е Капуста</a></li><li><a href="#">MoneyMan</a></li><li><a href="#">Быстроденьги</a></li><li><a href="#">Займер</a></li><li><a href="#">Деньги Сразу</a></li><li><a href="#">Турбозайм</a></li><li><a href="#">Webbankir</a></li><li><a href="#">OneClickMoney</a></li><li><a href="#">Деньга</a></li><li><a href="#">МигКредит</a></li><li><a href="#">Kviku</a></li><li><a href="#">Joymoney</a></li><li><a href="#">Krediska</a></li><li><a href="#">Кэшмагнит</a></li><li><a href="#">БериБеру</a></li><li><a href="#">Snapcredit</a></li><li><a href="#">Доброзайм</a></li><li><a href="#">Деньги Ок</a></li><li><a href="#">СМС ФИНАНС</a></li><li><a href="#">Zaymigo</a></li></ul></div><div><h4>Страховые</h4><ul><li><a href="insurance-companies.html">Все лицензии</a></li><li><a href="#">Ингосстрах</a></li><li><a href="#">АльфаСтрахование</a></li><li><a href="#">СК ПАРИ</a></li><li><a href="#">Согласие</a></li><li><a href="#">Т-Банк Страхование</a></li><li><a href="#">Зетта</a></li><li><a href="#">КАПИТАЛ LIFE</a></li><li><a href="#">Cherehapa</a></li><li><a href="#">Полис812</a></li><li><a href="#">Мафин</a></li></ul></div></div><div class="footer-bottom"><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%"><div class="footer-logo"><img src="../assets/img/logo.svg" alt="ВСЕ-БАНКИ" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">ВСЕ<span>-</span>БАНКИ</div><div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">Сайт не несёт ответственности за качество предоставляемых услуг организациями, представленными на сайте. Все организации имеют лицензии ЦБ РФ. Сайт оказывает рекламные услуги и не является офертой.</div><div class="footer-copyright" style="margin-left:auto">© 2026</div></div></div></div></footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+(function(){
+  const depAmount = document.getElementById('depositAmount');
+  const depRate = document.getElementById('depositRate');
+  const depTerm = document.getElementById('depositTerm');
+  const monthlyAdd = document.getElementById('monthlyAdd');
+  const amountValue = document.getElementById('amountValue');
+  const rateValue = document.getElementById('rateValue');
+  const termValue = document.getElementById('termValue');
+  const finalAmount = document.getElementById('finalAmount');
+  const totalIncome = document.getElementById('totalIncome');
+  const totalDeposited = document.getElementById('totalDeposited');
+  const incomePercent = document.getElementById('incomePercent');
+  const schedule = document.getElementById('depositSchedule');
+  let capitalization = true;
+
+  function fmt(n) { return new Intl.NumberFormat('ru-RU').format(Math.round(n)) + ' ₽'; }
+
+  function getTermText(m) {
+    const y = Math.floor(m / 12);
+    const mo = m % 12;
+    if (y === 0) return m + ' мес.';
+    if (mo === 0) return y + ' год' + (y > 1 && y < 5 ? 'а' : y >= 5 ? 'ов' : '');
+    return y + ' г. ' + mo + ' мес.';
+  }
+
+  function calc() {
+    const P0 = parseFloat(depAmount.value);
+    const r = parseFloat(depRate.value) / 100 / 12;
+    const n = parseInt(depTerm.value);
+    const add = parseFloat(monthlyAdd.value || 0);
+
+    let balance = P0;
+    let totalAdded = P0;
+    let totalInterest = 0;
+
+    let scheduleHTML = '<table style="width:100%;border-collapse:collapse;font-size:0.8125rem"><thead><tr style="border-bottom:1px solid var(--border)"><th style="padding:8px;text-align:left;color:var(--text-muted)">Месяц</th><th style="padding:8px;text-align:right;color:var(--text-muted)">Пополнение</th><th style="padding:8px;text-align:right;color:var(--text-muted)">Проценты</th><th style="padding:8px;text-align:right;color:var(--text-muted)">Баланс</th></tr></thead><tbody>';
+
+    for (let i = 1; i <= n; i++) {
+      const interest = balance * r;
+      totalInterest += interest;
+      balance += interest + add;
+      totalAdded += add;
+
+      scheduleHTML += `<tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">${i}</td><td style="padding:6px 8px;text-align:right">${add > 0 ? fmt(add) : '—'}</td><td style="padding:6px 8px;text-align:right;color:var(--success)">${fmt(interest)}</td><td style="padding:6px 8px;text-align:right;color:var(--bronze)">${fmt(balance)}</td></tr>`;
+    }
+
+    scheduleHTML += '</tbody></table>';
+
+    amountValue.textContent = fmt(P0);
+    rateValue.textContent = parseFloat(depRate.value).toFixed(1) + '%';
+    termValue.textContent = getTermText(n);
+
+    finalAmount.textContent = fmt(balance);
+    totalIncome.textContent = fmt(totalInterest);
+    totalDeposited.textContent = fmt(totalAdded);
+    incomePercent.textContent = (totalInterest / totalAdded * 100).toFixed(1) + '%';
+    schedule.innerHTML = scheduleHTML;
+  }
+
+  function setCapitalization(val) {
+    capitalization = val;
+    document.getElementById('capYes').classList.toggle('active', val);
+    document.getElementById('capNo').classList.toggle('active', !val);
+    calc();
+  }
+  window.setCapitalization = setCapitalization;
+
+  [depAmount, depRate, depTerm, monthlyAdd].forEach(el => el.addEventListener('input', calc));
+  calc();
+})();
+</script>
+</body>
+</html>
