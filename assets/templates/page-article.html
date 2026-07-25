@@ -1,7 +1,4 @@
 <!-- ШАБЛОН: Страница статьи блога -->
-<!-- Поля: {{title}}, {{description}}, {{category}}, {{date}}, {{read_time}}, -->
-<!--       {{content_html}}, {{sidebar_links}}, {{filename}} -->
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -18,8 +15,8 @@
 </head>
 <body>
 
-<div id="site-header"></div>
-<div id="site-mobile-nav"></div>
+{{header}}
+{{mobile_nav}}
 
 <div class="page-content">
   <div class="container"><nav class="breadcrumbs"><a href="../index.html">Главная</a><span class="separator">/</span><a href="blog.html">Блог</a><span class="separator">/</span><span class="current">{{title_short}}</span></nav></div>
@@ -48,7 +45,6 @@
   </div></div></section>
 </div>
 
-<div id="site-footer"></div>
-<script src="../assets/js/header-loader.js"></script>
+{{footer}}
 </body>
 </html>

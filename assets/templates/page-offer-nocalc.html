@@ -1,9 +1,4 @@
 <!-- ШАБЛОН: Страница оффера БЕЗ КАЛЬКУЛЯТОРА -->
-<!-- Категории: Займы, Страхование, РКО -->
-<!-- Поля: {{bank}}, {{product}}, {{logo}}, {{brand_color}}, {{badge}}, {{badge_class}}, -->
-<!--       {{rate_value}}, {{rate_label}}, {{description}}, {{conditions_list}}, {{documents_list}}, -->
-<!--       {{sidebar_items}}, {{faq_items}}, {{page_url}}, {{btn_text}} -->
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -21,8 +16,8 @@
 </head>
 <body>
 
-<div id="site-header"></div>
-<div id="site-mobile-nav"></div>
+{{header}}
+{{mobile_nav}}
 
 <div class="page-content">
   <div class="container"><nav class="breadcrumbs"><a href="../index.html">Главная</a><span class="separator">/</span><a href="{{category_url}}">{{category_name}}</a><span class="separator">/</span><span class="current">{{product}}</span></nav></div>
@@ -67,7 +62,6 @@
   </div></div></section>
 </div>
 
-<div id="site-footer"></div>
-<script src="../assets/js/header-loader.js"></script>
+{{footer}}
 </body>
 </html>
