@@ -1,0 +1,73 @@
+<!-- ШАБЛОН: Страница оффера БЕЗ КАЛЬКУЛЯТОРА -->
+<!-- Категории: Займы, Страхование, РКО -->
+<!-- Поля: {{bank}}, {{product}}, {{logo}}, {{brand_color}}, {{badge}}, {{badge_class}}, -->
+<!--       {{rate_value}}, {{rate_label}}, {{description}}, {{conditions_list}}, {{documents_list}}, -->
+<!--       {{sidebar_items}}, {{faq_items}}, {{page_url}}, {{btn_text}} -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{product}} — {{bank}} — Все-Банки</title>
+  <link rel="stylesheet" href="../assets/css/main.css?v=9">
+  <style>.offer-sidebar-mobile{display:none}@media (max-width:768px){.offer-detail{grid-template-columns:1fr!important;padding:24px 0}.offer-detail-rate{padding:16px;flex-direction:column;align-items:flex-start;gap:4px}.offer-detail-rate-value{font-size:1.75rem}.offer-detail-rate-label{font-size:0.875rem}.offer-detail-main h1{font-size:1.25rem}.offer-sidebar{display:none!important}.offer-sidebar-mobile{display:block}.sidebar-condition{flex-wrap:wrap;gap:4px}.sidebar-condition-value{text-align:right}}</style>
+  <meta name="description" content="{{meta_description}}">
+  <link rel="canonical" href="https://kaylas000.github.io/all-banki/pages/{{filename}}">
+  <meta property="og:title" content="{{product}} — {{bank}} — Все-Банки">
+  <meta property="og:description" content="{{meta_description}}">
+  <meta property="og:url" content="https://kaylas000.github.io/all-banki/pages/{{filename}}">
+  <meta name="robots" content="index, follow">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div id="site-mobile-nav"></div>
+
+<div class="page-content">
+  <div class="container"><nav class="breadcrumbs"><a href="../index.html">Главная</a><span class="separator">/</span><a href="{{category_url}}">{{category_name}}</a><span class="separator">/</span><span class="current">{{product}}</span></nav></div>
+
+  <section class="section"><div class="container"><div class="offer-detail">
+    <div class="offer-detail-main">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px">
+        <div style="width:64px;height:64px;border-radius:12px;overflow:hidden;flex-shrink:0;background:var(--bg-elevated);display:flex;align-items:center;justify-content:center"><img src="../assets/img/{{logo}}" alt="{{bank}}" style="width:100%;height:100%;object-fit:contain"></div>
+        <div><div style="font-size:0.875rem;font-weight:600;color:{{brand_color}}">{{bank}}</div><h1 style="margin-bottom:0">{{product}}</h1></div>
+      </div>
+      <div class="offer-detail-rate"><div class="offer-detail-rate-value" style="color:{{brand_color}}">{{rate_value}}</div><div class="offer-detail-rate-label">{{rate_label}}</div></div>
+      <div class="offer-detail-features"><h3>{{about_title}}</h3><p style="color:var(--text-secondary);line-height:1.7;margin-bottom:16px">{{description}}</p></div>
+      <div class="offer-detail-features"><h3>{{conditions_title}}</h3><div class="feature-list">{{conditions_html}}</div></div>
+      <div class="offer-detail-features"><h3>Документы</h3><div class="feature-list">{{documents_html}}</div></div>
+
+      <!-- Мобильный сайдбар -->
+      <div class="offer-sidebar-mobile"><div class="offer-sidebar-card">
+        <h3>Преимущества</h3>
+        <div class="offer-sidebar-bank">
+          <div style="width:40px;height:40px;border-radius:8px;overflow:hidden;flex-shrink:0;background:var(--bg-elevated);display:flex;align-items:center;justify-content:center"><img src="../assets/img/{{logo}}" alt="{{bank}}" style="width:100%;height:100%;object-fit:contain"></div>
+          <div><div class="offer-sidebar-bank-name">{{bank}}</div><div class="offer-sidebar-bank-rating">{{rating}}</div></div>
+        </div>
+        <div class="sidebar-conditions">{{sidebar_html}}</div>
+        <button class="btn-primary" style="width:100%;justify-content:center;margin-bottom:12px">{{btn_text}}</button>
+      </div></div>
+
+      <!-- FAQ -->
+      <div class="offer-detail-features"><h3>FAQ</h3>{{faq_html}}</div>
+    </div>
+
+    <!-- Десктоп сайдбар -->
+    <div class="offer-sidebar"><div class="offer-sidebar-card">
+      <h3>Преимущества</h3>
+      <div class="offer-sidebar-bank">
+        <div style="width:40px;height:40px;border-radius:8px;overflow:hidden;flex-shrink:0;background:var(--bg-elevated);display:flex;align-items:center;justify-content:center"><img src="../assets/img/{{logo}}" alt="{{bank}}" style="width:100%;height:100%;object-fit:contain"></div>
+        <div><div class="offer-sidebar-bank-name">{{bank}}</div><div class="offer-sidebar-bank-rating">{{rating}}</div></div>
+      </div>
+      <div class="sidebar-conditions">{{sidebar_html}}</div>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-bottom:12px">{{btn_text}}</button>
+      <button class="btn-secondary" style="width:100%;justify-content:center">Сравнить</button>
+    </div></div>
+  </div></div></section>
+</div>
+
+<div id="site-footer"></div>
+<script src="../assets/js/header-loader.js"></script>
+</body>
+</html>

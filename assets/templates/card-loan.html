@@ -1,0 +1,42 @@
+<!-- ШАБЛОН: Вертикальная карточка — Займы (offer-card + offer-params-col) -->
+<!-- Категория: Займы -->
+<!-- Поля: {{bank}}, {{product}}, {{logo}}, {{badge}}, {{category}}, {{page_url}}, {{btn_text}} -->
+
+<div class="offer-card" data-category="{{category}}" data-name="{{bank}} {{product}}" data-rate="{{rate}}">
+
+  <div class="offer-card-header">
+    <div class="offer-bank-logo">
+      <img src="../assets/img/{{logo}}" alt="{{bank}}" style="width:100%;height:100%;object-fit:contain">
+    </div>
+    <span class="brand-name">{{bank}}</span>
+    {{#if badge}}<span class="offer-badge {{badge_class}}">{{badge}}</span>{{/if}}
+  </div>
+
+  <div class="offer-card-body">
+    <div class="offer-card-title">{{product}}</div>
+    <div class="offer-params-col">
+      <div class="offer-param-row">
+        <span class="label">Ставка (от):</span>
+        <span class="value">{{param_rate}}</span>
+      </div>
+      <div class="offer-param-row">
+        <span class="label">Срок:</span>
+        <span class="value">{{param_term}}</span>
+      </div>
+      <div class="offer-param-row">
+        <span class="label">Сумма:</span>
+        <span class="value">{{param_amount}}</span>
+      </div>
+      <div class="offer-param-row">
+        <span class="label">Одобрение:</span>
+        <span class="value" style="color:var(--success)">{{param_approval}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="offer-card-footer">
+    <a href="{{page_url}}" class="btn-primary">{{btn_text}} →</a>
+    <a href="{{page_url}}" class="btn-ghost">Подробнее</a>
+  </div>
+
+</div>

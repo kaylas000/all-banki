@@ -1,0 +1,54 @@
+<!-- ШАБЛОН: Страница статьи блога -->
+<!-- Поля: {{title}}, {{description}}, {{category}}, {{date}}, {{read_time}}, -->
+<!--       {{content_html}}, {{sidebar_links}}, {{filename}} -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}} | Все-Банки</title>
+  <link rel="stylesheet" href="../assets/css/main.css?v=9">
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="https://kaylas000.github.io/all-banki/pages/{{filename}}">
+  <meta property="og:title" content="{{title}} | Все-Банки">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="https://kaylas000.github.io/all-banki/pages/{{filename}}">
+  <meta name="robots" content="index, follow">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div id="site-mobile-nav"></div>
+
+<div class="page-content">
+  <div class="container"><nav class="breadcrumbs"><a href="../index.html">Главная</a><span class="separator">/</span><a href="blog.html">Блог</a><span class="separator">/</span><span class="current">{{title_short}}</span></nav></div>
+
+  <section class="section"><div class="container"><div class="article-layout">
+    <div class="article-content">
+      <h1>{{title}}</h1>
+      <div class="article-meta"><span>{{date}}</span><span>·</span><span>{{read_time}}</span><span>·</span><span style="color:var(--bronze)">{{category}}</span></div>
+      {{content_html}}
+    </div>
+
+    <div class="article-sidebar">
+      <div class="article-sidebar-card">
+        <h3>Полезные ссылки</h3>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:8px">
+          {{sidebar_links}}
+        </ul>
+      </div>
+      <div class="article-sidebar-card">
+        <h3>Популярные статьи</h3>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:8px">
+          {{popular_links}}
+        </ul>
+      </div>
+    </div>
+  </div></div></section>
+</div>
+
+<div id="site-footer"></div>
+<script src="../assets/js/header-loader.js"></script>
+</body>
+</html>
