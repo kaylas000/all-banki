@@ -1,4 +1,4 @@
-// Header & Footer loader - loads from components/
+// Header loader - loads header from components/header.html
 (function() {
   function getBasePath() {
     var path = window.location.pathname;
@@ -8,17 +8,17 @@
     return '';
   }
 
-  function initComponents() {
+  function initHeader() {
     var basePath = getBasePath();
     var headerEl = document.getElementById('site-header');
     var mobileNavEl = document.getElementById('site-mobile-nav');
-    var footerEl = document.getElementById('site-footer');
 
     if (headerEl) {
       fetch(basePath + 'assets/components/header.html')
         .then(function(r) { return r.text(); })
         .then(function(html) {
           headerEl.innerHTML = html;
+          // Set active link
           var currentPage = window.location.pathname.split('/').pop() || 'index.html';
           var links = headerEl.querySelectorAll('a[data-page]');
           links.forEach(function(link) {
@@ -38,19 +38,11 @@
           mobileNavEl.innerHTML = html;
         });
     }
-
-    if (footerEl) {
-      fetch(basePath + 'assets/components/footer.html')
-        .then(function(r) { return r.text(); })
-        .then(function(html) {
-          footerEl.innerHTML = html;
-        });
-    }
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initComponents);
+    document.addEventListener('DOMContentLoaded', initHeader);
   } else {
-    initComponents();
+    initHeader();
   }
 })();
