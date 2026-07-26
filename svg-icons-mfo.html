@@ -374,7 +374,7 @@ function openIconModal(btn) {
   document.getElementById('modalIcon').src = imgSrc;
   document.getElementById('modalName').textContent = name;
   document.getElementById('modalFile').textContent = icon;
-  document.getElementById('modalDownload').href = '../assets/img/' + icon + '?download';
+  document.getElementById('modalDownload').href = 'assets/img/' + icon + '?download';
 
   const htmlCards = (typeof htmlMap !== 'undefined' && htmlMap[icon]) ? htmlMap[icon] : [];
   const container = document.getElementById('modalCards');
