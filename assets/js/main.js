@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-page]').forEach(link => {
     const page = link.dataset.page;
     let active = false;
-    if (page === 'home' && (path === '/' || path.endsWith('index.html'))) active = true;
+    if (page === 'home' && (path === '/' || path === '/')) active = true;
     else if (page === 'catalog' && path.includes('catalog')) active = true;
     else if (page === 'credits' && path.includes('category=credits')) active = true;
     else if (page === 'cards' && path.includes('category=cards')) active = true;
