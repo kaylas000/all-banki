@@ -23,16 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-page]').forEach(link => {
     const page = link.dataset.page;
     let active = false;
-    if (page === 'home' && (path === '/' || path === '/')) active = true;
-    else if (page === 'catalog' && path.includes('catalog')) active = true;
-    else if (page === 'credits' && path.includes('category=credits')) active = true;
-    else if (page === 'cards' && path.includes('category=cards')) active = true;
-    else if (page === 'deposits' && path.includes('category=deposits')) active = true;
-    else if (page === 'investments' && path.includes('category=investments')) active = true;
-    else if (page === 'loans' && path.includes('category=loans')) active = true;
+    if (page === 'home') active = (path === '/' || path === '/index.html');
+    else if (page === 'catalog') active = path.includes('catalog');
+    else if (page === 'credits') active = path.includes('credits');
+    else if (page === 'cards') active = path.includes('cards');
+    else if (page === 'deposits') active = path.includes('deposits');
+    else if (page === 'investments') active = path.includes('investments');
+    else if (page === 'loans') active = path.includes('loans');
     else if (page === 'insurance') active = path.includes('insurance');
-    else if (page === 'faq' && path.includes('faq')) active = true;
-    else if (page === 'blog' && path.includes('article')) active = true;
+    else if (page === 'faq') active = path.includes('faq');
+    else if (page === 'blog') active = path.includes('article');
     link.classList.toggle('active', active);
   });
 
