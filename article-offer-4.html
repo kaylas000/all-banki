@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/svg+xml" sizes="192x192" href="assets/img/favicon-192.svg">
+  <link rel="icon" type="image/svg+xml" sizes="512x512" href="assets/img/favicon-512.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Потребительский кредит онлайн — как работают маркетплейсы | Все-Банки</title>
+  <link rel="stylesheet" href="assets/css/main.css?v=17">
+
+  <meta name="description" content="Как работают финансовые маркетплейсы: Банки.ру vs Финуслуги vs Сравни.ру. Бизнес-модель CPA, прескоринг vs жёсткий запрос, как не испортить КИ.">
+  <link rel="canonical" href="https://kaylas000.github.io/all-banki/article-offer-4">
+
+  <meta property="og:title" content="Потребительский кредит онлайн — как работают маркетплейсы | Все-Банки">
+  <meta property="og:description" content="CPA-модель, прескоринг vs hard inquiry, сравнение трёх площадок.">
+  <meta property="og:url" content="https://kaylas000.github.io/all-banki/article-offer-4">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0c">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Потребительский кредит онлайн — как работают маркетплейсы",
+    "datePublished":"2026-07-30",
+    "dateModified":"2026-08-01",
+    "author":{"@type":"Organization","name":"Все-Банки"},
+    "publisher":{"@type":"Organization","name":"Все-Банки"},
+    "mainEntityOfPage":"https://kaylas000.github.io/all-banki/article-offer-4"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Портит ли прескоринг кредитную историю?",
+        "acceptedAnswer":{"@type":"Answer","text":"Сам по себе «предварительный расчёт» на витрине обычно не требует запроса в БКИ и не оставляет следа. След в кредитной истории появляется, когда банк фиксирует обращение на заключение договора и/или делает запрос кредитного отчёта — это уже этап финальной заявки."}
+      },
+      {
+        "@type":"Question",
+        "name":"Почему маркетплейс бесплатный для пользователя?",
+        "acceptedAnswer":{"@type":"Answer","text":"Потому что площадка зарабатывает на вознаграждении от финансовых организаций: за оформленный продукт, подтверждённую заявку или иные целевые действия. Это нормальная бизнес-модель, но из неё следует, что «лучшее предложение» на витрине не всегда равно «лучшее лично для вас»."}
+      },
+      {
+        "@type":"Question",
+        "name":"Чем Финуслуги отличаются от обычного агрегатора?",
+        "acceptedAnswer":{"@type":"Answer","text":"Финуслуги — проект Московской биржи и оператор финансовой платформы. Платформы такого типа находятся в реестре Банка России и работают по отдельному регулированию. Для клиента это обычно означает более формализованный процесс, прозрачные правила и онлайн-оформление в рамках платформы."}
+      },
+      {
+        "@type":"Question",
+        "name":"Сколько банков стоит выбирать для финальной заявки?",
+        "acceptedAnswer":{"@type":"Answer","text":"Практичный диапазон — 1–3 банка. Больше — часто выглядит как спешка и увеличивает число отметок об обращениях в кредитной истории. Сначала соберите предварительные варианты, потом выбирайте 1–3 самых реалистичных по ПСК и платежу."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- Адаптация под мобильные всех размеров (без ущерба для десктопа).
+       Стили ограничены только этой страницей: .article-page -->
+  <style>
+    .article-page .page-content{ overflow-x: clip; }
+
+    .article-page .article-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 320px;
+      gap:28px;
+      align-items:start;
+    }
+    .article-page .article-content,
+    .article-page .article-sidebar{ min-width:0; }
+
+    @media (min-width:980px){
+      .article-page .article-sidebar{ position:sticky; top:80px; }
+    }
+    @media (max-width:979px){
+      .article-page .article-layout{ grid-template-columns:1fr; }
+      .article-page .article-sidebar{ position:static; top:auto; margin-top:18px; }
+    }
+
+    .article-page .article-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      color:var(--text-secondary);
+      font-size:.9rem;
+      margin:10px 0 18px;
+    }
+
+    .article-page .article-content p{ line-height:1.7; }
+    .article-page .article-content h1{ line-height:1.15; margin-bottom:10px; }
+    .article-page .article-content h2{ margin-top:28px; }
+    .article-page .article-content h3{ margin-top:18px; }
+
+    .article-page .callout{
+      background:var(--bg-secondary);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:18px;
+      margin:18px 0 26px;
+    }
+    .article-page .callout-warning{
+      background:rgba(255,178,102,.10);
+      border-color:rgba(255,178,102,.35);
+    }
+    .article-page .callout-success{
+      background:rgba(67,160,71,.10);
+      border-color:rgba(67,160,71,.25);
+    }
+
+    .article-page .list{
+      padding-left:18px;
+      margin:10px 0 16px;
+    }
+    .article-page .list li{ margin:8px 0; }
+
+    .article-page .table-wrap{
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--bg-card);
+      margin:16px 0 18px;
+      overflow:hidden;
+    }
+    .article-page .table-scroll{ overflow-x:visible; }
+    .article-page table.compare{
+      width:100%;
+      border-collapse:collapse;
+      min-width:0;
+      font-size:.95rem;
+    }
+    .article-page table.compare th,
+    .article-page table.compare td{
+      padding:12px 14px;
+      border-bottom:1px solid var(--border);
+      text-align:left;
+      vertical-align:top;
+      word-break:break-word;
+    }
+    .article-page table.compare thead th{
+      background:var(--bg-secondary);
+      font-weight:700;
+    }
+    .article-page table.compare tr:last-child td{ border-bottom:0; }
+
+    @media (max-width:820px){
+      .article-page .table-scroll{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+      }
+      .article-page table.compare{ min-width:760px; }
+    }
+
+    .article-page .faq-item{ border:1px solid var(--border); border-radius:12px; overflow:hidden; margin:10px 0; background:var(--bg-card); }
+    .article-page .faq-question{
+      width:100%;
+      background:transparent;
+      border:0;
+      padding:14px 14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      cursor:pointer;
+      text-align:left;
+      font-size:1rem;
+      font-weight:700;
+      color:var(--text-primary);
+    }
+    .article-page .faq-question .arrow{ transition:transform .2s ease; opacity:.8; }
+    .article-page .faq-answer{ display:none; padding:0 14px 14px; color:var(--text-secondary); }
+    .article-page .faq-item.is-open .faq-answer{ display:block; }
+    .article-page .faq-item.is-open .faq-question .arrow{ transform:rotate(180deg); }
+
+    .article-page .sidebar-box{
+      background:var(--bg-card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:20px;
+    }
+
+    @media (max-width:560px){
+      .article-page .container{ padding-left:16px; padding-right:16px; }
+      .article-page .breadcrumbs{ flex-wrap:wrap; gap:6px; }
+      .article-page .article-content h1{ font-size:clamp(1.55rem,6vw,2.1rem); }
+      .article-page .btn-primary{ width:100%; display:flex; justify-content:center; box-sizing:border-box; }
+      .article-page .callout{ padding:16px; }
+    }
+    @media (max-width:380px){
+      .article-page .container{ padding-left:12px; padding-right:12px; }
+    }
+  </style>
+  <!-- Mobile-friendly styles (scoped) -->
+  <style>
+    .article-page .page-content{ overflow-x: clip; }
+
+    .article-page .article-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 320px;
+      gap:28px;
+      align-items:start;
+    }
+    .article-page .article-content,
+    .article-page .article-sidebar{ min-width:0; }
+
+    @media (min-width:980px){
+      .article-page .article-sidebar{ position:sticky; top:80px; }
+    }
+    @media (max-width:979px){
+      .article-page .article-layout{ grid-template-columns:1fr; }
+      .article-page .article-sidebar{ position:static; top:auto; margin-top:18px; }
+    }
+
+    .article-page .article-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      color:var(--text-secondary);
+      font-size:.9rem;
+      margin:10px 0 18px;
+    }
+
+    .article-page .article-content p{ line-height:1.7; }
+    .article-page .article-content h1{ line-height:1.15; margin-bottom:10px; }
+    .article-page .article-content h2{ margin-top:28px; }
+    .article-page .article-content h3{ margin-top:18px; }
+
+    .article-page .callout{
+      background:var(--bg-secondary);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:18px;
+      margin:18px 0 26px;
+    }
+    .article-page .callout-warning{
+      background:rgba(255,178,102,.10);
+      border-color:rgba(255,178,102,.35);
+    }
+    .article-page .callout-success{
+      background:rgba(67,160,71,.10);
+      border-color:rgba(67,160,71,.25);
+    }
+
+    .article-page .list{
+      padding-left:18px;
+      margin:10px 0 16px;
+    }
+    .article-page .list li{ margin:8px 0; }
+
+    .article-page .table-wrap{
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--bg-card);
+      margin:16px 0 18px;
+      overflow:hidden;
+    }
+    .article-page .table-scroll{ overflow-x:visible; }
+    .article-page table.compare{
+      width:100%;
+      border-collapse:collapse;
+      min-width:0;
+      font-size:.95rem;
+    }
+    .article-page table.compare th,
+    .article-page table.compare td{
+      padding:12px 14px;
+      border-bottom:1px solid var(--border);
+      text-align:left;
+      vertical-align:top;
+      word-break:break-word;
+    }
+    .article-page table.compare thead th{
+      background:var(--bg-secondary);
+      font-weight:700;
+    }
+    .article-page table.compare tr:last-child td{ border-bottom:0; }
+
+    @media (max-width:820px){
+      .article-page .table-scroll{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+      }
+      .article-page table.compare{ min-width:760px; }
+      .article-page .article-content table{ min-width:760px; }
+      .article-page .article-content [style*="overflow-x:auto"]{
+        -webkit-overflow-scrolling:touch;
+      }
+    }
+
+    .article-page .faq-item{ border:1px solid var(--border); border-radius:12px; overflow:hidden; margin:10px 0; background:var(--bg-card); }
+    .article-page .faq-question{
+      width:100%;
+      background:transparent;
+      border:0;
+      padding:14px 14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      cursor:pointer;
+      text-align:left;
+      font-size:1rem;
+      font-weight:700;
+      color:var(--text-primary);
+    }
+    .article-page .faq-question .arrow{ transition:transform .2s ease; opacity:.8; }
+    .article-page .faq-answer{ display:none; padding:0 14px 14px; color:var(--text-secondary); }
+    .article-page .faq-item.is-open .faq-answer{ display:block; }
+    .article-page .faq-item.is-open .faq-question .arrow{ transform:rotate(180deg); }
+
+    .article-page .sidebar-box{
+      background:var(--bg-card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:20px;
+    }
+
+    @media (max-width:560px){
+      .article-page .container{ padding-left:16px; padding-right:16px; }
+      .article-page .breadcrumbs{ flex-wrap:wrap; gap:6px; }
+      .article-page .article-content h1{ font-size:clamp(1.55rem,6vw,2.1rem); }
+      .article-page .btn-primary{ width:100%; display:flex; justify-content:center; box-sizing:border-box; }
+      .article-page .callout{ padding:16px; }
+    }
+    @media (max-width:380px){
+      .article-page .container{ padding-left:12px; padding-right:12px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://kaylas000.github.io/all-banki"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://kaylas000.github.io/all-banki/blog"
+    }
+  ]
+}
+</script>
+</head>
+<body class="article-page">
+﻿<header class="header"><div class="header-inner"><a href="/" class="logo"><img src="../assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="/" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+﻿<div class="mobile-nav" id="mobileNav"><a href="/" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
+<div class="page-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/all-banki/">Главная</a>
+      <span class="separator">/</span>
+      <a href="blog">Блог</a>
+      <span class="separator">/</span>
+      <span class="current">Кредит через маркетплейс</span>
+    </nav>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+          <h1>Потребительский кредит онлайн — как работают финансовые маркетплейсы</h1>
+
+          <div class="article-meta">
+            <span>Автор: Команда Все-Банки</span><span>·</span>
+            <span>30 июля 2026</span><span>·</span><span>11–13 мин чтения</span><span>·</span><span style="color:var(--bronze)">Кредиты</span>
+          </div>
+
+          <div class="callout">
+            <p style="margin:0">
+              <strong>Главное:</strong> маркетплейс — это не “волшебный банк, который всем одобряет”.
+              Это площадка, которая помогает сравнить предложения и отправить анкету партнёрам.
+              Площадка зарабатывает на вознаграждении от финансовых организаций, поэтому “лучшее” на витрине — не всегда “лучшее лично для вас”.
+              Ваше оружие — <strong>ПСК</strong> (полная стоимость кредита), здравый смысл и дисциплина подачи заявок.
+            </p>
+          </div>
+
+          <h2>Два разных мира: агрегатор-витрина vs оператор финансовой платформы</h2>
+          <p>
+            Снаружи всё выглядит одинаково: вы вводите сумму и срок, получаете предложения.
+            Но внутри бывают два формата:
+          </p>
+          <ul class="list">
+            <li><strong>Агрегатор/витрина</strong> — показывает предложения и ведёт вас в банк (или отправляет анкету партнёрам), сама не всегда является стороной финансовой сделки.</li>
+            <li><strong>Оператор финансовой платформы</strong> (финансовая платформа) — работает по отдельному регулированию, включён в реестр Банка России, имеет правила платформы и установленную инфраструктуру.</li>
+          </ul>
+
+          <div class="callout callout-success">
+            <p style="margin:0">
+              <strong>Для пользователя смысл простой:</strong> на финансовой платформе процесс обычно более “рельсовый”: правила, согласия, статусы, подтверждения.
+              На витрине — больше вариативности, но и больше риска “нажимать всё подряд”.
+            </p>
+          </div>
+
+          <h2>Как маркетплейсы зарабатывают (и где тут конфликт интересов)</h2>
+          <p>
+            Самая распространённая логика — партнёрская модель: банк/финорганизация платит площадке за результат
+            (оформленный продукт, подтверждённую заявку, “целевое действие”).
+            На рынке встречаются разные схемы (CPA, CPL, RevShare) и цифры почти всегда зависят от продукта, региона и сезона.
+          </p>
+          <p>
+            Это не “обман”. Просто важная поправка к ожиданиям:
+            площадке выгодно, чтобы вы <em>оформили</em> продукт, а вам выгодно, чтобы вы оформили <em>самый подходящий</em> продукт
+            (по ПСК, по рискам, по сроку, по возможности досрочки).
+          </p>
+
+          <h2>Три площадки: что реально отличает Банки.ру, Финуслуги и Сравни.ру</h2>
+
+          <div class="table-wrap" role="region" aria-label="Сравнение платформ" tabindex="0">
+            <div class="table-scroll">
+              <table class="compare">
+                <thead>
+                  <tr>
+                    <th>Критерий</th>
+                    <th>Банки.ру</th>
+                    <th>Финуслуги</th>
+                    <th>Сравни.ру</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Статус</strong></td>
+                    <td>Маркетплейс + оператор финплатформы (по данным площадки)</td>
+                    <td>Проект Московской биржи, оператор финплатформы</td>
+                    <td>Оператор финплатформы (в реестре Банка России)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Как подтверждается личность</strong></td>
+                    <td>По сценарию банка/площадки</td>
+                    <td>Исторически запускалось с привязкой к Госуслугам</td>
+                    <td>По сценарию платформы/банка</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Сильная сторона</strong></td>
+                    <td>Много контента, витрин и отзывов (сотни тысяч+)</td>
+                    <td>Более “платформенный” процесс, онлайн-оформление</td>
+                    <td>Платформенная модель, оформление через финплатформу</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Слабая сторона</strong></td>
+                    <td>Легко “перекликать” заявки, если не держать дисциплину</td>
+                    <td>Не всем нравится жесткий сценарий и набор согласий</td>
+                    <td>Может быть меньше “побочных” инструментов (обзоры/отзывы), чем у контентных порталов</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Прескоринг vs «жёсткий запрос»: где реально появляется след в КИ</h2>
+          <p>
+            В российской терминологии “hard inquiry” — это не официальный термин, но смысл понятный:
+            когда вы дошли до стадии, где фиксируется <strong>обращение за кредитом</strong> и/или банк получает ваш <strong>кредитный отчёт</strong>,
+            след может появиться в кредитной истории.
+          </p>
+          <p>
+            Важно: по разъяснениям Банка России <strong>информационная часть кредитной истории</strong> содержит сведения об обращении,
+            о заключении договора или об отказе. Поэтому многочисленные обращения “в один вечер” — это то, что другие банки могут увидеть.
+          </p>
+
+          <div class="callout callout-warning">
+            <p style="margin:0">
+              <strong>Правило, которое спасает кредитный профиль:</strong>
+              предварительные расчёты — делайте сколько угодно, но к финальной подаче относитесь как к “боевому выстрелу”.
+              1–3 финальные заявки обычно достаточно. 7–10 подряд — почти всегда лишнее.
+            </p>
+          </div>
+
+          <h2>Как пользоваться маркетплейсом в своих интересах (пошагово)</h2>
+          <ol class="list">
+            <li><strong>Сначала — проверка “стоп-факторов”.</strong> Если вы когда-то включали самозапрет на кредиты, он может блокировать оформление дистанционно.</li>
+            <li><strong>Потом — предварительные варианты.</strong> Посмотрите предложения на 2–3 площадках: партнёры и условия отличаются.</li>
+            <li><strong>Сравнение — по ПСК.</strong> Не по “платежу в месяц” и не по “ставке от…”.</li>
+            <li><strong>Финальная подача — в 1–3 банка.</strong> Выбирайте те, где условия и вероятность адекватны по вашему доходу и ПДН.</li>
+            <li><strong>Остановитесь после одобрения.</strong> Частая ошибка — “раз уже одобрили, добью ещё пару, вдруг лучше”.
+              На практике так легко получить лишние отметки в КИ и ухудшить дальнейшие условия.</li>
+          </ol>
+
+          <p>
+            <a href="offer-4" style="color:var(--bronze);font-weight:600" rel="nofollow sponsored">Подобрать кредит через Банки.ру →</a>
+            — подбор предложений и онлайн-заявка.
+          </p>
+
+          <h2>Частые вопросы</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Портит ли прескоринг кредитную историю?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Предварительный расчёт сам по себе обычно не оставляет следа. След появляется, когда банк фиксирует обращение и/или получает кредитный отчёт — это уже стадия финальной заявки.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Почему маркетплейс бесплатный?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Площадка получает вознаграждение от финансовой организации за результат. Поэтому предложения на витрине — это не “бесплатный подборщик добра”, а коммерческий сервис. Ваш фильтр — ПСК и реальный платёж.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Чем отличается Банки.ру от Финуслуг?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Финуслуги — проект Московской биржи и оператор финансовой платформы; сервис потребкредитования запускался с привязкой к Госуслугам и получением предодобренных предложений после анкеты.
+                Банки.ру — контентный маркетплейс с витринами продуктов и большим количеством отзывов, плюс имеет отдельный “платформенный” контур как оператор финплатформы (по данным самой площадки).
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--bronze);border-radius:12px;padding:24px;margin-top:32px">
+            <h3 style="margin-bottom:8px">Предложение</h3>
+            <p style="margin-bottom:12px;color:var(--text-secondary)">
+              Банки.ру — подбор потребительского кредита онлайн: витрина предложений, отзывы, оформление заявок.
+            </p>
+            <a href="offer-4" class="btn-primary" style="font-size:1rem;padding:16px 32px" rel="nofollow sponsored">Подобрать кредит онлайн →</a>
+          </div>
+
+          <p style="margin-top:18px;color:var(--text-muted);line-height:1.6;font-size:.85rem">
+            Дисклеймер: условия и доступность предложений зависят от анкеты, кредитной истории, ПДН и внутренних правил банков/платформ.
+            Перед оформлением сравнивайте по ПСК и читайте договор/тарифы.
+          </p>
+        </main>
+
+        <aside class="article-sidebar">
+          <div class="sidebar-box">
+            <h4 style="margin-bottom:12px">Маркетплейсы</h4>
+            <ul style="display:flex;flex-direction:column;gap:8px;font-size:0.875rem;padding-left:18px;margin:0">
+              <li><a href="offer-4" style="color:var(--bronze)">Банки.ру — подбор кредита →</a></li>
+              <li><a href="offer-6" style="color:var(--text-secondary)">Финуслуги — с плохой КИ →</a></li>
+            </ul>
+
+            <hr style="border:0;border-top:1px solid var(--border);margin:14px 0">
+
+            <div style="color:var(--text-secondary);font-size:.85rem;line-height:1.5">
+              <strong style="color:var(--text-primary)">Главное правило:</strong><br>
+              предварительные расчёты — можно много;<br>
+              финальные заявки — максимум 1–3.
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+</div>
+﻿
+﻿<div class="ai-banner"><div class="container"><div class="ai-banner-text">Этот сайт-витрина создан автономным агентом с искусственным интеллектом</div><div class="ai-banner-actions"><a href="article-ai-setup" class="btn-primary">Подробнее</a><a href="https://hubris.pw/r/50328191" target="_blank" rel="nofollow noopener" class="btn-ghost">Получить API AI</a></div></div></div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <div class="footer-logo">
+        <img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">
+        ВСЕ<span>-</span>БАНКИ
+      </div>
+      <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">
+        Источники: Банк России, данные банков, 353-ФЗ. Июль–август 2026.
+      </div>
+      <div class="footer-copyright">© 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<!-- FAQ toggler (если у вас уже есть в main.js — этот блок можно удалить) -->
+<script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      if (!btn) return;
+
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

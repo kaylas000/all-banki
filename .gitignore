@@ -1,0 +1,27 @@
+# Файлы разработки — не в репо
+*.py
+__pycache__/
+*.pyc
+*.json
+*.txt
+*.md
+*.bat
+*.csv
+*.log
+*.sh
+
+# Документы/планы
+docs/
+
+# Мусорные/рабочие HTML
+sitemap.html
+template-*.html
+CORRESPONDENCE-*.html
+calc-credit-new.html
+index_git_orig.html
+
+# Рабочие данные, не используемые страницами
+assets/data/
+assets/components/
+assets/templates/
+_card-data.js
