@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/svg+xml" sizes="192x192" href="assets/img/favicon-192.svg">
+  <link rel="icon" type="image/svg+xml" sizes="512x512" href="assets/img/favicon-512.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG-иконки МФО — бесплатная коллекция | Все-Банки</title>
+  <link rel="stylesheet" href="assets/css/main.css?v=17">
+  <style>
+    .icons-section { margin-bottom: 48px; }
+    .icons-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 16px; color: var(--bronze); }
+    .icons-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 12px; }
+    .icon-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 8px 12px; text-align: center; cursor: pointer; transition: all 0.3s; }
+    .icon-card:hover { border-color: rgba(201, 162, 39, 0.3); transform: translateY(-2px); }
+    .icon-card img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 8px; border-radius: 10px; background: var(--bg-elevated); padding: 4px; }
+    .icon-card-name { font-size: 0.6875rem; color: var(--text-secondary); margin-bottom: 8px; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .icon-card .btn-download { font-size: 0.6875rem; padding: 6px 12px; border-radius: 6px; background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-secondary); cursor: pointer; transition: all 0.2s; width: 100%; }
+    .icon-card .btn-download:hover { border-color: var(--bronze); color: var(--bronze); }
+
+    /* Модальное окно */
+    .icon-modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; justify-content: center; align-items: flex-start; padding: 80px 20px 20px; overflow-y: auto; }
+    .icon-modal-overlay.active { display: flex; }
+    .icon-modal { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 16px; max-width: 1280px; width: 100%; padding: 32px; position: relative; }
+    .icon-modal-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; }
+    .icon-modal-top { display: flex; align-items: center; gap: 24px; margin-bottom: 24px; }
+    .icon-modal-preview { width: 120px; height: 120px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 8px; }
+    .icon-modal-preview img { width: 100%; height: 100%; object-fit: contain; border-radius: 12px; }
+    .icon-modal-info { flex: 1; }
+    .icon-modal-info h3 { font-size: 1.125rem; font-weight: 700; margin-bottom: 4px; }
+    .icon-modal-info p { font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 12px; }
+    .icon-modal-actions { display: flex; gap: 8px; }
+    .icon-modal-actions .btn-primary { font-size: 0.8125rem; padding: 10px 20px; }
+    .icon-modal-actions .btn-ghost { font-size: 0.8125rem; padding: 10px 20px; }
+    .icon-modal-cards { border-top: 1px solid var(--border); padding-top: 20px; }
+    .icon-modal-cards h4 { font-size: 0.875rem; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+    .icon-modal-cards .credit-card { margin-bottom: 0; }
+    .icon-modal-cards .offer-card-footer { flex-direction: column; }
+    .icon-modal-cards .offer-card-footer .btn-primary,
+    .icon-modal-cards .offer-card-footer .btn-ghost { width: 100%; justify-content: center; }
+
+    @media (max-width: 768px) {
+      .icons-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 8px; }
+      .icon-card { padding: 12px 6px 10px; }
+      .icon-card img { width: 36px; height: 36px; }
+      .icon-modal { padding: 20px; }
+      .icon-modal-top { flex-direction: column; text-align: center; }
+      .icon-modal-actions { justify-content: center; }
+    }
+  </style>
+    <meta name="description" content="SVG-иконки МФО для баннеров и рекламных материалов. Бесплатная коллекция.">
+      <link rel="canonical" href="https://все-банки.site/svg-ikonki-mfo">
+      <meta property="og:title" content="SVG-иконки МФО — бесплатная коллекция | Все-Банки">
+    <meta property="og:description" content="SVG-иконки МФО для баннеров и рекламных материалов. Бесплатная коллекция.">
+    <meta property="og:url" content="https://все-банки.site/svg-ikonki-mfo">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://все-банки.site/assets/img/logo.svg">
+    <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://все-банки.site/"},{"@type":"ListItem","position":2,"name":"SVG-иконки МФО","item":"https://все-банки.site/svg-ikonki-mfo"}]}</script>
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Organization", "name": "Все-Банки", "url":"https://все-банки.site/", "logo": "https://все-банки.site/assets/img/logo.svg", "description": "Все-Банки — российский портал для сравнения финансовых продуктов: кредитов, карт, вкладов, займов, ипотеки, страхования и РКО."}
+</script><!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111483835', 'ym');
+
+    ym(111483835, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/111483835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+<header class="header"><div class="header-inner"><a href="./" class="logo"><img src="assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="./" data-page="home">Главная</a><a href="katalog" data-page="catalog">Каталог</a><a href="kredity" data-page="credits">Кредиты</a><a href="karty" data-page="cards">Карты</a><a href="vklady" data-page="deposits">Вклады</a><a href="investitsii" data-page="investments">Инвестиции</a><a href="zaymy" data-page="loans">Займы</a><a href="ipoteka" data-page="mortgage">Ипотека</a><a href="strahovanie" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+<div class="mobile-nav" id="mobileNav"><a href="./" data-page="home">Главная</a><a href="katalog" data-page="catalog">Каталог</a><a href="kredity" data-page="credits">Кредиты</a><a href="karty" data-page="cards">Карты</a><a href="vklady" data-page="deposits">Вклады</a><a href="investitsii" data-page="investments">Инвестиции</a><a href="zaymy" data-page="loans">Займы</a><a href="ipoteka" data-page="mortgage">Ипотека</a><a href="strahovanie" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
+
+<div class="page-content">
+  <div class="container"><nav class="breadcrumbs"><a href="./">Главная</a><span class="separator">/</span><span class="current">SVG иконки МФО</span></nav></div>
+  <section style="padding:32px 0;background:var(--bg-secondary)"><div class="container"><h1 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:8px">SVG иконки МФО</h1><p style="color:var(--text-secondary)">Все иконки банков и МФО проекта. Скачивайте и используйте.</p></div></section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- БАНКИ -->
+      <div class="icons-section">
+        <h2>Банки</h2>
+        <div class="icons-grid">
+          <div class="icon-card" data-icon="alfa-bank.svg" data-name="Альфа Банк" data-brand="Альфа Банк" data-color="#EE1B24">
+            <img src="assets/img/alfa-bank.svg" alt="Альфа Банк">
+            <div class="icon-card-name">Альфа Банк</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="t-bank.svg" data-name="Т-Банк" data-brand="Т-Банк" data-color="#FFD700">
+            <img src="assets/img/t-bank.svg" alt="Т-Банк">
+            <div class="icon-card-name">Т-Банк</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="sber.svg" data-name="Сбербанк" data-brand="Сбербанк" data-color="#21A038">
+            <img src="assets/img/sber.svg" alt="Сбербанк">
+            <div class="icon-card-name">Сбербанк</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="vtb.svg" data-name="ВТБ" data-brand="ВТБ" data-color="#003DA5">
+            <img src="assets/img/vtb.svg" alt="ВТБ">
+            <div class="icon-card-name">ВТБ</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="ozon-bank.svg" data-name="Ozon Банк" data-brand="Ozon Банк" data-color="#005BFF">
+            <img src="assets/img/ozon-bank.svg" alt="Ozon Банк">
+            <div class="icon-card-name">Ozon Банк</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="sovcombank-user.svg" data-name="Совкомбанк" data-brand="Совкомбанк" data-color="#E30611">
+            <img src="assets/img/sovcombank-user.svg" alt="Совкомбанк">
+            <div class="icon-card-name">Совкомбанк</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="tochka.svg" data-name="Точка" data-brand="Точка" data-color="#FFFFFF">
+            <img src="assets/img/tochka.svg" alt="Точка">
+            <div class="icon-card-name">Точка</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="uralsib.svg" data-name="Уралсиб" data-brand="Уралсиб" data-color="#003DA5">
+            <img src="assets/img/uralsib.svg" alt="Уралсиб">
+            <div class="icon-card-name">Уралсиб</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="loko.svg" data-name="ЛОКО-Банк" data-brand="ЛОКО-Банк" data-color="#1a5276">
+            <img src="assets/img/loko.svg" alt="ЛОКО-Банк">
+            <div class="icon-card-name">ЛОКО-Банк</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="yandex.svg" data-name="Яндекс" data-brand="Яндекс Сейвы" data-color="#7B2FBE">
+            <img src="assets/img/yandex.svg" alt="Яндекс">
+            <div class="icon-card-name">Яндекс</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="bankiru.svg" data-name="Банки.ру" data-brand="Банки.ру" data-color="#FFFFFF">
+            <img src="assets/img/bankiru.svg" alt="Банки.ру">
+            <div class="icon-card-name">Банки.ру</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="finuslugi.svg" data-name="Финуслуги" data-brand="Финуслуги" data-color="#FF4500">
+            <img src="assets/img/finuslugi.svg" alt="Финуслуги">
+            <div class="icon-card-name">Финуслуги</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="amex.svg" data-name="American Express" data-brand="Amex" data-color="#006FCF">
+            <img src="assets/img/amex.svg" alt="American Express">
+            <div class="icon-card-name">Amex</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="sravni.svg" data-name="Сравни.ру" data-brand="Сравни.ру" data-color="#2D6A4F">
+            <img src="assets/img/sravni.svg" alt="Сравни.ру">
+            <div class="icon-card-name">Сравни.ру</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- МФО / ЗАЙМЫ -->
+      <div class="icons-section">
+        <h2>МФО / Займы</h2>
+        <div class="icons-grid">
+          <div class="icon-card" data-icon="vivus.svg" data-name="Vivus" data-brand="Vivus">
+            <img src="assets/img/vivus.svg" alt="Vivus">
+            <div class="icon-card-name">Vivus</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="ekapusta.svg" data-name="е Капуста" data-brand="е Капуста">
+            <img src="assets/img/ekapusta.svg" alt="е Капуста">
+            <div class="icon-card-name">е Капуста</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="moneyman.svg" data-name="MoneyMan" data-brand="MoneyMan">
+            <img src="assets/img/moneyman.svg" alt="MoneyMan">
+            <div class="icon-card-name">MoneyMan</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="bystrodengi.svg" data-name="Быстроденьги" data-brand="Быстроденьги">
+            <img src="assets/img/bystrodengi.svg" alt="Быстроденьги">
+            <div class="icon-card-name">Быстроденьги</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="zaimer.svg" data-name="Займер" data-brand="Займер">
+            <img src="assets/img/zaimer.svg" alt="Займер">
+            <div class="icon-card-name">Займер</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="dobrozaim.svg" data-name="Доброзайм" data-brand="Доброзайм">
+            <img src="assets/img/dobrozaim.svg" alt="Доброзайм">
+            <div class="icon-card-name">Доброзайм</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="kviku.svg" data-name="Квику" data-brand="Квику">
+            <img src="assets/img/kviku.svg" alt="Квику">
+            <div class="icon-card-name">Квику</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="mafin.svg" data-name="Маффин" data-brand="Маффин">
+            <img src="assets/img/mafin.svg" alt="Маффин">
+            <div class="icon-card-name">Маффин</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="denga.svg" data-name="Деньга" data-brand="Деньга">
+            <img src="assets/img/denga.svg" alt="Деньга">
+            <div class="icon-card-name">Деньга</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="dengi-ok.svg" data-name="Деньги OK" data-brand="Деньги OK">
+            <img src="assets/img/dengi-ok.svg" alt="Деньги OK">
+            <div class="icon-card-name">Деньги OK</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="dengi-srazu.svg" data-name="Деньги сразу" data-brand="Деньги сразу">
+            <img src="assets/img/dengi-srazu.svg" alt="Деньги сразу">
+            <div class="icon-card-name">Деньги сразу</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="davaka.svg" data-name="Давака" data-brand="Давака">
+            <img src="assets/img/davaka.svg" alt="Давака">
+            <div class="icon-card-name">Давака</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="snapcredit.svg" data-name="Снапкредит" data-brand="Снапкредит">
+            <img src="assets/img/snapcredit.svg" alt="Снапкредит">
+            <div class="icon-card-name">Снапкредит</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="smsfinance.svg" data-name="СМС Финанс" data-brand="СМС Финанс">
+            <img src="assets/img/smsfinance.svg" alt="СМС Финанс">
+            <div class="icon-card-name">СМС Финанс</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="oneclickmoney.svg" data-name="OneClickMoney" data-brand="OneClickMoney">
+            <img src="assets/img/oneclickmoney.svg" alt="OneClickMoney">
+            <div class="icon-card-name">OneClickMoney</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="joymoney.svg" data-name="JoyMoney" data-brand="JoyMoney">
+            <img src="assets/img/joymoney.svg" alt="JoyMoney">
+            <div class="icon-card-name">JoyMoney</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="webbankir.svg" data-name="Веббанкир" data-brand="Веббанкир">
+            <img src="assets/img/webbankir.svg" alt="Веббанкир">
+            <div class="icon-card-name">Веббанкир</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="zaymigo.svg" data-name="Займиго" data-brand="Займиго">
+            <img src="assets/img/zaymigo.svg" alt="Займиго">
+            <div class="icon-card-name">Займиго</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="hurmacredit.svg" data-name="Хурмакредит" data-brand="Хурмакредит">
+            <img src="assets/img/hurmacredit.svg" alt="Хурмакредит">
+            <div class="icon-card-name">Хурмакредит</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="krediska.svg" data-name="Кредиска" data-brand="Кредиска">
+            <img src="assets/img/krediska.svg" alt="Кредиска">
+            <div class="icon-card-name">Кредиска</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="495.svg" data-name="495 Кредит" data-brand="495 Кредит">
+            <img src="assets/img/495.svg" alt="495 Кредит">
+            <div class="icon-card-name">495 Кредит</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="beriberu.svg" data-name="Бериберу" data-brand="Бериберу">
+            <img src="assets/img/beriberu.svg" alt="Бериберу">
+            <div class="icon-card-name">Бериберу</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="cashmagnit.svg" data-name="КэшМагнит" data-brand="КэшМагнит">
+            <img src="assets/img/cashmagnit.svg" alt="КэшМагнит">
+            <div class="icon-card-name">КэшМагнит</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="migkredit.svg" data-name="МигКредит" data-brand="МигКредит">
+            <img src="assets/img/migkredit.svg" alt="МигКредит">
+            <div class="icon-card-name">МигКредит</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="turbozaim.svg" data-name="Турбозайм" data-brand="Турбозайм">
+            <img src="assets/img/turbozaim.svg" alt="Турбозайм">
+            <div class="icon-card-name">Турбозайм</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="zetta.svg" data-name="Zetta" data-brand="Zetta">
+            <img src="assets/img/zetta.svg" alt="Zetta">
+            <div class="icon-card-name">Zetta</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- СТРАХОВАНИЕ -->
+      <div class="icons-section">
+        <h2>Страхование</h2>
+        <div class="icons-grid">
+          <div class="icon-card" data-icon="alfa-strah.svg" data-name="АльфаСтрахование" data-brand="АльфаСтрахование" data-color="#EE1B24">
+            <img src="assets/img/alfa-strah.svg" alt="АльфаСтрахование">
+            <div class="icon-card-name">АльфаСтрахование</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="ingosstrah.svg" data-name="Ингосстрах" data-brand="Ингосстрах" data-color="#003DA5">
+            <img src="assets/img/ingosstrah.svg" alt="Ингосстрах">
+            <div class="icon-card-name">Ингосстрах</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="kapital_life.svg" data-name="КАПИТАЛ LIFE" data-brand="КАПИТАЛ LIFE">
+            <img src="assets/img/kapital_life.svg" alt="КАПИТАЛ LIFE">
+            <div class="icon-card-name">КАПИТАЛ LIFE</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="polis812.svg" data-name="Полис812" data-brand="Полис812">
+            <img src="assets/img/polis812.svg" alt="Полис812">
+            <div class="icon-card-name">Полис812</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="soglasie.svg" data-name="Согласие" data-brand="Согласие">
+            <img src="assets/img/soglasie.svg" alt="Согласие">
+            <div class="icon-card-name">Согласие</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+          <div class="icon-card" data-icon="cherehapa.svg" data-name="Черехапа" data-brand="Черехапа">
+            <img src="assets/img/cherehapa.svg" alt="Черехапа">
+            <div class="icon-card-name">Черехапа</div>
+            <button class="btn-download" onclick="openIconModal(this)">Скачать</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div class="icon-modal-overlay" id="iconModal">
+  <div class="icon-modal">
+    <button class="icon-modal-close" onclick="closeIconModal()">&times;</button>
+    <div class="icon-modal-top">
+      <div class="icon-modal-preview"><img id="modalIcon" src="" alt=""></div>
+      <div class="icon-modal-info">
+        <h3 id="modalName"></h3>
+        <p id="modalFile"></p>
+        <div class="icon-modal-actions">
+          <a id="modalDownload" href="" class="btn-primary" onclick="event.preventDefault();downloadSvg(this)">Скачать SVG</a>
+          <button class="btn-ghost" onclick="closeIconModal()">Отмена</button>
+        </div>
+      </div>
+    </div>
+    <div class="icon-modal-cards">
+      <h4>Карточки с этой иконкой:</h4>
+      <div id="modalCards"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="ai-banner"><div class="container"><div class="ai-banner-text">Этот сайт-витрина создан автономным агентом с искусственным интеллектом</div><div class="ai-banner-actions"><a href="statya-ai-setup" class="btn-primary">Подробнее</a><a href="https://hubris.pw/r/50328191" target="_blank" rel="nofollow noopener" class="btn-ghost">Получить API AI</a></div></div></div>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><h4>Продукты</h4><ul><li><a href="kredity">Кредиты</a></li><li><a href="karty">Карты</a></li><li><a href="vklady">Вклады</a></li><li><a href="investitsii">Инвестиции</a></li><li><a href="zaymy">Займы</a></li><li><a href="ipoteka">Ипотека</a></li><li><a href="strahovanie">Страхование</a></li><li><a href="rko">РКО</a></li></ul></div><div><h4>Калькуляторы</h4><ul><li><a href="calc-kredit">Кредитный</a></li><li><a href="calc-ipoteka">Ипотечный</a></li><li><a href="calc-vklad">Депозитный</a></li></ul></div><div><h4>Информация</h4><ul><li><a href="katalog">Каталог</a></li><li><a href="faq">FAQ</a></li><li><a href="blog">Блог</a></li><li><a href="svg-ikonki-mfo">SVG иконки</a></li><li><a href="karta-sajta">Карта сайта</a></li><li><a href="sravnenie-kreditov">Сравнение кредитов</a></li><li><a href="sravnenie-vkladov">Сравнение вкладов</a></li><li><a href="sravnenie-kart">Сравнение карт</a></li><li><a href="rejting-bankov">Рейтинг банков</a></li><li><a href="nakopitelnye-scheta">Накопительные счета</a></li><li><a href="statya-ai-setup">Как установить ИИ-инструменты</a></li></ul></div><div><h4>Банки</h4><ul><li><a href="banki">Все лицензии</a></li><li><span>495 Кредит</span></li><li><span>Ozon Банк</span></li><li><span>Альфа Банк</span></li><li><span>Альфа-Банк</span></li><li><span>Банки.ру</span></li><li><span>ВТБ</span></li><li><span>ЛОКО-Банк</span></li><li><span>Сбербанк</span></li><li><span>Совком</span></li><li><span>Т-Банк</span></li><li><span>Точка</span></li><li><span>Уралсиб</span></li><li><span>Финуслуги</span></li><li><span>Яндекс Сейвы</span></li></ul></div><div><h4>Страхование</h4><ul><li><a href="strahovanie">Все лицензии</a></li><li><span>Cherehapa</span></li><li><span>Mafin</span></li><li><span>Zetta</span></li><li><span>АльфаСтрахование</span></li><li><span>Банки.ру</span></li><li><span>Ингосстрах</span></li><li><span>КАПИТАЛ LIFE</span></li><li><span>Полис812</span></li><li><span>СК ПАРИ</span></li><li><span>Согласие</span></li><li><span>Сравни</span></li><li><span>Т-Банк</span></li></ul></div><div><h4>МФО</h4><ul><li><a href="mfo">Все лицензии</a></li><li><span>Hurmacredit</span></li><li><span>Joymoney</span></li><li><span>Krediska</span></li><li><span>Kviku</span></li><li><span>MoneyMan</span></li><li><span>OneClickMoney</span></li><li><span>Snapcredit</span></li><li><span>Vivus</span></li><li><span>Webbankir</span></li><li><span>Zaymigo</span></li><li><span>Банки.ру</span></li><li><span>БериБеру</span></li><li><span>Быстроденьги</span></li><li><span>Давака</span></li><li><span>Деньга</span></li><li><span>Деньги Ок</span></li><li><span>Деньги Сразу</span></li><li><span>Доброзайм</span></li><li><span>Займер</span></li><li><span>Кэшмагнит</span></li><li><span>МигКредит</span></li><li><span>СМС ФИНАНС</span></li><li><span>Турбозайм</span></li><li><span>е Капуста</span></li></ul></div></div><div class="footer-bottom"><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%"><div class="footer-logo"><img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">ВСЕ<span>-</span>БАНКИ</div><div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">Сайт не несёт ответственности за качество предоставляемых услуг организациями, представленными на сайте. Все организации имеют лицензии ЦБ РФ. Сайт оказывает рекламные услуги и не является офертой.</div><div class="footer-copyright" style="margin-left:auto">© 2026</div></div></div></div></footer>
+
+<script src="assets/js/main.js"></script>
+<script src="_card-data.js"></script>
+<script>
+function openIconModal(btn) {
+  const card = btn.closest('.icon-card');
+  const icon = card.dataset.icon;
+  const name = card.dataset.name;
+  const imgSrc = card.querySelector('img').src;
+
+  document.getElementById('modalIcon').src = imgSrc;
+  document.getElementById('modalName').textContent = name;
+  document.getElementById('modalFile').textContent = icon;
+  document.getElementById('modalDownload').href = 'assets/img/' + icon + '?download';
+
+  const htmlCards = (typeof htmlMap !== 'undefined' && htmlMap[icon]) ? htmlMap[icon] : [];
+  const container = document.getElementById('modalCards');
+  if (htmlCards.length === 0) {
+    container.innerHTML = '<p style="color:var(--text-muted);font-size:0.875rem">Нет карточек с этой иконкой</p>';
+  } else {
+    // Deduplicate by data-name
+    const seen = new Set();
+    const unique = htmlCards.filter(html => {
+      const m = html.match(/data-name="([^"]*)"/);
+      const key = m ? m[1] : html;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    // Separate credit-cards (horizontal) from offer-cards (vertical)
+    const creditCards = [];
+    const offerCards = [];
+    const insuranceCategories = ['insurance', 'osago', 'kasko', 'property', 'life', 'health', 'travel', 'accident'];
+    unique.forEach(html => {
+      if (html.includes('class="credit-card"')) {
+        creditCards.push(html);
+      } else {
+        offerCards.push(html);
+      }
+    });
+    let result = '';
+    if (creditCards.length > 0) {
+      result += '<div class="credit-list" style="margin-bottom:20px">' + creditCards.join('') + '</div>';
+    }
+    if (offerCards.length > 0) {
+      const isInsurance = offerCards.some(html => insuranceCategories.some(cat => html.includes('data-category="' + cat + '"')));
+      const gridClass = isInsurance ? 'grid-4 insurance-section' : 'grid-4';
+      result += '<div class="' + gridClass + '">' + offerCards.join('') + '</div>';
+    }
+    container.innerHTML = result;
+  }
+
+  document.getElementById('iconModal').classList.add('active');
+  document.body.classList.add('menu-open');
+}
+
+function downloadSvg(btn) {
+  const href = btn.href || btn.getAttribute('href');
+  if (!href) return;
+  fetch(href.replace('?download', ''))
+    .then(r => r.text())
+    .then(svgText => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(svgText, 'image/svg+xml');
+      const svg = doc.querySelector('svg');
+      if (svg) {
+        svg.setAttribute('width', '64');
+        svg.setAttribute('height', '64');
+      }
+      const blob = new Blob([svg ? svg.outerHTML : svgText], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = href.split('/').pop().replace('?download', '');
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    })
+    .catch(() => {
+      // Fallback: direct download
+      window.location.href = href;
+    });
+}
+
+function closeIconModal() {
+  document.getElementById('iconModal').classList.remove('active');
+  document.body.classList.remove('menu-open');
+}
+
+document.getElementById('iconModal').addEventListener('click', function(e) {
+  if (e.target === this) closeIconModal();
+});
+</script>
+</body>
+</html>

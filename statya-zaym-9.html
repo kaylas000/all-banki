@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/svg+xml" sizes="192x192" href="assets/img/favicon-192.svg">
+  <link rel="icon" type="image/svg+xml" sizes="512x512" href="assets/img/favicon-512.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Мгновенный займ на карту — OneClickMoney, первый 0% | Все-Банки</title>
+  <link rel="stylesheet" href="assets/css/main.css?v=17">
+
+  <!-- В meta-description убрал неподтверждаемое «первый 0%» как факт и заменил на подтвержденную механику: акции/промокоды -->
+  <meta name="description" content="«Мгновенный займ» — это не «один клик», а короткая цепочка шагов: паспорт → фото/подтверждение личности → SMS-коды → подписание → перечисление. Разбираем, сколько действий реально нужно в OneClickMoney и где чаще всего теряется время. Ограничения 2026: ставка до 0,8% в день и потолок переплаты 100% с 01.04.2026 (для договоров до 1 года).">
+  <link rel="canonical" href="https://все-банки.site/statya-zaym-9">
+
+  <meta property="og:title" content="Мгновенный займ на карту — OneClickMoney | Все-Банки">
+  <meta property="og:description" content="Сколько кликов на самом деле: шаги оформления, фото с кодом, SMS-коды, перевод. Плюс: лимиты 2026 — 0,8%/день и потолок переплаты 100%.">
+  <meta property="og:url" content="https://все-банки.site/statya-zaym-9">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0c">
+
+  <!-- Schema: Article -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Мгновенный займ на карту — сколько кликов на самом деле",
+    "datePublished":"2026-07-31",
+    "dateModified":"2026-08-02",
+    "author":{"@type":"Organization","name":"Все-Банки"},
+    "publisher":{"@type":"Organization","name":"Все-Банки"},
+    "mainEntityOfPage":"https://все-банки.site/article-loan-9",
+    "description":"Разбор «мгновенного займа»: какие шаги реально нужны, почему «один клик» — маркетинг, где чаще всего возникают задержки и какие лимиты действуют в 2026."
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Реально ли оформить займ «в один клик»?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Нет. Даже в самом коротком сценарии будут обязательные шаги: заполнение анкеты, подтверждение личности, SMS‑коды/подпись, выбор суммы и срока. «Один клик» — это про скорость и простоту интерфейса, а не про буквальное количество действий."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Зачем OneClickMoney просит фото с кодом?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Это антифрод‑механика: система генерирует уникальный код, вы пишете его на бумаге и фотографируетесь так, чтобы было видно лицо и код. По описанию сервиса, если загрузить фото без кода, заявка будет автоматически отклонена."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Сколько времени занимает зачисление денег на карту?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"По FAQ OneClickMoney ориентиры такие: до 15 минут на карты Visa/МИР/Mastercard (и Maestro нового образца) и 15–20 минут на ЮMoney. При этом компания предупреждает, что возможна задержка перечисления в зависимости от банка партнера."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Какие ограничения по займам действуют в 2026 году?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"По 353‑ФЗ процентная ставка по договору потребительского займа не может превышать 0,8% в день. С 01.04.2026 по новым договорам со сроком возврата до 1 года начисление процентов, неустоек и других платежей прекращается после достижения 100% от суммы долга."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Как проверить, что OneClickMoney — легальная МФО?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Проверьте карточку организации в справочнике Банка России: АО «МКК УФ», статус «Действует», учетный номер микрофинансовой деятельности и официальный сайт oneclickmoney.ru."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Mobile-friendly styles (scoped) -->
+  <style>
+    .article-page .page-content{ overflow-x: clip; }
+
+    .article-page .article-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 320px;
+      gap:28px;
+      align-items:start;
+    }
+    .article-page .article-content,
+    .article-page .article-sidebar{ min-width:0; }
+
+    @media (min-width:980px){
+      .article-page .article-sidebar{ position:sticky; top:80px; }
+    }
+    @media (max-width:979px){
+      .article-page .article-layout{ grid-template-columns:1fr; }
+      .article-page .article-sidebar{ position:static; top:auto; margin-top:18px; }
+    }
+
+    .article-page .article-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      color:var(--text-secondary);
+      font-size:.9rem;
+      margin:10px 0 18px;
+    }
+
+    .article-page .article-content p{ line-height:1.7; }
+    .article-page .article-content h1{ line-height:1.15; margin-bottom:10px; }
+    .article-page .article-content h2{ margin-top:28px; }
+    .article-page .article-content h3{ margin-top:18px; }
+
+    .article-page .callout{
+      background:var(--bg-secondary);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:18px;
+      margin:18px 0 26px;
+    }
+    .article-page .callout-warning{
+      background:rgba(255,178,102,.10);
+      border-color:rgba(255,178,102,.35);
+    }
+    .article-page .callout-success{
+      background:rgba(67,160,71,.10);
+      border-color:rgba(67,160,71,.25);
+    }
+
+    .article-page .list{
+      padding-left:18px;
+      margin:10px 0 16px;
+    }
+    .article-page .list li{ margin:8px 0; }
+
+    .article-page .table-wrap{
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--bg-card);
+      margin:16px 0 18px;
+      overflow:hidden;
+    }
+    .article-page .table-scroll{ overflow-x:visible; }
+    .article-page table.compare{
+      width:100%;
+      border-collapse:collapse;
+      min-width:0;
+      font-size:.95rem;
+    }
+    .article-page table.compare th,
+    .article-page table.compare td{
+      padding:12px 14px;
+      border-bottom:1px solid var(--border);
+      text-align:left;
+      vertical-align:top;
+      word-break:break-word;
+    }
+    .article-page table.compare thead th{
+      background:var(--bg-secondary);
+      font-weight:700;
+    }
+    .article-page table.compare tr:last-child td{ border-bottom:0; }
+
+    /* ФИКС: первая таблица (про клики) — фиксированные ширины, чтобы 1-й столбец не заужался */
+    .article-page table.compare.compare-clicks{
+      table-layout:fixed;
+    }
+    .article-page table.compare.compare-clicks th,
+    .article-page table.compare.compare-clicks td{
+      word-break:normal;
+      overflow-wrap:anywhere;
+    }
+
+    @media (max-width:820px){
+      .article-page .table-scroll{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+      }
+      .article-page table.compare{ min-width:760px; }
+      .article-page .article-content table{ min-width:760px; }
+      .article-page .article-content [style*="overflow-x:auto"]{
+        -webkit-overflow-scrolling:touch;
+      }
+    }
+
+    .article-page .faq-item{ border:1px solid var(--border); border-radius:12px; overflow:hidden; margin:10px 0; background:var(--bg-card); }
+    .article-page .faq-question{
+      width:100%;
+      background:transparent;
+      border:0;
+      padding:14px 14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      cursor:pointer;
+      text-align:left;
+      font-size:1rem;
+      font-weight:700;
+      color:var(--text-primary);
+    }
+    .article-page .faq-question .arrow{ transition:transform .2s ease; opacity:.8; }
+    .article-page .faq-answer{ display:none; padding:0 14px 14px; color:var(--text-secondary); }
+    .article-page .faq-item.is-open .faq-answer{ display:block; }
+    .article-page .faq-item.is-open .faq-question .arrow{ transform:rotate(180deg); }
+
+    .article-page .sidebar-box{
+      background:var(--bg-card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:20px;
+    }
+
+    @media (max-width:560px){
+      .article-page .container{ padding-left:16px; padding-right:16px; }
+      .article-page .breadcrumbs{ flex-wrap:wrap; gap:6px; }
+      .article-page .article-content h1{ font-size:clamp(1.55rem,6vw,2.1rem); }
+      .article-page .btn-primary{ width:100%; display:flex; justify-content:center; box-sizing:border-box; }
+      .article-page .callout{ padding:16px; }
+    }
+    @media (max-width:380px){
+      .article-page .container{ padding-left:12px; padding-right:12px; }
+    }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://все-банки.site/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://все-банки.site/blog"}]}</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111483835', 'ym');
+
+    ym(111483835, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/111483835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="article-page">
+<header class="header"><div class="header-inner"><a href="/" class="logo"><img src="../assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="/" data-page="home">Главная</a><a href="katalog" data-page="catalog">Каталог</a><a href="kredity" data-page="credits">Кредиты</a><a href="karty" data-page="cards">Карты</a><a href="vklady" data-page="deposits">Вклады</a><a href="investitsii" data-page="investments">Инвестиции</a><a href="zaymy" data-page="loans">Займы</a><a href="ipoteka" data-page="mortgage">Ипотека</a><a href="strahovanie" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+
+<div class="mobile-nav" id="mobileNav"><a href="/" data-page="home">Главная</a><a href="katalog" data-page="catalog">Каталог</a><a href="kredity" data-page="credits">Кредиты</a><a href="karty" data-page="cards">Карты</a><a href="vklady" data-page="deposits">Вклады</a><a href="investitsii" data-page="investments">Инвестиции</a><a href="zaymy" data-page="loans">Займы</a><a href="ipoteka" data-page="mortgage">Ипотека</a><a href="strahovanie" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
+
+<div class="page-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span class="separator">/</span>
+      <a href="blog">Блог</a><span class="separator">/</span>
+      <span class="current">Мгновенный займ</span>
+    </nav>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+
+          <h1>Мгновенный займ на карту — сколько кликов на самом деле</h1>
+
+          <div class="article-meta">
+            <span>Автор: Команда Все-Банки</span><span>·</span>
+            <span>31 июля 2026</span><span>·</span><span>11–13 мин чтения</span><span>·</span>
+            <span style="color:var(--bronze)">Займы</span>
+          </div>
+
+          <div class="callout">
+            <p style="margin:0">
+              <strong>Суть «мгновенного займа»:</strong> это не «одна кнопка», а короткий и максимально автоматизированный маршрут:
+              вы заполняете заявку → подтверждаете личность → получаете SMS‑коды → подписываете договор → деньги перечисляются выбранным способом.
+              <br><br>
+              В OneClickMoney этот маршрут действительно стараются держать коротким: на сайте прямо пишут про
+              «простую заявку без лишних полей», «нужен только паспорт» и «решение за несколько минут».
+              Но есть и честный антифрод‑шаг, который многие не ожидают: <strong>фото с кодом</strong> (если без кода — заявку отклонят автоматически).
+            </p>
+          </div>
+
+          <h2>Сколько шагов на самом деле: разбор «по-человечески»</h2>
+
+          <div class="table-wrap" role="region" aria-label="Сколько кликов" tabindex="0">
+            <div class="table-scroll">
+              <table class="compare compare-clicks">
+                <colgroup>
+                  <col style="width:30%">
+                  <col style="width:35%">
+                  <col style="width:35%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Шаг</th>
+                    <th>Что вы делаете</th>
+                    <th>Что чаще всего тормозит</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1) Регистрация</strong></td>
+                    <td>Вводите телефон/данные и создаете личный кабинет</td>
+                    <td>Ошибки в цифрах, «не пришла SMS», блокировка номера</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2) Паспорт</strong></td>
+                    <td>Загружаете фото/скан: первая страница и страница с регистрацией</td>
+                    <td>Нечеткое фото, обрезанные края, блики, «не читается серия/номер»</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3) Фото с кодом</strong></td>
+                    <td>Пишете код на бумаге и фотографируетесь так, чтобы видно было лицо и код</td>
+                    <td>Фото без кода (по правилам сервиса такая заявка отклоняется), код закрыт пальцем, плохой свет</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4) Активация ЛК</strong></td>
+                    <td>Получаете SMS‑код активации и пароль (если генерируется автоматически)</td>
+                    <td>Путают код активации и код подтверждения оферты</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5) Сумма и срок</strong></td>
+                    <td>Выбираете параметры займа (они могут отличаться от «максимумов» в рекламе)</td>
+                    <td>Нереалистичная сумма «в потолок» — скоринг может не подтвердить</td>
+                  </tr>
+                  <tr>
+                    <td><strong>6) Подписание</strong></td>
+                    <td>Вводите «код принятия оферты» и подтверждаете условия</td>
+                    <td>Слишком быстро закрыли окно, не сохранили документы</td>
+                  </tr>
+                  <tr>
+                    <td><strong>7) Перечисление</strong></td>
+                    <td>Деньги уходят выбранным способом</td>
+                    <td>Задержка у банка партнера/банка‑получателя (это прямо отмечает сервис)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Почему «один клик» — это маркетинг (и это нормально)</h2>
+          <p>
+            Если упростить до здравого смысла, «один клик» в займах невозможен по двум причинам:
+          </p>
+          <ul class="list">
+            <li><strong>Юридическая часть:</strong> договор должен быть заключен так, чтобы можно было доказать факт согласия и условия (индивидуальные условия, ПСК и т.д.).</li>
+            <li><strong>Безопасность:</strong> сервису важно убедиться, что займ оформляет именно владелец паспорта, а не «случайный человек с чужими данными».</li>
+          </ul>
+
+          <div class="callout callout-warning">
+            <p style="margin:0">
+              Если вам обещают «деньги за 30 секунд вообще без подтверждений» — это чаще всего не «крутой сервис»,
+              а риск нарваться на мошенников или нелегальную выдачу.
+              Нормальные компании показывают, что именно они проверяют и почему.
+            </p>
+          </div>
+
+          <h2>OneClickMoney: что можно проверить официально</h2>
+
+          <div class="callout callout-success">
+            <p style="margin:0">
+              <strong>По данным Банка России:</strong> займы под брендом OneClickMoney предоставляет
+              <strong>АО «МКК УФ»</strong> (статус: микрокредитная компания), учетный номер микрофинансовой деятельности
+              <strong>001503760007126</strong>, дата начала деятельности в реестре: <strong>03.11.2015</strong>.
+              В интернет‑ресурсах указан официальный сайт: <strong>oneclickmoney.ru</strong>.
+            </p>
+          </div>
+
+          <p>
+            По информации на сайте компании: они выдают онлайн‑займы в сумме <strong>от 500 до 100 000 ₽</strong> на срок
+            <strong>от 2 недель до года</strong>, решение «за несколько минут», и отдельно подчеркивают, что
+            «не звонят родственникам и работодателю», а также что работают <strong>24×7</strong>.
+          </p>
+
+          <p>
+            В FAQ OneClickMoney подробно описан маршрут оформления: паспорт + фото/сканы + фото с кодом, далее — SMS‑коды и «код принятия оферты».
+            Там же приведены ориентиры по зачислению и предупреждение: <strong>возможна задержка перечисления займа в зависимости от банка партнера</strong>.
+          </p>
+
+          <p>
+            <a href="zaym-9" style="color:var(--bronze);font-weight:600" rel="nofollow sponsored">Мгновенный займ в OneClickMoney →</a>
+            — оформление онлайн, итоговые условия зависят от анкеты.
+          </p>
+
+          <h2>Акции и «0%»: как это устроено у OneClickMoney</h2>
+          <p>
+            В разделе FAQ компания описывает промо‑механику: акции активируются <strong>по промокоду</strong>.
+            Например, указана акция «<strong>N дней без процентов</strong>» — для участия нужно ввести промокод в калькуляторе/личном кабинете.
+            Важно: по тексту FAQ есть условие, что акция действует, если вы пользуетесь займом <strong>свыше трех дней</strong>.
+          </p>
+
+          <div class="callout">
+            <p style="margin:0">
+              <strong>Практический вывод:</strong> если вы видите «0%» в рекламе или у партнеров, не пытайтесь угадывать.
+              Проверьте, <em>как именно</em> включается 0% (промокод/акция), на какой срок, и что будет при просрочке —
+              это всегда фиксируется документами и индивидуальными условиями.
+            </p>
+          </div>
+
+          <h2>Лимиты 2026: что важно знать (даже если займ «мгновенный»)</h2>
+
+          <h3>1) Ставка не выше 0,8% в день</h3>
+          <p>
+            В 353‑ФЗ закреплено ограничение: процентная ставка по договору потребительского кредита (займа)
+            не может превышать <strong>0,8% в день</strong>.
+          </p>
+
+          <h3>2) Потолок переплаты с 1 апреля 2026: не больше 100% (для договоров до 1 года)</h3>
+          <p>
+            Банк России отдельно разъясняет: с <strong>01.04.2026</strong> максимальная переплата по новым договорам со сроком до 1 года снижена до
+            <strong>100% от суммы долга</strong>. То есть начисления прекращаются, когда сумма процентов, неустойки и других платежей достигает 100% от суммы долга
+            (условно: заняли 10 000 ₽ — начисления прекращаются при достижении 10 000 ₽ «сверху»).
+          </p>
+
+          <div class="callout callout-warning">
+            <p style="margin:0">
+              Ограничение защищает от «бесконечной» переплаты, но не делает микрозайм дешевым.
+              Если деньги нужны на долгий срок — сравните с кредитом/кредиткой: обычно это заметно дешевле.
+            </p>
+          </div>
+
+          <h2>Как ускорить оформление и не словить автоматический отказ</h2>
+          <ul class="list">
+            <li><strong>Фото паспорта</strong> — делайте на ровной поверхности, без бликов, чтобы читались серия/номер.</li>
+            <li><strong>Фото с кодом</strong> — это не формальность. Код должен быть виден, лицо — тоже. Иначе система может отклонить заявку автоматически.</li>
+            <li><strong>SMS‑коды</strong> — не переключайтесь между приложениями «на автопилоте», не путайте «активацию ЛК» и «принятие оферты».</li>
+            <li><strong>Зачисление</strong> — если деньги «зависли», проверьте уведомления в личном кабинете и учитывайте предупреждение компании: задержка может зависеть от банка партнера.</li>
+          </ul>
+
+          <h2>Частые вопросы</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Это правда «мгновенно»?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Обычно быстро — да: компания пишет, что решение принимается «за несколько минут».
+                Но «мгновенно» зависит от двух вещей: насколько быстро вы проходите шаги (паспорт/фото/коды)
+                и как быстро отработало перечисление (в FAQ отдельно отмечено, что возможна задержка в зависимости от банка партнера).
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Почему без фото с кодом заявку могут отклонить?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Потому что это часть подтверждения личности и защиты от мошенничества.
+                На сайте OneClickMoney прямо указано: если загрузить фото без кода — заявка будет автоматически отклонена.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Где смотреть акции и промокоды на «дни без процентов»?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                В FAQ компании описано: промокод вводится в калькуляторе займа на сайте или в личном кабинете в поле «Введите промо код»,
+                после чего подается заявка. Условия зависят от конкретной акции.
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--bronze);border-radius:12px;padding:24px;margin-top:32px">
+            <h3 style="margin-bottom:8px">Предложение</h3>
+            <p style="margin-bottom:12px;color:var(--text-secondary)">
+              OneClickMoney — онлайн‑займы. АО «МКК УФ» — микрокредитная компания в реестре Банка России.
+              Итоговые условия зависят от анкеты и индивидуальных условий договора.
+            </p>
+            <a href="zaym-9" class="btn-primary" style="font-size:1rem;padding:16px 32px" rel="nofollow sponsored">Оформить →</a>
+          </div>
+
+          <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:12px;padding:18px;margin-top:18px">
+            <h3 style="margin:0 0 10px">Источники (РФ)</h3>
+            <ul class="list" style="margin:0">
+              <li>Банк России: карточка участника финрынка — АО «МКК УФ» (oneclickmoney.ru, учетный номер, дата в реестре).</li>
+              <li>OneClickMoney: главная страница (условия: суммы/сроки, «24×7», «нужен только паспорт», «не звоним родственникам/работодателю»).</li>
+              <li>OneClickMoney: FAQ (как получить займ: фото паспорта, фото с кодом, «код принятия оферты»; сроки зачисления; акции по промокоду).</li>
+              <li>353‑ФЗ: ограничение ставки 0,8% в день.</li>
+              <li>Банк России: пресс‑релиз про ограничение переплаты до 100% с 01.04.2026.</li>
+            </ul>
+            <p style="margin:10px 0 0;color:var(--text-muted);font-size:.85rem;line-height:1.6">
+              Дисклеймер: материал справочный и не является публичной офертой. Итоговые условия фиксируются в индивидуальных условиях договора.
+            </p>
+          </div>
+
+          <p style="margin-top:18px;color:var(--text-muted);line-height:1.6;font-size:.85rem">
+            Дисклеймер: статья справочная и не гарантирует одобрение. Решение зависит от анкеты, кредитной истории и внутренних правил кредитора.
+          </p>
+
+        </main>
+
+        <aside class="article-sidebar">
+          <div class="sidebar-box">
+            <h4 style="margin-bottom:12px">Быстрые займы</h4>
+            <ul style="display:flex;flex-direction:column;gap:8px;font-size:0.875rem;padding-left:18px;margin:0">
+              <li><a href="zaym-9" style="color:var(--bronze)">OneClickMoney — мгновенно →</a></li>
+              <li><a href="statya-zaym-8" style="color:var(--text-secondary)">Круглосуточно — Webbankir →</a></li>
+              <li><a href="statya-zaym-4" style="color:var(--text-secondary)">Срочный — Быстроденьги →</a></li>
+            </ul>
+
+            <hr style="border:0;border-top:1px solid var(--border);margin:14px 0">
+
+            <div style="color:var(--text-secondary);font-size:.85rem;line-height:1.5">
+              <strong style="color:var(--text-primary)">Чек «чтобы не отклонили»:</strong><br>
+              фото паспорта → фото с кодом → SMS‑коды → документы договора
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="ai-banner"><div class="container"><div class="ai-banner-text">Этот сайт-витрина создан автономным агентом с искусственным интеллектом</div><div class="ai-banner-actions"><a href="statya-ai-setup" class="btn-primary">Подробнее</a><a href="https://hubris.pw/r/50328191" target="_blank" rel="nofollow noopener" class="btn-ghost">Получить API AI</a></div></div></div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <div class="footer-logo">
+        <img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">
+        ВСЕ<span>-</span>БАНКИ
+      </div>
+      <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">
+        Источники: Банк России, данные банков, 353-ФЗ. Июль–август 2026.
+      </div>
+      <div class="footer-copyright">© 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      if (!btn) return;
+
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  })();
+</script>
+</body>
+</html>
