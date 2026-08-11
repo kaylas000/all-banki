@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="assets/img/favicon-192.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Блог о финансах — кредиты, вклады, инвестиции | Все-Банки</title>
-  <link rel="stylesheet" href="assets/css/main.css?v=9">
+  <link rel="stylesheet" href="assets/css/main.css?v=17">
   <style>
     .blog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
     .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: all 0.3s; display: flex; flex-direction: column; }
@@ -30,108 +30,777 @@
     }
   </style>
     <meta name="description" content="Экспертный блог о финансах: кредиты, вклады, инвестиции, страхование. Полезные советы от финансовых экспертов.">
-      <link rel="canonical" href="https://kaylas000.github.io/all-banki/blog">
+      <link rel="canonical" href="https://все-банки.site/blog">
       <meta property="og:title" content="Блог о финансах — кредиты, вклады, инвестиции | Все-Банки">
     <meta property="og:description" content="Экспертный блог о финансах: кредиты, вклады, инвестиции, страхование. Полезные советы от финансовых экспертов.">
-    <meta property="og:url" content="https://kaylas000.github.io/all-banki/blog">
+    <meta property="og:url" content="https://все-банки.site/blog">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://kaylas000.github.io/all-banki/assets/img/logo.svg">
+    <meta property="og:image" content="https://все-банки.site/assets/img/logo.svg">
     <meta name="twitter:card" content="summary">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://kaylas000.github.io/all-banki/"},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://kaylas000.github.io/all-banki/blog.html"}
+    {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://все-банки.site/"},
+    {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://все-банки.site/blog"}
   ]
 }
 </script>
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  </head>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111483835', 'ym');
+
+    ym(111483835, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/111483835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
 <body>
 
-<header class="header"><div class="header-inner"><a href="index" class="logo"><img src="assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="index" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
-<div class="mobile-nav" id="mobileNav"><a href="index" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
+<header class="header"><div class="header-inner"><a href="./" class="logo"><img src="assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="./" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+<div class="mobile-nav" id="mobileNav"><a href="./" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
 
 <div class="page-content">
-  <div class="container"><nav class="breadcrumbs"><a href="index">Главная</a><span class="separator">/</span><span class="current">Блог</span></nav></div>
+  <div class="container"><nav class="breadcrumbs"><a href="./">Главная</a><span class="separator">/</span><span class="current">Блог</span></nav></div>
 
   <section style="padding:32px 0;background:var(--bg-secondary)"><div class="container"><h1 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:8px">Блог</h1><p style="color:var(--text-secondary)">Полезные статьи о финансах, кредитах и инвестициях</p></div></section>
 
   <div class="filter-bar"><div class="filter-bar-inner">
-    <button class="filter-pill active" data-category="all">Все</button>
-    <button class="filter-pill" data-category="credits">Кредиты</button>
-    <button class="filter-pill" data-category="deposits">Вклады</button>
-    <button class="filter-pill" data-category="cards">Карты</button>
-    <button class="filter-pill" data-category="loans">Займы</button>
-    <button class="filter-pill" data-category="investments">Инвестиции</button>
-    <button class="filter-pill" data-category="mortgage">Ипотека</button>
-    <button class="filter-pill" data-category="insurance">Страхование</button>
-    <button class="filter-pill" data-category="finance">Личные финансы</button>
+    <button class="filter-toggle" id="filterToggle"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 1H1M15 5H5M15 9H9M15 13H3"/></svg>Фильтры<span class="arrow">▼</span></button>
+    <div class="filter-content" id="filterContent">
+      <div class="filter-pills" id="filterPills">
+        <button class="filter-pill active" data-category="all">Все</button>
+        <button class="filter-pill" data-category="credits">Кредиты</button>
+        <button class="filter-pill" data-category="deposits">Вклады</button>
+        <button class="filter-pill" data-category="cards">Карты</button>
+        <button class="filter-pill" data-category="loans">Займы</button>
+        <button class="filter-pill" data-category="investments">Инвестиции</button>
+        <button class="filter-pill" data-category="mortgage">Ипотека</button>
+        <button class="filter-pill" data-category="insurance">Страхование</button>
+        <button class="filter-pill" data-category="finance">Личные финансы</button>
+      </div>
+      <input type="text" class="filter-search" id="searchInput" placeholder="Поиск по статьям...">
+    </div>
   </div></div>
 
   <section class="section">
     <div class="container">
       <div class="blog-grid" id="blogGrid">
 
-        <a href="article-credits" class="blog-card" data-category="credits">
+        <a href="article-offer-1" class="blog-card" data-category="credits">
           <div class="blog-card-body">
             <span class="blog-card-tag">Кредиты</span>
-            <div class="blog-card-title">Как выбрать кредит: полное руководство</div>
-            <div class="blog-card-desc">Разбираемся, на что обращать внимание при выборе кредита, как снизить ставку и избежать переплаты.</div>
-            <div class="blog-card-meta"><span>15 июля 2026</span><span>·</span><span>12 мин чтения</span></div>
+            <div class="blog-card-title">Кредит наличными онлайн на карту — полный гид 2026</div>
+            <div class="blog-card-desc">Кредит наличными онлайн: ставки от 16,7%, до 7,5 млн ₽. Новые правила ЦБ с октября 2026.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
           </div>
           <div class="blog-card-footer"><span>Читать статью →</span></div>
         </a>
 
-        <a href="article-deposits" class="blog-card" data-category="deposits">
+        <a href="article-offer-2" class="blog-card" data-category="credits">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Вклады</span>
-            <div class="blog-card-title">Вклады 2026: где лучше отложить деньги</div>
-            <div class="blog-card-desc">Сравниваем ставки по вкладам ведущих банков. Какой вклад выбрать для надёжного дохода.</div>
-            <div class="blog-card-meta"><span>10 июля 2026</span><span>·</span><span>8 мин чтения</span></div>
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит наличными без отказа — как получить одобрение в 2026</div>
+            <div class="blog-card-desc">7 стратегий повышения шансов: ПДН, подтверждение дохода, ошибки в БКИ, самозапрет.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>13–15 мин чтения</span></div>
           </div>
           <div class="blog-card-footer"><span>Читать статью →</span></div>
         </a>
 
-        <a href="article-cards" class="blog-card" data-category="cards">
+        <a href="article-offer-3" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит наличными под низкий процент — из чего складывается ставка</div>
+            <div class="blog-card-desc">5 компонентов ПСК, почему разброс от 8,9% до 38,5%, как получить ставку ниже.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>12–14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-4" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Потребительский кредит онлайн — как работают маркетплейсы</div>
+            <div class="blog-card-desc">Банки.ру vs Финуслуги vs Сравни.ру: бизнес-модель CPA, прескоринг vs жёсткий запрос.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>11–13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-5" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит без справок и поручителей — цена простоты</div>
+            <div class="blog-card-desc">На сколько ставка выше без подтверждения дохода. Когда это оправдано, а когда — нет.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-6" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит с плохой кредитной историей — стратегия восстановления</div>
+            <div class="blog-card-desc">Что видит банк, дорожная карта восстановления за 12 месяцев, лояльные банки.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>12–14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-7" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Автокредит без первоначального взноса — математика нулевого входа</div>
+            <div class="blog-card-desc">Скрытая цена — отрицательный equity. Когда нулевой взнос оправдан.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>11–13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-8" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит наличными на любые цели — нецелевой vs целевой</div>
+            <div class="blog-card-desc">Когда нецелевой кредит выгоднее целевого. Психология свободных денег.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>11–13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-9" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит под залог авто — деньги есть, машина при вас</div>
+            <div class="blog-card-desc">Машина остаётся у вас, залог регистрируется в реестре. Разбор механики и рисков.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>11–13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-10" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит наличными пенсионерам — почему пенсия это козырь</div>
+            <div class="blog-card-desc">Пенсия — стабильный доход для банка. До какого возраста одобряют, какие документы нужны.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>11–13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-11" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредитная карта онлайн с доставкой — как пользоваться бесплатно</div>
+            <div class="blog-card-desc">Льготный период до 120 дней, кешбэк до 30%. Как не платить проценты вообще.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>11–13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-12" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит наличными на карту срочно — когда счёт идёт на минуты</div>
+            <div class="blog-card-desc">Решение за 2 минуты. От чего зависит реальная скорость зачисления. Как получить сегодня.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-13" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит под залог недвижимости — до 100 млн без подтверждения дохода</div>
+            <div class="blog-card-desc">Как работает ипотека на вашу квартиру. Риски для единственного жилья.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-14" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Выгодный кредит наличными от 650 тысяч — почему сумма влияет на ставку</div>
+            <div class="blog-card-desc">Риск-прайсинг, ПДН, документы и конкуренция банков. Как подготовиться к заявке.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-15" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Крупный кредит наличными от 1 млн — что меняется после миллиона</div>
+            <div class="blog-card-desc">Какие проверки и документы нужны, как банки смотрят на ПДН, доход и кредитную историю.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-16" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит с досрочным погашением — как гасить выгодно</div>
+            <div class="blog-card-desc">Уменьшать срок или платёж? Досрочка по 353‑ФЗ, когда нужно уведомление.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-17" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит на ремонт квартиры до 100 000 — быстро и без залога</div>
+            <div class="blog-card-desc">Косметический ремонт в кредит. Когда ремонт в кредит выгоднее, чем из сбережений.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>9–11 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-18" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит на ремонт дома — кровля, утепление, коммуникации</div>
+            <div class="blog-card-desc">Что реально закрыть бюджетом до 300 тыс ₽, что ремонтировать в первую очередь.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-19" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит на ремонт с плохой кредитной историей — реальные варианты</div>
+            <div class="blog-card-desc">Какие просрочки банки считают критичными, как поднять шансы на одобрение.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-offer-20" class="blog-card" data-category="credits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Кредиты</span>
+            <div class="blog-card-title">Кредит на капитальный ремонт от 1 млн — как выбрать финансирование</div>
+            <div class="blog-card-desc">Как оценить бюджет, когда выгоднее кредит, а когда — рефинансирование ипотеки.</div>
+            <div class="blog-card-meta"><span>30 июля 2026</span><span>·</span><span>10–12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-1" class="blog-card" data-category="cards">
           <div class="blog-card-body">
             <span class="blog-card-tag">Карты</span>
-            <div class="blog-card-title">Дебетовые карты с кешбэком: обзор лучших</div>
-            <div class="blog-card-desc">Как выбрать дебетовую карту с максимальным кешбэком. Сравнение условий Т-Банка, Альфы, Сбера.</div>
-            <div class="blog-card-meta"><span>5 июля 2026</span><span>·</span><span>10 мин чтения</span></div>
+            <div class="blog-card-title">Дебетовая карта с кешбэком — Т-Банк Black, до 15%</div>
+            <div class="blog-card-desc">Кешбэк до 15% в 4 категориях, 30% у партнёров, до 6 000 ₽ в месяц.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>7 мин чтения</span></div>
           </div>
           <div class="blog-card-footer"><span>Читать статью →</span></div>
         </a>
 
-        <a href="article-investments" class="blog-card" data-category="investments">
+        <a href="article-card-2" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Кредитная карта с льготным периодом — Т-Банк, 55 дней без %</div>
+            <div class="blog-card-desc">Льготный период 55 дней, кешбэк до 30%, лимит до 1 млн ₽. Как пользоваться бесплатно.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>6 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-3" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Кредитная карта без отказа — Сбербанк, 55 дней, до 300 тыс.</div>
+            <div class="blog-card-desc">55 дней без %, лимит до 300 тыс. ₽, бесплатное обслуживание. СберПремьер — до 10%.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-4" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Дебетовая карта с процентом на остаток — Альфа-Карта, до 17%</div>
+            <div class="blog-card-desc">Кешбэк до 30%, процент на остаток до 17%, бесплатное обслуживание. Сравнение с Т-Банк.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>6 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-5" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Дебетовая карта с доставкой на дом — Ozon Банк, кешбэк до 5%</div>
+            <div class="blog-card-desc">Кешбэк баллами до 5%, бесплатное обслуживание, доставка курьером.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-6" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Дебетовая карта МИР с кешбэком — ВТБ, до 15%</div>
+            <div class="blog-card-desc">Кешбэк до 15% у партнёров, лимит 1 500 ₽, полностью бесплатное обслуживание.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-7" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Кредитная карта с кешбэком — ВТБ, 55 дней, до 500 тыс.</div>
+            <div class="blog-card-desc">55 дней без %, лимит до 500 тыс. ₽, обслуживание 0 ₽. Кешбэк партнёрский.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-8" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Детская дебетовая карта — Т-Банк Джуниор, кешбэк 15%</div>
+            <div class="blog-card-desc">Кешбэк до 15%, родительский контроль, бесплатное обслуживание. С какого возраста.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-card-9" class="blog-card" data-category="cards">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Карты</span>
+            <div class="blog-card-title">Дебетовая карта бесплатно — Уралсиб, кешбэк 5%</div>
+            <div class="blog-card-desc">Кешбэк до 5%, обслуживание 0 ₽. Для тех, кому нужна простая карта без условий.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-1" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Вклад под высокий процент — Т-Банк, до 18,01%</div>
+            <div class="blog-card-desc">До 18,01% годовых, от 1 ₽, пополняемый. Средняя ставка топ-10 банков — 12,79%.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>6 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-2" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Накопительный счёт с ежедневным начислением — Яндекс Сейвы, до 16%</div>
+            <div class="blog-card-desc">До 16% годовых, от 1 ₽, снятие в любой день. Чем отличается от вклада.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-3" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Вклад с максимальной ставкой — Финуслуги, до 22%</div>
+            <div class="blog-card-desc">До 22% годовых, от 10 000 ₽. Маркетплейс Московской биржи, 50+ банков.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-4" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Вклад онлайн с капитализацией — Банки.ру, подбор 50+ банков</div>
+            <div class="blog-card-desc">Подбор вклада через Банки.ру: ставка до 20%, от 1 000 ₽. Капитализация, пополнение.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-5" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Вклад с капитализацией — Альфа-Банк, до 19,61%</div>
+            <div class="blog-card-desc">До 19,61% с капитализацией, от 10 000 ₽. Как работает сложный процент.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-6" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Вклад Сбербанка под высокий процент — «Лучший %», до 16,5%</div>
+            <div class="blog-card-desc">До 16,5% годовых, пополняемый, от 1 000 ₽. Надёжность или доходность.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-7" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Накопительный счёт с бонусами — Ozon Банк, до 17%</div>
+            <div class="blog-card-desc">До 17%, баллы Ozon, от 1 ₽. Для активных покупателей маркетплейса.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-deposit-8" class="blog-card" data-category="deposits">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Вклады</span>
+            <div class="blog-card-title">Накопительный счёт без ограничений — Альфа-Банк, до 16,44%</div>
+            <div class="blog-card-desc">До 16,44%, от 1 ₽, без ограничений по снятию и пополнению. Свобода или доходность.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-invest-1" class="blog-card" data-category="investments">
           <div class="blog-card-body">
             <span class="blog-card-tag">Инвестиции</span>
-            <div class="blog-card-title">С чего начать инвестировать в 2026</div>
-            <div class="blog-card-desc">Базовое руководство для начинающих инвесторов. ОФЗ, акции, ИИС — что выбрать новичку.</div>
-            <div class="blog-card-meta"><span>1 июля 2026</span><span>·</span><span>15 мин чтения</span></div>
+            <div class="blog-card-title">Брокерский счёт открыть онлайн — Т-Банк, 0 ₽ открытие</div>
+            <div class="blog-card-desc">Открытие 0 ₽, 5 минут, без мин. остатка. Налоги 13% до 2,4 млн. ИИС-3.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>6 мин чтения</span></div>
           </div>
           <div class="blog-card-footer"><span>Читать статью →</span></div>
         </a>
 
-        <a href="article-mortgage" class="blog-card" data-category="mortgage">
+        <a href="article-invest-2" class="blog-card" data-category="investments">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Инвестиции</span>
+            <div class="blog-card-title">ИИС с налоговым вычетом — Альфа-Банк, до 52 000 ₽</div>
+            <div class="blog-card-desc">ИИС-3: налоговый вычет до 52 000 ₽/год, от 1 000 ₽. Как работает возврат налога.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>6 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-invest-3" class="blog-card" data-category="investments">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Инвестиции</span>
+            <div class="blog-card-title">Облигации ОФЗ купить — ВТБ, доходность до 12%</div>
+            <div class="blog-card-desc">Доходность до 12%, государственные, от 1 000 ₽. Надёжнее вклада.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-invest-4" class="blog-card" data-category="investments">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Инвестиции</span>
+            <div class="blog-card-title">Брокерский счёт для начинающих — Сбербанк, от 1 ₽</div>
+            <div class="blog-card-desc">От 1 ₽, широкий выбор активов. Как начать инвестировать.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-invest-5" class="blog-card" data-category="investments">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Инвестиции</span>
+            <div class="blog-card-title">ИИС открыть онлайн — Т-Банк, от 1 000 ₽</div>
+            <div class="blog-card-desc">Открытие онлайн, от 1 000 ₽. Налоговый вычет до 52 000 ₽/год.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-invest-6" class="blog-card" data-category="investments">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Инвестиции</span>
+            <div class="blog-card-title">Корпоративные облигации — Альфа-Банк, доходность до 15%</div>
+            <div class="blog-card-desc">Доходность до 15%, от 1 000 ₽. Риск выше ОФЗ, доходность выше.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-mortgage-1" class="blog-card" data-category="mortgage">
           <div class="blog-card-body">
             <span class="blog-card-tag">Ипотека</span>
-            <div class="blog-card-title">Ипотека в 2026: программы и льготы</div>
-            <div class="blog-card-desc">Обзор ипотечных программ: семейная, IT, военная. Какие льготы доступны и как оформить.</div>
-            <div class="blog-card-meta"><span>25 июня 2026</span><span>·</span><span>14 мин чтения</span></div>
+            <div class="blog-card-title">Ипотека без первоначального взноса — миф или реальность</div>
+            <div class="blog-card-desc">Альфа Банк, до 5 млн ₽. Госпрограммы 2026: семейная 6%, IT 6%. Комбинированная.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>6 мин чтения</span></div>
           </div>
           <div class="blog-card-footer"><span>Читать статью →</span></div>
         </a>
 
-        <a href="article-insurance" class="blog-card" data-category="insurance">
+        <a href="article-mortgage-2" class="blog-card" data-category="mortgage">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Страхование</span>
-            <div class="blog-card-title">ОСАГО: как сэкономить на полисе</div>
-            <div class="blog-card-desc">Советы по выбору ОСАГО. Какие факторы влияют на стоимость и где искать лучшие цены.</div>
-            <div class="blog-card-meta"><span>20 июня 2026</span><span>·</span><span>7 мин чтения</span></div>
+            <span class="blog-card-tag">Ипотека</span>
+            <div class="blog-card-title">Ипотека с господдержкой — семейная 6%, IT 6%</div>
+            <div class="blog-card-desc">Господдержка 2026: семейная 6%, IT 6%, дальневосточная 2%, сельская 3%.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>6 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-mortgage-3" class="blog-card" data-category="mortgage">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Ипотека</span>
+            <div class="blog-card-title">Ипотека на новостройку — Альфа Банк, свыше 10 млн</div>
+            <div class="blog-card-desc">От 10 млн, индивидуальные условия. Семейная 6%, IT 6%. Комбинированная.</div>
+            <div class="blog-card-meta"><span>1 августа 2026</span><span>·</span><span>5 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-1" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ онлайн на карту без отказа — Vivus, первый займ 0%</div>
+            <div class="blog-card-desc">Как устроены микрозаймы в 2026: лимит переплаты 100%, ставка не выше 0,8% в день.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-2" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Микрозайм на карту мгновенно — е Капуста, первый 0%</div>
+            <div class="blog-card-desc">Как устроен скоринг МФО: запросы в БКИ, идентификация через ЕСИА+ЕБС, ставка 0,8%.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-3" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ без процентов первый раз — как работает акция 0%</div>
+            <div class="blog-card-desc">Первый займ под 0% — реальная акция, но при строгих условиях. Разбор на примере MoneyMan.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-4" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ на карту срочно без проверок — Быстроденьги, до 40 000 ₽</div>
+            <div class="blog-card-desc">Без справок и поручителей, но с идентификацией. Лимиты 2026 и правила переплаты.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-5" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Быстрый займ онлайн на карту — Займер, первый 0%</div>
+            <div class="blog-card-desc">Как устроен «первый займ 0%» и почему новым клиентам дают небольшой лимит.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-6" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ без отказа с плохой историей — Деньги Сразу до 100 000 ₽</div>
+            <div class="blog-card-desc">Что влияет на решение МФО, какие записи в КИ ломают заявку, как действовать.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>16 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-7" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Долгосрочный займ онлайн до 168 дней — Турбозайм</div>
+            <div class="blog-card-desc">Чем отличается от «до зарплаты» и почему переплата меньше из-за лимита 100%.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>15 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-8" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ на карту круглосуточно — Webbankir, до 100 000 ₽</div>
+            <div class="blog-card-desc">Что реально работает 24/7: скоринг, подписание, СБП. Первый займ 0%.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-9" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Мгновенный займ на карту — OneClickMoney, первый 0%</div>
+            <div class="blog-card-desc">Это не «один клик», а цепочка: паспорт → подтверждение личности → подписание.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-10" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ на карту без звонков — Деньга, автоматическое решение</div>
+            <div class="blog-card-desc">Это не «никто не позвонит», а отсутствие верификационного звонка при оформлении.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-11" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ с ежемесячным платежом — МигКредит до 50 000 ₽</div>
+            <div class="blog-card-desc">Как устроено постепенное погашение в МФО и чем отличается от банковского кредита.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-12" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ на карту без залога — Kviku, первый 0%</div>
+            <div class="blog-card-desc">Что проверять вместо рекламы: реестр ЦБ, ставка 0,8%, ПСК, допуслуги.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-13" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Подбор займов онлайн — Банки.ру, 50+ МФО</div>
+            <div class="blog-card-desc">Одна анкета → предварительные условия → отправка заявки. Как устроен агрегатор.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-14" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ с временной регистрацией — Hurmacredit до 30 000 ₽</div>
+            <div class="blog-card-desc">Почему МФО спрашивает адрес, что считается временной регистрацией по закону.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>12 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-15" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ безработным на карту — Joymoney до 30 000 ₽</div>
+            <div class="blog-card-desc">Это обычно «без справки 2-НДФЛ», но не «без дохода». Какие источники подходят.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>13 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-16" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ студентам на карту — Krediska, от 18 лет</div>
+            <div class="blog-card-desc">Как МФО оценивают нулевую кредитную историю и как аккуратно построить КИ с нуля.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-17" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ с доставкой наличных — Кэшмагнит до 15 000 ₽</div>
+            <div class="blog-card-desc">Как реально получить деньги «в руки» и почему на чужую карту не перечислят.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>17 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-18" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ без паспорта — БериБеру: без фото, онлайн через ЕСИА</div>
+            <div class="blog-card-desc">Паспортные данные в договоре всё равно нужны. Как подписываются документы.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>15 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-19" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ самозанятым — Давака, первый 0%, до 15 000 ₽</div>
+            <div class="blog-card-desc">Как подтвердить статус и доход без 2-НДФЛ: справки из «Мой налог».</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>15 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-20" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ с открытыми просрочками — Snapcredit до 15 000 ₽</div>
+            <div class="blog-card-desc">Какие просрочки ломают заявку и что реально повышает шанс одобрения.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>15 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-21" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ без фото паспорта — Доброзайм, до 30 000 ₽</div>
+            <div class="blog-card-desc">Авторизация через Госуслуги, выдача на именную карту, почему просят селфи.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-22" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ через СБП — Деньги Ок, мгновенное зачисление</div>
+            <div class="blog-card-desc">Выдача на карту или СБП, чем СБП отличается от межбанковского перевода.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-23" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ с 18 лет — СМС ФИНАНС, до 50 000 ₽</div>
+            <div class="blog-card-desc">Одобрение в 18 зависит от рисков: КИ, дохода и стоп-факторов. Рассмотрение в сутки.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>14 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-24" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Займ без комиссии — Zaymigo, честная ставка 0,8%</div>
+            <div class="blog-card-desc">Нет обязательных платежей сверх процентов. Как отличить проценты от допуслуг.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>15 мин чтения</span></div>
+          </div>
+          <div class="blog-card-footer"><span>Читать статью →</span></div>
+        </a>
+
+        <a href="article-loan-25" class="blog-card" data-category="loans">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Займы</span>
+            <div class="blog-card-title">Микрозайм с лицензией ЦБ — как проверить МФО</div>
+            <div class="blog-card-desc">У МФО нет банковской лицензии — есть реестр Банка России. Как проверить на cbr.ru.</div>
+            <div class="blog-card-meta"><span>31 июля 2026</span><span>·</span><span>12 мин чтения</span></div>
           </div>
           <div class="blog-card-footer"><span>Читать статью →</span></div>
         </a>
@@ -146,36 +815,48 @@
     <div class="container">
       <div class="section-header"><h2>Популярные статьи</h2><p>Экспертные материалы о финансах</p></div>
       <div class="blog-grid">
-        <a href="article-credits" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Кредиты</div><div class="blog-card-title">Как выбрать кредит: полное руководство</div><div class="blog-card-desc">Разбираемся в типах кредитов, ставках и условиях. Как не переплатить и получить лучшие условия.</div><div class="blog-card-meta"><span>15 июля 2026</span><span>12 мин</span></div></div></a>
-        <a href="article-cards" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Карты</div><div class="blog-card-title">Дебетовые карты: максимальный кешбэк</div><div class="blog-card-desc">Обзор лучших карт с кешбэком до 15%. Какую выбрать под свои траты.</div><div class="blog-card-meta"><span>10 июля 2026</span><span>8 мин</span></div></div></a>
-        <a href="article-deposits" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Вклады</div><div class="blog-card-title">Вклады 2026: куда вложить деньги</div><div class="blog-card-desc">Сравнение ставок банков, стратегии инвестирования, страхование вкладов.</div><div class="blog-card-meta"><span>5 июля 2026</span><span>10 мин</span></div></div></a>
-        <a href="article-personal" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Личные финансы</div><div class="blog-card-title">Правило 50/30/20: управление бюджетом</div><div class="blog-card-desc">Простая формула распределения дохода. Как начать копить и увеличить savings.</div><div class="blog-card-meta"><span>1 июля 2026</span><span>6 мин</span></div></div></a>
+        <a href="article-offer-1" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Кредиты</div><div class="blog-card-title">Кредит наличными онлайн на карту — полный гид 2026</div><div class="blog-card-desc">Кредит наличными онлайн: ставки от 16,7%, до 7,5 млн ₽. Новые правила ЦБ с октября 2026.</div><div class="blog-card-meta"><span>30 июля 2026</span><span>14 мин</span></div></div></a>
+        <a href="article-card-1" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Карты</div><div class="blog-card-title">Дебетовая карта с кешбэком — Т-Банк Black, до 15%</div><div class="blog-card-desc">Кешбэк до 15% в 4 категориях, 30% у партнёров, до 6 000 ₽ в месяц.</div><div class="blog-card-meta"><span>1 августа 2026</span><span>7 мин</span></div></div></a>
+        <a href="article-deposit-1" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Вклады</div><div class="blog-card-title">Вклад под высокий процент — Т-Банк, до 18,01%</div><div class="blog-card-desc">До 18,01% годовых, от 1 ₽, пополняемый. Средняя ставка топ-10 банков — 12,79%.</div><div class="blog-card-meta"><span>1 августа 2026</span><span>6 мин</span></div></div></a>
+        <a href="article-loan-1" class="blog-card"><div class="blog-card-body"><div class="blog-card-tag">Займы</div><div class="blog-card-title">Займ онлайн на карту без отказа — Vivus, первый займ 0%</div><div class="blog-card-desc">Как устроены микрозаймы в 2026: лимит переплаты 100%, ставка не выше 0,8% в день.</div><div class="blog-card-meta"><span>31 июля 2026</span><span>14 мин</span></div></div></a>
       </div>
     </div>
   </section>
-</div>
 
 
-<footer class="footer"><div class="container"><div class="footer-grid"><div><h4>Продукты</h4><ul><li><a href="credits">Кредиты</a></li><li><a href="cards">Карты</a></li><li><a href="deposits">Вклады</a></li><li><a href="investments">Инвестиции</a></li><li><a href="loans">Займы</a></li><li><a href="mortgage">Ипотека</a></li><li><a href="insurance">Страхование</a></li><li><a href="rko">РКО</a></li></ul></div><div><h4>Калькуляторы</h4><ul><li><a href="calc-credit">Кредитный</a></li><li><a href="calc-mortgage">Ипотечный</a></li><li><a href="calc-deposit">Депозитный</a></li></ul></div><div><h4>Информация</h4><ul><li><a href="catalog">Каталог</a></li><li><a href="faq">FAQ</a></li><li><a href="blog">Блог</a></li><li><a href="svg-icons-mfo">SVG иконки</a></li><li><a href="sitemap">Карта сайта</a></li><li><a href="sravnenie-kreditov">Сравнение кредитов</a></li><li><a href="sravnenie-vkladov">Сравнение вкладов</a></li><li><a href="sravnenie-kart">Сравнение карт</a></li><li><a href="rejting-bankov">Рейтинг банков</a></li><li><a href="nakopitelnye-scheta">Накопительные счета</a></li></ul></div><div><h4>Банки</h4><ul><li><a href="banks">Все лицензии</a></li><li><a href="#">495 Кредит</a></li><li><a href="#">Ozon Банк</a></li><li><a href="#">Альфа Банк</a></li><li><a href="#">Альфа-Банк</a></li><li><a href="#">Банки.ру</a></li><li><a href="#">ВТБ</a></li><li><a href="#">ЛОКО-Банк</a></li><li><a href="#">Сбербанк</a></li><li><a href="#">Совком</a></li><li><a href="#">Т-Банк</a></li><li><a href="#">Точка</a></li><li><a href="#">Уралсиб</a></li><li><a href="#">Финуслуги</a></li><li><a href="#">Яндекс Сейвы</a></li></ul></div><div><h4>Страхование</h4><ul><li><a href="insurance-companies">Все лицензии</a></li><li><a href="#">Cherehapa</a></li><li><a href="#">Mafin</a></li><li><a href="#">Zetta</a></li><li><a href="#">АльфаСтрахование</a></li><li><a href="#">Банки.ру</a></li><li><a href="#">Ингосстрах</a></li><li><a href="#">КАПИТАЛ LIFE</a></li><li><a href="#">Полис812</a></li><li><a href="#">СК ПАРИ</a></li><li><a href="#">Согласие</a></li><li><a href="#">Сравни</a></li><li><a href="#">Т-Банк</a></li></ul></div><div><h4>МФО</h4><ul><li><a href="mfo">Все лицензии</a></li><li><a href="#">Hurmacredit</a></li><li><a href="#">Joymoney</a></li><li><a href="#">Krediska</a></li><li><a href="#">Kviku</a></li><li><a href="#">MoneyMan</a></li><li><a href="#">OneClickMoney</a></li><li><a href="#">Snapcredit</a></li><li><a href="#">Vivus</a></li><li><a href="#">Webbankir</a></li><li><a href="#">Zaymigo</a></li><li><a href="#">Банки.ру</a></li><li><a href="#">БериБеру</a></li><li><a href="#">Быстроденьги</a></li><li><a href="#">Давака</a></li><li><a href="#">Деньга</a></li><li><a href="#">Деньги Ок</a></li><li><a href="#">Деньги Сразу</a></li><li><a href="#">Доброзайм</a></li><li><a href="#">Займер</a></li><li><a href="#">Кэшмагнит</a></li><li><a href="#">МигКредит</a></li><li><a href="#">СМС ФИНАНС</a></li><li><a href="#">Турбозайм</a></li><li><a href="#">е Капуста</a></li></ul></div></div><div class="footer-bottom"><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%"><div class="footer-logo"><img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">ВСЕ<span>-</span>БАНКИ</div><div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">Сайт не несёт ответственности за качество предоставляемых услуг организациями, представленными на сайте. Все организации имеют лицензии ЦБ РФ. Сайт оказывает рекламные услуги и не является офертой.</div><div class="footer-copyright" style="margin-left:auto">© 2026</div></div></div></div></footer>
+<div class="ai-banner"><div class="container"><div class="ai-banner-text">Этот сайт-витрина создан автономным агентом с искусственным интеллектом</div><div class="ai-banner-actions"><a href="article-ai-setup" class="btn-primary">Подробнее</a><a href="https://hubris.pw/r/50328191" target="_blank" rel="nofollow noopener" class="btn-ghost">Получить API AI</a></div></div></div>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><h4>Продукты</h4><ul><li><a href="credits">Кредиты</a></li><li><a href="cards">Карты</a></li><li><a href="deposits">Вклады</a></li><li><a href="investments">Инвестиции</a></li><li><a href="loans">Займы</a></li><li><a href="mortgage">Ипотека</a></li><li><a href="insurance">Страхование</a></li><li><a href="rko">РКО</a></li></ul></div><div><h4>Калькуляторы</h4><ul><li><a href="calc-credit">Кредитный</a></li><li><a href="calc-mortgage">Ипотечный</a></li><li><a href="calc-deposit">Депозитный</a></li></ul></div><div><h4>Информация</h4><ul><li><a href="catalog">Каталог</a></li><li><a href="faq">FAQ</a></li><li><a href="blog">Блог</a></li><li><a href="svg-icons-mfo">SVG иконки</a></li><li><a href="sitemap">Карта сайта</a></li><li><a href="sravnenie-kreditov">Сравнение кредитов</a></li><li><a href="sravnenie-vkladov">Сравнение вкладов</a></li><li><a href="sravnenie-kart">Сравнение карт</a></li><li><a href="rejting-bankov">Рейтинг банков</a></li><li><a href="nakopitelnye-scheta">Накопительные счета</a></li><li><a href="article-ai-setup">Как установить ИИ-инструменты</a></li></ul></div><div><h4>Банки</h4><ul><li><a href="banks">Все лицензии</a></li><li><span>495 Кредит</span></li><li><span>Ozon Банк</span></li><li><span>Альфа Банк</span></li><li><span>Альфа-Банк</span></li><li><span>Банки.ру</span></li><li><span>ВТБ</span></li><li><span>ЛОКО-Банк</span></li><li><span>Сбербанк</span></li><li><span>Совком</span></li><li><span>Т-Банк</span></li><li><span>Точка</span></li><li><span>Уралсиб</span></li><li><span>Финуслуги</span></li><li><span>Яндекс Сейвы</span></li></ul></div><div><h4>Страхование</h4><ul><li><a href="insurance">Все лицензии</a></li><li><span>Cherehapa</span></li><li><span>Mafin</span></li><li><span>Zetta</span></li><li><span>АльфаСтрахование</span></li><li><span>Банки.ру</span></li><li><span>Ингосстрах</span></li><li><span>КАПИТАЛ LIFE</span></li><li><span>Полис812</span></li><li><span>СК ПАРИ</span></li><li><span>Согласие</span></li><li><span>Сравни</span></li><li><span>Т-Банк</span></li></ul></div><div><h4>МФО</h4><ul><li><a href="mfo">Все лицензии</a></li><li><span>Hurmacredit</span></li><li><span>Joymoney</span></li><li><span>Krediska</span></li><li><span>Kviku</span></li><li><span>MoneyMan</span></li><li><span>OneClickMoney</span></li><li><span>Snapcredit</span></li><li><span>Vivus</span></li><li><span>Webbankir</span></li><li><span>Zaymigo</span></li><li><span>Банки.ру</span></li><li><span>БериБеру</span></li><li><span>Быстроденьги</span></li><li><span>Давака</span></li><li><span>Деньга</span></li><li><span>Деньги Ок</span></li><li><span>Деньги Сразу</span></li><li><span>Доброзайм</span></li><li><span>Займер</span></li><li><span>Кэшмагнит</span></li><li><span>МигКредит</span></li><li><span>СМС ФИНАНС</span></li><li><span>Турбозайм</span></li><li><span>е Капуста</span></li></ul></div></div><div class="footer-bottom"><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%"><div class="footer-logo"><img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">ВСЕ<span>-</span>БАНКИ</div><div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">Сайт не несёт ответственности за качество предоставляемых услуг организациями, представленными на сайте. Все организации имеют лицензии ЦБ РФ. Сайт оказывает рекламные услуги и не является офертой.</div><div class="footer-copyright" style="margin-left:auto">© 2026</div></div></div></div></footer>
 
 <script src="assets/js/main.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var pills = document.querySelectorAll('.filter-pill');
   var cards = document.querySelectorAll('.blog-card');
+  var searchInput = document.getElementById('searchInput');
   var active = 'all';
+
+  function applyFilter() {
+    var q = searchInput ? searchInput.value.toLowerCase() : '';
+    cards.forEach(function(card) {
+      var cat = card.dataset.category;
+      var titleEl = card.querySelector('.blog-card-title');
+      var title = titleEl ? titleEl.textContent.toLowerCase() : '';
+      var matchCat = active === 'all' || cat === active;
+      var matchSearch = !q || title.indexOf(q) !== -1;
+      card.style.display = (matchCat && matchSearch) ? '' : 'none';
+    });
+  }
 
   pills.forEach(function(pill) {
     pill.addEventListener('click', function() {
       active = pill.dataset.category;
       pills.forEach(function(p) { p.classList.remove('active'); });
       pill.classList.add('active');
-      cards.forEach(function(card) {
-        var cat = card.dataset.category;
-        card.style.display = (active === 'all' || cat === active) ? '' : 'none';
-      });
+      applyFilter();
     });
   });
+
+  if (searchInput) searchInput.addEventListener('input', applyFilter);
 });
 </script>
 </body>

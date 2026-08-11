@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/svg+xml" sizes="192x192" href="assets/img/favicon-192.svg">
+  <link rel="icon" type="image/svg+xml" sizes="512x512" href="assets/img/favicon-512.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Микрозайм с лицензией ЦБ — как проверить МФО | Все-Банки</title>
+<link rel="stylesheet" href="assets/css/main.css?v=17">
+
+<!-- ВАЖНО: юридически корректнее не обещать «лицензию» для МФО.
+     У банков — лицензия, у МФО — включение в госреестр Банка России (и статус «действует»). -->
+<meta name="description" content="Легальный микрозайм: у МФО нет «банковской лицензии», но она должна быть включена Банком России в государственный реестр МФО. Показываем пошагово, как проверить МФО на cbr.ru (карточка в справочнике, статус «действует», сайт, ОГРН/ИНН), как пробить компанию по предупредительному списку ЦБ (нелегалы) и чем рискует заемщик у «серых» кредиторов. Плюс: лимиты 2026 — 0,8%/день и потолок начислений 100% с 01.04.2026 по договорам до 1 года.">
+<link rel="canonical" href="https://все-банки.site/article-loan-25">
+
+<meta property="og:title" content="Микрозайм с лицензией ЦБ — как проверить МФО | Все-Банки">
+<meta property="og:description" content="Как проверить МФО на cbr.ru: реестр/справочник, статус «действует», сайт, СРО. Плюс проверка предупредительного списка ЦБ (нелегалы) и лимиты переплаты 2026.">
+<meta property="og:url" content="https://все-банки.site/article-loan-25">
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0b0c">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Микрозайм с «лицензией ЦБ» — как проверить МФО в реестре Банка России (и не попасть к нелегалам)",
+  "datePublished":"2026-07-31",
+  "dateModified":"2026-08-02",
+  "author":{"@type":"Organization","name":"Все-Банки"},
+  "publisher":{"@type":"Organization","name":"Все-Банки"},
+  "mainEntityOfPage":"https://все-банки.site/article-loan-25",
+  "description":"Пошаговая проверка МФО по источникам Банка России: справочник финорганизаций, госреестр МФО, предупредительный список нелегалов. Плюс кратко о лимитах переплаты и о том, куда жаловаться."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"У МФО правда есть «лицензия ЦБ»?",
+      "acceptedAnswer":{"@type":"Answer","text":"Термин «лицензия» чаще относится к банкам. Микрофинансовые организации (МФО) должны быть внесены Банком России в государственный реестр МФО. Самая надежная проверка — карточка компании в справочнике Банка России и статус «действует»."}
+    },
+    {
+      "@type":"Question",
+      "name":"Как проверить МФО за 30 секунд?",
+      "acceptedAnswer":{"@type":"Answer","text":"Зайдите на сайт Банка России в сервис «Проверить финансовую организацию» (справочник). Введите ИНН/ОГРН или название. Откройте карточку: смотрите статус, ОГРН/ИНН, сайт, номер записи в реестре. Если организация не находится — высока вероятность, что она работает без допуска Банка России."}
+    },
+    {
+      "@type":"Question",
+      "name":"Нужно ли дополнительно проверять «предупредительный список» (warning list) ЦБ?",
+      "acceptedAnswer":{"@type":"Answer","text":"Да. Банк России публикует список компаний с выявленными признаками нелегальной деятельности на финансовом рынке. Если организация или сайт там есть — лучше не связываться и сообщить о факте в Банк России/правоохранительные органы."}
+    },
+    {
+      "@type":"Question",
+      "name":"Какие лимиты переплаты действуют для легальных МФО в 2026?",
+      "acceptedAnswer":{"@type":"Answer","text":"По информации Банка России: действует ограничение ежедневной ставки по микрозаймам — не более 0,8% в день. С 01.04.2026 по новым договорам сроком до 1 года начисление процентов, неустоек и иных платежей прекращается, когда их общая сумма достигает 100% от суммы долга."}
+    }
+  ]
+}
+</script>
+
+<!-- Mobile-friendly styles (scoped) -->
+<style>
+  .article-page .page-content{ overflow-x: clip; }
+
+  .article-page .article-layout{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 320px;
+    gap:28px;
+    align-items:start;
+  }
+  .article-page .article-content,
+  .article-page .article-sidebar{ min-width:0; }
+
+  @media (min-width:980px){
+    .article-page .article-sidebar{ position:sticky; top:80px; }
+  }
+  @media (max-width:979px){
+    .article-page .article-layout{ grid-template-columns:1fr; }
+    .article-page .article-sidebar{ position:static; top:auto; margin-top:18px; }
+  }
+
+  .article-page .article-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    color:var(--text-secondary);
+    font-size:.9rem;
+    margin:10px 0 18px;
+  }
+
+  .article-page .article-content p{ line-height:1.7; }
+  .article-page .article-content h1{ line-height:1.15; margin-bottom:10px; }
+  .article-page .article-content h2{ margin-top:28px; }
+  .article-page .article-content h3{ margin-top:18px; }
+
+  .article-page .callout{
+    background:var(--bg-secondary);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:18px;
+    margin:18px 0 26px;
+  }
+  .article-page .callout-warning{
+    background:rgba(255,178,102,.10);
+    border-color:rgba(255,178,102,.35);
+  }
+  .article-page .callout-success{
+    background:rgba(67,160,71,.10);
+    border-color:rgba(67,160,71,.25);
+  }
+
+  .article-page .list{
+    padding-left:18px;
+    margin:10px 0 16px;
+  }
+  .article-page .list li{ margin:8px 0; }
+
+  .article-page .table-wrap{
+    border:1px solid var(--border);
+    border-radius:12px;
+    background:var(--bg-card);
+    margin:16px 0 18px;
+    overflow:hidden;
+  }
+  .article-page .table-scroll{ overflow-x:visible; }
+  .article-page table.compare{
+    width:100%;
+    border-collapse:collapse;
+    min-width:0;
+    font-size:.95rem;
+  }
+  .article-page table.compare th,
+  .article-page table.compare td{
+    padding:12px 14px;
+    border-bottom:1px solid var(--border);
+    text-align:left;
+    vertical-align:top;
+    word-break:break-word;
+  }
+  .article-page table.compare thead th{
+    background:var(--bg-secondary);
+    font-weight:700;
+  }
+  .article-page table.compare tr:last-child td{ border-bottom:0; }
+
+  @media (max-width:820px){
+    .article-page .table-scroll{
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+    }
+    .article-page table.compare{ min-width:760px; }
+    .article-page .article-content table{ min-width:760px; }
+    .article-page .article-content [style*="overflow-x:auto"]{
+      -webkit-overflow-scrolling:touch;
+    }
+  }
+
+  .article-page .faq-item{ border:1px solid var(--border); border-radius:12px; overflow:hidden; margin:10px 0; background:var(--bg-card); }
+  .article-page .faq-question{
+    width:100%;
+    background:transparent;
+    border:0;
+    padding:14px 14px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    text-align:left;
+    font-size:1rem;
+    font-weight:700;
+    color:var(--text-primary);
+  }
+  .article-page .faq-question .arrow{ transition:transform .2s ease; opacity:.8; }
+  .article-page .faq-answer{ display:none; padding:0 14px 14px; color:var(--text-secondary); }
+  .article-page .faq-item.is-open .faq-answer{ display:block; }
+  .article-page .faq-item.is-open .faq-question .arrow{ transform:rotate(180deg); }
+
+  .article-page .sidebar-box{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:20px;
+  }
+
+  @media (max-width:560px){
+    .article-page .container{ padding-left:16px; padding-right:16px; }
+    .article-page .breadcrumbs{ flex-wrap:wrap; gap:6px; }
+    .article-page .article-content h1{ font-size:clamp(1.55rem,6vw,2.1rem); }
+    .article-page .btn-primary{ width:100%; display:flex; justify-content:center; box-sizing:border-box; }
+    .article-page .callout{ padding:16px; }
+  }
+  @media (max-width:380px){
+    .article-page .container{ padding-left:12px; padding-right:12px; }
+  }
+</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://все-банки.site"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://все-банки.site/blog"
+    }
+  ]
+}
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111483835', 'ym');
+
+    ym(111483835, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/111483835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="article-page">
+<header class="header"><div class="header-inner"><a href="/" class="logo"><img src="../assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="/" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+
+<div class="mobile-nav" id="mobileNav"><a href="/" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
+
+<div class="page-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/all-banki/">Главная</a><span class="separator">/</span>
+      <a href="blog">Блог</a><span class="separator">/</span>
+      <span class="current">Лицензия МФО</span>
+    </nav>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+
+          <h1>Микрозайм с «лицензией ЦБ» — как не попасть к нелегалам</h1>
+
+          <div class="article-meta">
+            <span>Автор: Команда Все-Банки</span><span>·</span>
+            <span>31 июля 2026</span><span>·</span><span>10–12 мин чтения</span><span>·</span>
+            <span style="color:var(--bronze)">Займы</span>
+          </div>
+
+          <div class="callout">
+            <p style="margin:0">
+              <strong>Сразу важная поправка:</strong> в поиске часто пишут «МФО с лицензией ЦБ», но корректнее говорить так:
+              <br><br>
+              <strong>• банки</strong> работают на основании лицензии Банка России;<br>
+              <strong>• микрофинансовые организации (МФО)</strong> должны быть <strong>включены в государственный реестр МФО</strong>, который ведет Банк России.
+              <br><br>
+              Поэтому «проверка лицензии» для микрозайма на практике = открыть карточку организации на cbr.ru и убедиться,
+              что она действительно <em>в реестре</em> и со статусом <strong>«действует»</strong>.
+            </p>
+          </div>
+
+          <h2>Проверка МФО за 30 секунд: самый надежный алгоритм</h2>
+
+          <div class="table-wrap" role="region" aria-label="Алгоритм проверки МФО" tabindex="0">
+            <div class="table-scroll">
+              <table class="compare">
+                <thead>
+                  <tr>
+                    <th>Шаг</th>
+                    <th>Что делаем</th>
+                    <th>Что должно получиться</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1</strong></td>
+                    <td>Открываем сервис ЦБ «Проверить финансовую организацию» (справочник)</td>
+                    <td>Находим компанию по ИНН/ОГРН/названию и открываем карточку</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2</strong></td>
+                    <td>Смотрим <strong>статус</strong> и реквизиты</td>
+                    <td>Статус «действует», совпадают ИНН/ОГРН и адрес/сайт</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3</strong></td>
+                    <td>Смотрим номер записи и дату в реестре</td>
+                    <td>Есть регистрационный номер записи в реестре МФО и дата внесения</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4</strong></td>
+                    <td>Проверяем «предупредительный список» (warning list) ЦБ</td>
+                    <td>Организация/сайт не фигурирует как «нелегальный кредитор»</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="callout callout-success">
+            <p style="margin:0">
+              <strong>Почему это работает:</strong> Банк России прямо пишет, что проверить, включена ли МФО в реестр, можно через справочник финорганизаций,
+              а юрлицо должно быть внесено в государственный реестр МФО, чтобы работать как МФО.
+            </p>
+          </div>
+
+          <p>
+            <a href="loan-25" style="color:var(--bronze);font-weight:600" rel="nofollow sponsored">Подбор легальных займов на Все‑Банки →</a>
+            — перед оформлением всё равно проверяйте карточку компании на cbr.ru (это занимает меньше минуты).
+          </p>
+
+          <h2>Что именно смотреть в карточке на cbr.ru (и какие «красные флаги»)</h2>
+
+          <div class="table-wrap" role="region" aria-label="Что смотреть в карточке ЦБ" tabindex="0">
+            <div class="table-scroll">
+              <table class="compare">
+                <thead>
+                  <tr>
+                    <th>Пункт</th>
+                    <th>Норма/логика</th>
+                    <th>Красный флаг</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Статус</strong></td>
+                    <td>Должен быть «действует»</td>
+                    <td>«исключена», «прекращена», «в процессе» — лучше не оформлять</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ОГРН/ИНН</strong></td>
+                    <td>Должны совпадать с тем, что написано на сайте/в договоре</td>
+                    <td>На сайте одни реквизиты, в карточке другие</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Официальный сайт</strong></td>
+                    <td>Домен должен совпадать (осторожно с копиями/фишингом)</td>
+                    <td>Вы на «похожем» домене, а в карточке ЦБ указан другой</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Запись в реестре</strong></td>
+                    <td>Должен быть номер записи и дата внесения</td>
+                    <td>Нет записи / компания не находится в справочнике</td>
+                  </tr>
+                  <tr>
+                    <td><strong>СРО</strong></td>
+                    <td>Ответственные участники рынка обычно раскрывают, в каком СРО состоят</td>
+                    <td>На сайте нет документов, нет сведений о СРО, всё «в одном лендинге без реквизитов»</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Вторая обязательная проверка: «предупредительный список» ЦБ (нелегалы)</h2>
+          <p>
+            Помимо реестров, Банк России публикует список компаний и интернет‑проектов с выявленными признаками нелегальной деятельности на финансовом рынке.
+            Это как «черный список»: если организация (или её сайт/зеркало) там есть — лучше не оформлять и не отправлять документы.
+          </p>
+
+          <div class="callout callout-warning">
+            <p style="margin:0">
+              <strong>Важно:</strong> нелегалы часто маскируются под «почти официальное название», делают похожий домен
+              и рисуют на сайте «лицензии». Поэтому проверка «в реестре» + «в warning list» — это две разные защиты.
+            </p>
+          </div>
+
+          <h2>Чем рискует заемщик у нелегальной «МФО» (по сути — у “черного кредитора”)</h2>
+          <ul class="list">
+            <li><strong>Неограниченная стоимость.</strong> Ограничения ставки/переплаты работают для легального рынка; с нелегалом вы часто остаетесь один на один.</li>
+            <li><strong>Риск утечки данных.</strong> Паспорт/селфи/доступ к телефону могут уйти «в никуда».</li>
+            <li><strong>Проблемное взыскание.</strong> Даже если вы готовы платить, у нелегалов чаще встречаются «силовые» и незаконные методы общения.</li>
+            <li><strong>Сложнее защищаться.</strong> Банк России пишет: если это нелегальный участник, у регулятора нет полномочий надзора как над легальным рынком — и тогда нужен контакт с правоохранительными органами.</li>
+          </ul>
+
+          <h2>Если вы уже оставили заявку «не там»: что делать</h2>
+          <ol class="list">
+            <li><strong>Ничего не подписывайте</strong> и не отправляйте новые фото/коды из СМС.</li>
+            <li><strong>Сохраните доказательства:</strong> скриншоты сайта, переписку, номера телефонов, реквизиты.</li>
+            <li><strong>Проверьте компанию в справочнике ЦБ</strong> и в warning list.</li>
+            <li><strong>Сообщите о нелегале:</strong> у Банка России есть форма информирования о нелегальной деятельности; также обращайтесь в правоохранительные органы.</li>
+          </ol>
+
+          <h2>Ограничения 2026: что важно знать про переплату у легальных МФО</h2>
+
+          <h3>Лимит ставки: не более 0,8% в день</h3>
+          <p>
+            На странице Банка России о микрофинансировании указано ограничение ежедневной ставки по потребительским микрозаймам —
+            не выше 0,8% в день.
+          </p>
+
+          <h3>Лимит начислений: 100% с 01.04.2026 по новым договорам до 1 года</h3>
+          <p>
+            Банк России разъясняет: с <strong>1 апреля 2026</strong> по новым договорам сроком до 1 года начисление процентов, неустоек и других платежей
+            прекращается, когда их общая сумма достигает <strong>100% от суммы долга</strong>.
+          </p>
+
+          <div class="callout callout-success">
+            <p style="margin:0">
+              <strong>Пример:</strong> заняли 10 000 ₽ — суммарно «сверху» не могут начислить больше 10 000 ₽ (если договор подпадает под правило).
+              Просрочка всё равно опасна для кредитной истории, но долг не «растёт бесконечно».
+            </p>
+          </div>
+
+          <h2>Частые вопросы</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Где именно на cbr.ru проверять МФО?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Самый удобный путь — сервис Банка России «Проверить финансовую организацию» (справочник):
+                вводите ИНН/ОГРН/название, открываете карточку, проверяете статус «действует», реквизиты и сайт.
+                Альтернатива — раздел «Реестры субъектов рынка микрофинансирования» с государственным реестром МФО.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Если компания есть в реестре — это 100% безопасно?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Это главный фильтр «легальность/нелегальность», но он не отменяет здравый смысл:
+                проверяйте домен сайта, документы, итоговую сумму к возврату и допуслуги.
+                И обязательно проверьте warning list — там бывают «псевдо‑МФО», которые вообще не должны выдавать займы.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Что делать, если нашел компанию в warning list?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Не оформлять и не отправлять документы. Зафиксировать материалы и сообщить о факте через форму Банка России,
+                а также обратиться в правоохранительные органы.
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--bronze);border-radius:12px;padding:24px;margin-top:32px">
+            <h3 style="margin-bottom:8px">Рекомендуем</h3>
+            <p style="margin-bottom:12px;color:var(--text-secondary)">
+              Ищете «только легальные МФО»? Начинайте с проверки на cbr.ru и не оформляйте займ,
+              пока не увидите карточку организации и статус «действует».
+            </p>
+            <a href="loan-25" class="btn-primary" style="font-size:1rem;padding:16px 32px" rel="nofollow sponsored">Подобрать легальные займы →</a>
+          </div>
+
+          <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:12px;padding:18px;margin-top:18px">
+            <h3 style="margin:0 0 10px">Источники (РФ)</h3>
+            <ul class="list" style="margin:0">
+              <li>
+                Банк России — «Проверить финансовую организацию» (справочник; поиск по ИНН/ОГРН/названию):<br>
+                <a href="https://www.cbr.ru/finorg/" rel="nofollow">https://www.cbr.ru/finorg/</a>
+              </li>
+              <li>
+                Банк России — FAQ «Микрофинансирование: как проверить МФО» (реестр, документы, СРО):<br>
+                <a href="https://www.cbr.ru/faq/microfin/" rel="nofollow">https://www.cbr.ru/faq/microfin/</a>
+              </li>
+              <li>
+                Банк России — государственный реестр микрофинансовых организаций (раздел реестров):<br>
+                <a href="https://www.cbr.ru/microfinance/registry/" rel="nofollow">https://www.cbr.ru/microfinance/registry/</a>
+              </li>
+              <li>
+                Банк России — «Виды нелегальной деятельности…» (объяснение: банки — лицензии, МФО — в реестре; совет проверять через справочник):<br>
+                <a href="https://www.cbr.ru/inside/k_illegals/" rel="nofollow">https://www.cbr.ru/inside/k_illegals/</a>
+              </li>
+              <li>
+                Банк России — warning list (список компаний с выявленными признаками нелегальной деятельности):<br>
+                <a href="https://www.cbr.ru/inside/warning-list/" rel="nofollow">https://www.cbr.ru/inside/warning-list/</a>
+              </li>
+              <li>
+                Банк России — форма информирования о нелегальной деятельности:<br>
+                <a href="https://www.cbr.ru/anonyminform/" rel="nofollow">https://www.cbr.ru/anonyminform/</a>
+              </li>
+              <li>
+                Банк России — микрофинансирование (ограничение ставки 0,8% в день):<br>
+                <a href="https://cbr.ru/microfinance/" rel="nofollow">https://cbr.ru/microfinance/</a>
+              </li>
+              <li>
+                Банк России — «С 1 апреля 2026 года снижается максимальная переплата…» (лимит 100%):<br>
+                <a href="https://cbr.ru/press/event/?id=28447" rel="nofollow">https://cbr.ru/press/event/?id=28447</a>
+              </li>
+              <li>
+                353‑ФЗ «О потребительском кредите (займе)» — официальное опубликование:<br>
+                <a href="https://publication.pravo.gov.ru/document/0001201312230003" rel="nofollow">https://publication.pravo.gov.ru/document/0001201312230003</a>
+              </li>
+              <li>
+                230‑ФЗ о правилах взыскания просроченной задолженности — официальное опубликование:<br>
+                <a href="https://publication.pravo.gov.ru/Document/View/0001201607030002" rel="nofollow">https://publication.pravo.gov.ru/Document/View/0001201607030002</a>
+              </li>
+              <li>
+                151‑ФЗ «О микрофинансовой деятельности…» (публикация текста закона):<br>
+                <a href="https://rg.ru/documents/2010/07/07/mikrofinans-dok" rel="nofollow">https://rg.ru/documents/2010/07/07/mikrofinans-dok.html</a>
+              </li>
+            </ul>
+
+            <p style="margin:10px 0 0;color:var(--text-muted);font-size:.85rem;line-height:1.6">
+              Дисклеймер: статья справочная и не является публичной офертой. Итоговые условия займа фиксируются в индивидуальных условиях договора.
+              «Лицензия ЦБ» в заголовке — поисковая формулировка; для МФО корректная проверка — включение в госреестр Банка России и статус «действует».
+            </p>
+          </div>
+
+          <p style="margin-top:18px;color:var(--text-muted);line-height:1.6;font-size:.85rem">
+            Дисклеймер: материал не гарантирует одобрение и не является финансовой консультацией. Перед оформлением проверяйте компанию на cbr.ru и документы на официальном сайте кредитора.
+          </p>
+
+        </main>
+
+        <aside class="article-sidebar">
+          <div class="sidebar-box">
+            <h4 style="margin-bottom:12px">Безопасность</h4>
+            <ul style="display:flex;flex-direction:column;gap:8px;font-size:0.875rem;padding-left:18px;margin:0">
+              <li><a href="article-loan-24" style="color:var(--text-secondary)">Займ без комиссии — как проверять договор →</a></li>
+              <li><a href="article-loan-22" style="color:var(--text-secondary)">Займ через СБП — как быстро зачисляют →</a></li>
+              <li><a href="article-loan-1" style="color:var(--bronze)">Займ онлайн (база 2026) →</a></li>
+            </ul>
+
+            <hr style="border:0;border-top:1px solid var(--border);margin:14px 0">
+
+            <div style="color:var(--text-secondary);font-size:.85rem;line-height:1.5">
+              <strong style="color:var(--text-primary)">Чек перед оформлением:</strong><br>
+              справочник ЦБ → статус «действует» → warning list → домен сайта
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="ai-banner"><div class="container"><div class="ai-banner-text">Этот сайт-витрина создан автономным агентом с искусственным интеллектом</div><div class="ai-banner-actions"><a href="article-ai-setup" class="btn-primary">Подробнее</a><a href="https://hubris.pw/r/50328191" target="_blank" rel="nofollow noopener" class="btn-ghost">Получить API AI</a></div></div></div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <div class="footer-logo">
+        <img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">
+        ВСЕ<span>-</span>БАНКИ
+      </div>
+      <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">
+        Источники: Банк России, данные банков, 353-ФЗ. Июль–август 2026.
+      </div>
+      <div class="footer-copyright">© 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      if (!btn) return;
+
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

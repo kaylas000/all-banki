@@ -27,8 +27,6 @@ Disallow: /
 User-agent: *
 Allow: /
 Disallow: /assets/components/
-Disallow: /pages/_card-data.js
+Disallow: /_card-data.js
 
-Crawl-delay: 0
-
-Sitemap: https://kaylas000.github.io/all-banki/sitemap.xml
+Sitemap: https://все-банки.site/sitemap.xml

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/svg+xml" sizes="192x192" href="assets/img/favicon-192.svg">
+  <link rel="icon" type="image/svg+xml" sizes="512x512" href="assets/img/favicon-512.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Микрозайм на карту мгновенно — е Капуста, первый 0% | Все-Банки</title>
+  <link rel="stylesheet" href="assets/css/main.css?v=17">
+
+  <meta name="description" content="Микрозайм «мгновенно» — это про автоматическую проверку и быстрое решение, но без гарантий одобрения. Разбираем, как устроен скоринг МФО в 2026: запросы в БКИ, идентификация для онлайн‑договора через ЕСИА+ЕБС с 01.03.2026, лимит ставки 0,8% в день и потолок переплаты 100% с 01.04.2026 (для договоров до 1 года). еКапуста — сервис ООО МКК «Русинтерфинанс» (реестр ЦБ РФ).">
+  <link rel="canonical" href="https://все-банки.site/article-loan-2">
+
+  <meta property="og:title" content="Микрозайм мгновенно — е Капуста | Все-Банки">
+  <meta property="og:description" content="Как работает автоматический скоринг МФО в 2026: БКИ, ЕСИА+ЕБС, лимит 0,8%/день и потолок переплаты 100%. еКапуста (ООО МКК «Русинтерфинанс»).">
+  <meta property="og:url" content="https://все-банки.site/article-loan-2">
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0c">
+
+  <!-- Article schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Микрозайм на карту мгновенно — как работает автоматический скоринг",
+    "datePublished":"2026-07-31",
+    "dateModified":"2026-08-02",
+    "author":{"@type":"Organization","name":"Все-Банки"},
+    "publisher":{"@type":"Organization","name":"Все-Банки"},
+    "mainEntityOfPage":"https://все-банки.site/article-loan-2",
+    "description":"Разбор мгновенных микрозаймов в 2026: что проверяет скоринг МФО, как влияет ЕСИА+ЕБС (с 01.03.2026), какие лимиты по ставке и переплате действуют с 01.04.2026."
+  }
+  </script>
+
+  <!-- FAQPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"«Мгновенно» — это правда или просто рекламное слово?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Чаще всего — правда в смысле процесса: решение по заявке действительно может приходить быстро, потому что проверка автоматизирована. Но по документам кредитор обычно оставляет себе формальный срок на рассмотрение (например, «не более 1 рабочего дня»), поэтому «мгновенно» не равно «обязаны одобрить за 60 секунд»."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Что проверяет скоринг МФО?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Обычно проверяют корректность и непротиворечивость данных, возможность подтвердить личность (в том числе через ЕСИА+ЕБС при онлайн‑договоре), кредитную историю (через БКИ) и общий риск‑профиль. В каждом сервисе набор факторов отличается, но логика одна: быстро понять, кто вы, и насколько вероятен возврат."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Почему для онлайн‑займа в 2026 могут понадобиться Госуслуги и биометрия?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"С 1 марта 2026 микрофинансовая организация, заключающая договор потребительского займа в электронной форме, обязана проводить идентификацию/аутентификацию заемщика с использованием ЕСИА и ЕБС (в порядке, предусмотренном законом). Поэтому часть МФО не может оформить займ полностью онлайн без прохождения этого контура."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Правда ли, что ставка по займу не может быть выше 0,8% в день?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Да. В 353‑ФЗ закреплено ограничение: процентная ставка по договору потребительского кредита (займа) не может превышать 0,8% в день."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Что значит «переплата ограничена 100%» с 1 апреля 2026 года?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"По новым договорам со сроком возврата до 1 года начисление процентов, неустоек и прочих платежей прекращается, когда их общая сумма достигает 100% от суммы займа. Пример: 10 000 ₽ → вернуть нужно не более 20 000 ₽."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Как проверить, что МФО легальная?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Проверьте организацию в карточке участника финансового рынка на сайте Банка России по ИНН/ОГРН: там видны статус («Действует»), вид МФО, номер записи в реестре и официальные интернет‑ресурсы."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Mobile-friendly styles (scoped) -->
+  <style>
+    .article-page .page-content{ overflow-x: clip; }
+
+    .article-page .article-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 320px;
+      gap:28px;
+      align-items:start;
+    }
+    .article-page .article-content,
+    .article-page .article-sidebar{ min-width:0; }
+
+    @media (min-width:980px){
+      .article-page .article-sidebar{ position:sticky; top:80px; }
+    }
+    @media (max-width:979px){
+      .article-page .article-layout{ grid-template-columns:1fr; }
+      .article-page .article-sidebar{ position:static; top:auto; margin-top:18px; }
+    }
+
+    .article-page .article-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      color:var(--text-secondary);
+      font-size:.9rem;
+      margin:10px 0 18px;
+    }
+
+    .article-page .article-content p{ line-height:1.7; }
+    .article-page .article-content h1{ line-height:1.15; margin-bottom:10px; }
+    .article-page .article-content h2{ margin-top:28px; }
+    .article-page .article-content h3{ margin-top:18px; }
+
+    .article-page .callout{
+      background:var(--bg-secondary);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:18px;
+      margin:18px 0 26px;
+    }
+    .article-page .callout-warning{
+      background:rgba(255,178,102,.10);
+      border-color:rgba(255,178,102,.35);
+    }
+    .article-page .callout-success{
+      background:rgba(67,160,71,.10);
+      border-color:rgba(67,160,71,.25);
+    }
+
+    .article-page .list{
+      padding-left:18px;
+      margin:10px 0 16px;
+    }
+    .article-page .list li{ margin:8px 0; }
+
+    .article-page .table-wrap{
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--bg-card);
+      margin:16px 0 18px;
+      overflow:hidden;
+    }
+    .article-page .table-scroll{ overflow-x:visible; }
+    .article-page table.compare{
+      width:100%;
+      border-collapse:collapse;
+      min-width:0;
+      font-size:.95rem;
+    }
+    .article-page table.compare th,
+    .article-page table.compare td{
+      padding:12px 14px;
+      border-bottom:1px solid var(--border);
+      text-align:left;
+      vertical-align:top;
+      word-break:break-word;
+    }
+    .article-page table.compare thead th{
+      background:var(--bg-secondary);
+      font-weight:700;
+    }
+    .article-page table.compare tr:last-child td{ border-bottom:0; }
+
+    /* ФИКС: главная (первая) таблица — ширины колонок + фиксированная раскладка */
+    .article-page table.compare.compare-steps{
+      table-layout:fixed;
+    }
+    .article-page table.compare.compare-steps th,
+    .article-page table.compare.compare-steps td{
+      word-break:normal;
+      overflow-wrap:anywhere;
+    }
+
+    @media (max-width:820px){
+      .article-page .table-scroll{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+      }
+      .article-page table.compare{ min-width:760px; }
+      .article-page .article-content table{ min-width:760px; }
+      .article-page .article-content [style*="overflow-x:auto"]{
+        -webkit-overflow-scrolling:touch;
+      }
+    }
+
+    .article-page .faq-item{ border:1px solid var(--border); border-radius:12px; overflow:hidden; margin:10px 0; background:var(--bg-card); }
+    .article-page .faq-question{
+      width:100%;
+      background:transparent;
+      border:0;
+      padding:14px 14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      cursor:pointer;
+      text-align:left;
+      font-size:1rem;
+      font-weight:700;
+      color:var(--text-primary);
+    }
+    .article-page .faq-question .arrow{ transition:transform .2s ease; opacity:.8; }
+    .article-page .faq-answer{ display:none; padding:0 14px 14px; color:var(--text-secondary); }
+    .article-page .faq-item.is-open .faq-answer{ display:block; }
+    .article-page .faq-item.is-open .faq-question .arrow{ transform:rotate(180deg); }
+
+    .article-page .sidebar-box{
+      background:var(--bg-card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:20px;
+    }
+
+    @media (max-width:560px){
+      .article-page .container{ padding-left:16px; padding-right:16px; }
+      .article-page .breadcrumbs{ flex-wrap:wrap; gap:6px; }
+      .article-page .article-content h1{ font-size:clamp(1.55rem,6vw,2.1rem); }
+      .article-page .btn-primary{ width:100%; display:flex; justify-content:center; box-sizing:border-box; }
+      .article-page .callout{ padding:16px; }
+    }
+    @media (max-width:380px){
+      .article-page .container{ padding-left:12px; padding-right:12px; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://все-банки.site"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://все-банки.site/blog"
+    }
+  ]
+}
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111483835', 'ym');
+
+    ym(111483835, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/111483835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="article-page">
+<header class="header"><div class="header-inner"><a href="/" class="logo"><img src="../assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="/" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+
+<div class="mobile-nav" id="mobileNav"><a href="/" data-page="home">Главная</a><a href="catalog" data-page="catalog">Каталог</a><a href="credits" data-page="credits">Кредиты</a><a href="cards" data-page="cards">Карты</a><a href="deposits" data-page="deposits">Вклады</a><a href="investments" data-page="investments">Инвестиции</a><a href="loans" data-page="loans">Займы</a><a href="mortgage" data-page="mortgage">Ипотека</a><a href="insurance" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
+
+<div class="page-content">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/all-banki/">Главная</a><span class="separator">/</span>
+      <a href="blog">Блог</a><span class="separator">/</span>
+      <span class="current">Микрозайм мгновенно</span>
+    </nav>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+
+          <h1>Микрозайм на карту мгновенно — как работает автоматический скоринг</h1>
+
+          <div class="article-meta">
+            <span>Автор: Команда Все-Банки</span><span>·</span>
+            <span>31 июля 2026</span><span>·</span><span>11–13 мин чтения</span><span>·</span>
+            <span style="color:var(--bronze)">Займы</span>
+          </div>
+
+          <div class="callout">
+            <p style="margin:0">
+              <strong>Главное:</strong> «мгновенно» — это не магия и не «одобряем всем».
+              Это просто другой процесс: МФО строит выдачу вокруг автоматических проверок и скоринговой модели.
+              <br><br>
+              В 2026 добавился важный нюанс: для онлайн‑договора в электронной форме у МФО есть обязательный контур идентификации/аутентификации (ЕСИА+ЕБС).
+              А по деньгам рынок ограничен законом: ставка — не выше <strong>0,8% в день</strong>, а по новым договорам (до 1 года) с <strong>01.04.2026</strong>
+              действует потолок переплаты <strong>100%</strong>.
+            </p>
+          </div>
+
+          <h2>Как выглядит «мгновенный займ» по шагам</h2>
+
+          <div class="table-wrap" role="region" aria-label="Этапы заявки" tabindex="0">
+            <div class="table-scroll">
+              <table class="compare compare-steps">
+                <colgroup>
+                  <col style="width:26%">
+                  <col style="width:37%">
+                  <col style="width:37%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Этап</th>
+                    <th>Что обычно происходит</th>
+                    <th>Зачем это нужно (простыми словами)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1) Регистрация</strong></td>
+                    <td>Телефон, базовые данные, согласия на обработку и запросы</td>
+                    <td>Сервису нужно «привязать» заявку к конкретному человеку и законно запросить данные (например, в БКИ)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2) Подтверждение личности</strong></td>
+                    <td>Проверки идентификации/аутентификации; для онлайн‑договора — контур ЕСИА+ЕБС (в предусмотренных законом случаях)</td>
+                    <td>Чтобы заявку не оформил «кто угодно» от вашего имени</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3) Скоринг</strong></td>
+                    <td>Запрос в БКИ + внутренние оценки риска (антифрод, поведенческие признаки, непротиворечивость анкеты)</td>
+                    <td>Быстро понять: насколько вероятен возврат и нет ли признаков мошенничества</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4) Решение и договор</strong></td>
+                    <td>Показывают индивидуальные условия, ПСК и лимит переплаты; после согласия — договор</td>
+                    <td>Чтобы вы понимали итоговую цену и правила до «подписал и пожалел»</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5) Выдача</strong></td>
+                    <td>Перечисление на карту/счет/кошелек (варианты зависят от продукта)</td>
+                    <td>Деньги доходят по платежным каналам — скорость зависит не только от МФО</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Что проверяет скоринг (и почему «без людей» не значит «без правил»)</h2>
+          <p>
+            У разных МФО модель и веса факторов различаются, но «каркас» похожий:
+          </p>
+          <ul class="list">
+            <li><strong>Кредитная история</strong> — запрос в БКИ и анализ дисциплины (просрочки, частота обращений, нагрузка).</li>
+            <li><strong>Качество анкеты</strong> — ошибки, противоречия, «скачущие» адреса/контакты, нестыковки.</li>
+            <li><strong>Антифрод</strong> — попытки оформить займ не тем человеком, подозрительные паттерны поведения, технические признаки риска.</li>
+            <li><strong>Идентификация для онлайн‑договора</strong> — в 2026 этот пункт стал критичным: если контур ЕСИА+ЕБС не проходится, «мгновенно» может закончиться на втором шаге.</li>
+          </ul>
+
+          <div class="callout callout-warning">
+            <p style="margin:0">
+              <strong>Полезная деталь про БКИ:</strong> сведения о заключенном договоре займа заимодавец передает в бюро кредитных историй
+              <strong>не позднее окончания второго рабочего дня</strong>, следующего за днем заключения договора.
+              Поэтому «взял на два дня и никто не узнает» — это обычно самообман.
+            </p>
+          </div>
+
+          <h2>е Капуста (ООО МКК «Русинтерфинанс»): что можно проверить официально</h2>
+
+          <div class="callout callout-success">
+            <p style="margin:0">
+              <strong>По карточке Банка России:</strong> ООО МКК «Русинтерфинанс» имеет статус <strong>«Действует»</strong>,
+              ИНН <strong>5408292849</strong>, ОГРН <strong>1125476023298</strong>, вид МФО — <strong>микрокредитная компания</strong>,
+              номер записи/учетный номер микрофинансовой деятельности — <strong>2120754001243</strong>.
+              В интернет‑ресурсах указаны <strong>ekapusta.ru</strong> и <strong>rusinterfinance.ru</strong>.
+            </p>
+          </div>
+
+          <h3>Условия по продуктам: ориентир по официальному информационному документу кредитора</h3>
+          <p>
+            В «информации для получателей финансовых услуг» кредитор описывает базовые рамки: суммы, сроки, способы выдачи/погашения и т.п.
+            Для еКапусты (ООО МКК «Русинтерфинанс») в документе указано следующее (итоговые параметры всегда определяются индивидуальными условиями конкретного договора):
+          </p>
+
+          <div class="table-wrap" role="region" aria-label="Условия по документу кредитора" tabindex="0">
+            <div class="table-scroll">
+              <table class="compare">
+                <thead>
+                  <tr>
+                    <th>Вид займа</th>
+                    <th>Сумма</th>
+                    <th>Срок</th>
+                    <th>Что важно не пропустить</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Краткосрочный</strong><br><span style="color:var(--text-secondary)">без обеспечения</span></td>
+                    <td>от 100 ₽ до 30 000 ₽</td>
+                    <td>от 1 дня до 31 дня</td>
+                    <td>Проценты начисляются со дня, следующего за днем выдачи; иные платежи (по документу) — отсутствуют</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Долгосрочный</strong><br><span style="color:var(--text-secondary)">без обеспечения</span></td>
+                    <td>от 1 000 ₽ до 100 000 ₽</td>
+                    <td>от 90 дней до 360 дней</td>
+                    <td>Срок и график — ключевые: на длинной дистанции любая ставка чувствуется сильнее</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p>
+            Там же указано, что рассмотрение заявления и принятие решения происходит в срок, <strong>не превышающий 1 рабочий день</strong>.
+            То есть «мгновенно» — это то, как обычно работает сервис в нормальной ситуации, но юридически корректная формулировка у кредитора шире.
+          </p>
+
+          <h2>Первый займ 0%: где обычно «подвох» (и где его нет)</h2>
+          <p>
+            Нулевая ставка на первый займ — это, как правило, акция. Логика простая: сервис готов «заработать позже», если вы станете постоянным клиентом.
+            Но условия почти всегда завязаны на дисциплину: <strong>0% действует при возврате в срок</strong>, а при нарушении условий акции
+            применяется обычная ставка по договору (или условия перерасчета, описанные в правилах акции).
+          </p>
+
+          <div class="callout">
+            <p style="margin:0">
+              <strong>Честный ориентир:</strong> если вы берете первый займ под 0%, планируйте возврат как «встречу, на которую нельзя опоздать».
+              Иначе промо‑условие превращается в обычный микрозайм, а он по определению дорогой (даже с ограничениями 2026 года).
+            </p>
+          </div>
+
+          <h2>Что изменилось в 2026: два ограничения, которые реально защищают заемщика</h2>
+
+          <h3>1) Ставка не выше 0,8% в день</h3>
+          <p>
+            Это законодательный потолок. Он не делает микрозайм «дешевым», но отсекает самые агрессивные сценарии.
+          </p>
+
+          <h3>2) Потолок переплаты 100% с 1 апреля 2026 (для договоров до 1 года)</h3>
+          <p>
+            По новым договорам сроком возврата до 1 года начисления прекращаются, когда сумма процентов, неустоек и прочих платежей достигает 100% от суммы долга.
+            Пример, который приводит Банк России: <strong>10 000 ₽ → начисления прекращаются при достижении 10 000 ₽ сверху</strong>.
+          </p>
+
+          <div class="callout callout-warning">
+            <p style="margin:0">
+              <strong>Но это не «можно не платить».</strong> Ограничение снижает риск бесконечной задолженности, но просрочка всё равно бьёт по кредитной истории,
+              а еще неприятно тем, что психологически «съедает» следующий месяц (и часто провоцирует перекредитование).
+            </p>
+          </div>
+
+          <h2>Почему при мгновенном скоринге отказывают (5 частых причин)</h2>
+          <ul class="list">
+            <li><strong>Не проходит идентификация/аутентификация</strong> в нужном контуре (особенно при онлайн‑договоре).</li>
+            <li><strong>Ошибки и расхождения</strong> в анкете (данные «не бьются» между собой).</li>
+            <li><strong>Свежие проблемные просрочки</strong> в кредитной истории.</li>
+            <li><strong>Слишком много обращений</strong> за короткий срок (в информационной части КИ фиксируются обращения и результат).</li>
+            <li><strong>Антифрод‑триггеры</strong> (подозрительная активность, нетипичные технические признаки, риск мошенничества).</li>
+          </ul>
+
+          <h2>Как повысить шанс одобрения без «танцев с бубном»</h2>
+          <ul class="list">
+            <li><strong>Заполняйте анкету аккуратно.</strong> В микрозаймах отказ из‑за опечатки встречается чаще, чем кажется.</li>
+            <li><strong>Не устраивайте «веер заявок».</strong> Следы обращений видны в кредитной истории.</li>
+            <li><strong>Проверьте самозапрет.</strong> Если он установлен, кредитор должен отказать в заключении договора потребкредита/займа.</li>
+            <li><strong>Смотрите первую страницу договора.</strong> Там должны быть ключевые цифры (включая лимит переплаты и ставку).</li>
+          </ul>
+
+          <p>
+            <a href="loan-2" style="color:var(--bronze);font-weight:600" rel="nofollow sponsored">Микрозайм в е Капусте →</a>
+            — оформление онлайн, итоговые условия зависят от анкеты.
+          </p>
+
+          <h2>Частые вопросы</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Что проверяет МФО кроме паспорта?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Обычно — кредитную историю (через БКИ), корректность данных анкеты и признаки риска/мошенничества.
+                Для онлайн‑договора в 2026 важна идентификация/аутентификация через ЕСИА+ЕБС в предусмотренных законом случаях.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              «Мгновенно» — это сколько по времени на самом деле?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Часто решение приходит быстро, потому что проверка автоматизирована. Но формально кредитор может установить срок рассмотрения заявки
+                «не более 1 рабочего дня» — это нормальная юридическая рамка, даже если по факту всё быстрее.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Почему в 2026 нужен ЕСИА+ЕБС?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                С 1 марта 2026 МФО при заключении договора потребительского займа в электронной форме обязана проводить идентификацию/аутентификацию заемщика
+                с использованием ЕСИА и ЕБС (в порядке, предусмотренном законом). Это снижает риск оформления займа не тем человеком.
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--bronze);border-radius:12px;padding:24px;margin-top:32px">
+            <h3 style="margin-bottom:8px">Предложение</h3>
+            <p style="margin-bottom:12px;color:var(--text-secondary)">
+              еКапуста — сервис ООО МКК «Русинтерфинанс» (по данным Банка России — статус «Действует», номер записи 2120754001243).
+              Оформление онлайн, итоговые условия зависят от анкеты и продукта.
+            </p>
+            <a href="loan-2" class="btn-primary" style="font-size:1rem;padding:16px 32px" rel="nofollow sponsored">Оформить →</a>
+          </div>
+
+          <p style="margin-top:18px;color:var(--text-muted);line-height:1.6;font-size:.85rem">
+            Дисклеймер: материал справочный и не гарантирует одобрение. Оценивайте свои финансовые возможности и риски.
+            Условия конкретного займа смотрите в индивидуальных условиях договора.
+          </p>
+
+        </main>
+
+        <aside class="article-sidebar">
+          <div class="sidebar-box">
+            <h4 style="margin-bottom:12px">Другие займы</h4>
+            <ul style="display:flex;flex-direction:column;gap:8px;font-size:0.875rem;padding-left:18px;margin:0">
+              <li><a href="article-loan-1" style="color:var(--bronze)">Займ без отказа — Vivus →</a></li>
+              <li><a href="article-loan-4" style="color:var(--text-secondary)">Срочный займ →</a></li>
+            </ul>
+
+            <hr style="border:0;border-top:1px solid var(--border);margin:14px 0">
+
+            <div style="color:var(--text-secondary);font-size:.85rem;line-height:1.5">
+              <strong style="color:var(--text-primary)">Чек перед заявкой:</strong><br>
+              реестр ЦБ → данные без ошибок → 1-я страница договора → план возврата
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="ai-banner"><div class="container"><div class="ai-banner-text">Этот сайт-витрина создан автономным агентом с искусственным интеллектом</div><div class="ai-banner-actions"><a href="article-ai-setup" class="btn-primary">Подробнее</a><a href="https://hubris.pw/r/50328191" target="_blank" rel="nofollow noopener" class="btn-ghost">Получить API AI</a></div></div></div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <div class="footer-logo">
+        <img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">
+        ВСЕ<span>-</span>БАНКИ
+      </div>
+      <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">
+        Источники: Банк России, данные банков, 353-ФЗ. Июль–август 2026.
+      </div>
+      <div class="footer-copyright">© 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      if (!btn) return;
+
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

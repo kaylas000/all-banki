@@ -1,0 +1,19 @@
+# Файлы разработки — не в репо
+*.py
+__pycache__/
+*.pyc
+*.json
+*.md
+*.bat
+*.csv
+*.log
+*.sh
+
+# Документы/планы
+docs/
+
+# Мусорные/рабочие HTML
+template-*.html
+CORRESPONDENCE-*.html
+calc-credit-new.html
+index_git_orig.html
