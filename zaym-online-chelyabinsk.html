@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/svg+xml" sizes="192x192" href="assets/img/favicon-192.svg">
+  <link rel="icon" type="image/svg+xml" sizes="512x512" href="assets/img/favicon-512.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.svg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Займ онлайн в Челябинске: математика долговой спирали и выход из неё | Все-Банки</title>
+
+  <link rel="stylesheet" href="assets/css/main.css?v=17">
+
+  <style>.offer-card-footer{flex-direction:column}.offer-card-footer .btn-primary,.offer-card-footer .btn-ghost{width:100%;justify-content:center}
+    .article-page .page-content{ overflow-x: clip; }
+    .article-page .article-layout{ display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:28px; align-items:start; }
+    .article-page .article-content,.article-page .article-sidebar{ min-width:0; }
+    @media (min-width:980px){ .article-page .article-sidebar{ position:sticky; top:80px; } }
+    @media (max-width:979px){ .article-page .article-layout{ grid-template-columns:1fr; } .article-page .article-sidebar{ position:static; top:auto; margin-top:18px; } }
+    .article-page .article-meta{ display:flex; flex-wrap:wrap; gap:8px; color:var(--text-secondary); font-size:.9rem; margin:10px 0 18px; }
+    .article-page .article-content p{ line-height:1.7; margin:12px 0; }
+    .article-page .article-content h1{ line-height:1.15; margin-bottom:10px; }
+    .article-page .article-content h2{ margin-top:24px; font-size:1.3rem; }
+    .article-page .article-content h3{ margin-top:18px; }
+    .article-page .article-content ul{ padding-left:18px; margin:10px 0; }
+    .article-page .article-content li{ margin:6px 0; line-height:1.6; }
+    .article-page .callout{ background:var(--bg-secondary); border:1px solid var(--border); border-radius:12px; padding:16px; margin:16px 0 20px; font-size:.95rem; }
+    .article-page .callout-warning{ background:rgba(255,178,102,.08); border-color:rgba(255,178,102,.3); }
+    .article-page .callout-success{ background:rgba(67,160,71,.08); border-color:rgba(67,160,71,.2); }
+    .article-page .math-block{ background:var(--bg-secondary); border:1px solid var(--border); border-radius:10px; padding:14px 18px; margin:14px 0; font-family:'Courier New', Courier, monospace; font-size:.92rem; line-height:1.75; color:var(--text-primary); }
+    .article-page .math-block .row{ display:flex; justify-content:space-between; padding:2px 0; }
+    .article-page .math-block .total{ border-top:1px solid var(--border); margin-top:6px; padding-top:6px; font-weight:700; }
+    .article-page .spiral-card{ border:1px solid var(--border); border-radius:12px; background:var(--bg-card); margin:16px 0; overflow:hidden; }
+    .article-page .spiral-header{ padding:14px 18px; display:flex; align-items:center; gap:14px; border-bottom:1px solid var(--border); }
+    .article-page .spiral-step{ width:48px; height:48px; background:var(--bronze); color:#fff; font-weight:800; font-size:1.15rem; border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .article-page .spiral-title{ font-weight:700; font-size:1.05rem; }
+    .article-page .spiral-sub{ color:var(--text-secondary); font-size:.85rem; margin-top:2px; }
+    .article-page .spiral-body{ padding:14px 18px; }
+    .article-page .danger-sign{ background:rgba(220,60,60,.06); border:1px solid rgba(220,60,60,.25); border-radius:12px; padding:16px 20px; margin:18px 0; }
+    .article-page .danger-sign h3{ color:#c0392b; margin:0 0 10px; font-size:1.1rem; }
+    .article-page .strategy-card{ border:1px solid var(--border); border-radius:12px; background:var(--bg-card); margin:14px 0; overflow:hidden; }
+    .article-page .strategy-header{ padding:14px 18px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:12px; }
+    .article-page .strategy-badge{ background:var(--bronze); color:#fff; padding:3px 10px; border-radius:20px; font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; }
+    .article-page .strategy-name{ font-weight:700; font-size:1.05rem; }
+    .article-page .strategy-body{ padding:14px 18px; }
+    .article-page .faq-item{ border:1px solid var(--border); border-radius:12px; overflow:hidden; margin:10px 0; background:var(--bg-card); }
+    .article-page .faq-question{ width:100%; background:transparent; border:0; padding:14px; display:flex; justify-content:space-between; align-items:center; gap:12px; cursor:pointer; text-align:left; font-size:1rem; font-weight:700; color:var(--text-primary); }
+    .article-page .faq-question .arrow{ transition:transform .2s ease; opacity:.8; }
+    .article-page .faq-answer{ display:none; padding:0 14px 14px; color:var(--text-secondary); line-height:1.6; }
+    .article-page .faq-item.is-open .faq-answer{ display:block; }
+    .article-page .faq-item.is-open .faq-question .arrow{ transform:rotate(180deg); }
+    .article-page .table-wrap{ border:1px solid var(--border); border-radius:12px; background:var(--bg-card); margin:16px 0; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .article-page table.compare{ width:100%; border-collapse:collapse; font-size:.88rem; min-width:600px; }
+    .article-page table.compare th,.article-page table.compare td{ padding:10px 12px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+    .article-page table.compare thead th{ background:var(--bg-secondary); font-weight:700; font-size:.82rem; text-transform:uppercase; letter-spacing:.3px; }
+    .article-page table.compare tr:last-child td{ border-bottom:0; }
+  </style>
+
+    <meta name="description" content="Займ онлайн в Челябинске: экспертный разбор феномена долговой спирали. Математика повторных займов, 4 стратегии выхода, критерии банкротства.">
+      <link rel="canonical" href="https://все-банки.site/zaym-online-chelyabinsk">
+      <meta property="og:title" content="Займ онлайн в Челябинске: математика долговой спирали и выход из неё | Все-Банки">
+    <meta property="og:description" content="Экспертный разбор: как формируется долговая спираль в МФО и 4 стратегии выхода из неё.">
+    <meta property="og:url" content="https://все-банки.site/zaym-online-chelyabinsk">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://все-банки.site/assets/img/logo.svg">
+    <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://все-банки.site/"},{"@type":"ListItem","position":2,"name":"Займы","item":"https://все-банки.site/zaymy"},{"@type":"ListItem","position":3,"name":"Займ онлайн в Челябинске","item":"https://все-банки.site/zaym-online-chelyabinsk"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Займ онлайн в Челябинске: математика долговой спирали и выход из неё","datePublished":"2026-08-14","dateModified":"2026-08-14","author":{"@type":"Organization","name":"Все-Банки"},"publisher":{"@type":"Organization","name":"Все-Банки","logo":{"@type":"ImageObject","url":"https://все-банки.site/assets/img/logo.svg"}}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое долговая спираль в МФО?","acceptedAnswer":{"@type":"Answer","text":"Это цикл, при котором заёмщик берёт новый займ, чтобы погасить старый. Каждый следующий займ крупнее предыдущего за счёт накопленных процентов. Долг растёт геометрически при сохранении прежнего уровня дохода."}},{"@type":"Question","name":"Через сколько займов начинается спираль?","acceptedAnswer":{"@type":"Answer","text":"Эмпирический порог — третий-четвёртый последовательный займ. Первые два обычно связаны с реальной потребностью. С третьего начинается рефинансирование долга, а не закрытие потребности."}},{"@type":"Question","name":"Почему МФО одобряют новые займы при просрочках?","acceptedAnswer":{"@type":"Answer","text":"Это бизнес-модель. МФО зарабатывают на пролонгациях и повторных займах больше, чем на разовых выдачах. Клиент в спирали генерирует стабильный процентный доход месяцами."}},{"@type":"Question","name":"Можно ли выйти из спирали без банкротства?","acceptedAnswer":{"@type":"Answer","text":"Да, если общий долг менее 300 000 ₽. Рабочие методы: стратегия «снежный ком» (сначала мелкие долги), «лавина» (сначала дорогие), рефинансирование в потребкредите, переговоры о реструктуризации."}},{"@type":"Question","name":"Когда стоит подавать на банкротство?","acceptedAnswer":{"@type":"Answer","text":"По 127-ФЗ — при долге от 500 000 ₽ и просрочке от 3 месяцев. Упрощённое бесплатное банкротство через МФЦ доступно при долге 25 000–1 000 000 ₽ и завершённом исполнительном производстве."}},{"@type":"Question","name":"Что делать, если МФО угрожает судом?","acceptedAnswer":{"@type":"Answer","text":"Суд — это нормальная процедура, а не угроза. В суде можно заявить о снижении неустойки по 333 ГК РФ и применить правило 130% от тела займа по 353-ФЗ. Часто суд уменьшает долг в 2–3 раза."}}]}</script>
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111483835', 'ym');
+
+    ym(111483835, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/111483835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="article-page">
+
+<header class="header"><div class="header-inner"><a href="./" class="logo"><img src="assets/img/logo.svg" alt="Все-Банки — финансовый портал" style="height:40px;width:auto;border-radius:8px;margin-right:6px;vertical-align:middle">ВСЕ<span>-</span>БАНКИ</a><nav class="nav"><a href="./" data-page="home">Главная</a><a href="katalog" data-page="catalog">Каталог</a><a href="kredity" data-page="credits">Кредиты</a><a href="karty" data-page="cards">Карты</a><a href="vklady" data-page="deposits">Вклады</a><a href="investitsii" data-page="investments">Инвестиции</a><a href="zaymy" data-page="loans">Займы</a><a href="ipoteka" data-page="mortgage">Ипотека</a><a href="strahovanie" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></nav><button class="mobile-menu-btn" id="mobileMenuBtn"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></div></header>
+
+<div class="mobile-nav" id="mobileNav"><a href="./" data-page="home">Главная</a><a href="katalog" data-page="catalog">Каталог</a><a href="kredity" data-page="credits">Кредиты</a><a href="karty" data-page="cards">Карты</a><a href="vklady" data-page="deposits">Вклады</a><a href="investitsii" data-page="investments">Инвестиции</a><a href="zaymy" data-page="loans">Займы</a><a href="ipoteka" data-page="mortgage">Ипотека</a><a href="strahovanie" data-page="insurance">Страхование</a><a href="rko" data-page="rko">РКО</a><a href="faq" data-page="faq">FAQ</a><a href="blog" data-page="blog">Блог</a></div>
+
+<div class="page-content">
+
+  <div class="container"><nav class="breadcrumbs"><a href="./">Главная</a><span class="separator">/</span><a href="zaymy">Займы</a><span class="separator">/</span><span class="current">Займ онлайн в Челябинске</span></nav></div>
+
+  <section style="padding:32px 0;background:var(--bg-secondary)"><div class="container"><h1 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:8px">🌀 Займ онлайн в Челябинске</h1><p style="color:var(--text-secondary)">Математика долговой спирали и выход из неё</p></div></section>
+
+  <div class="filter-bar"><div class="filter-bar-inner">
+
+    <button class="filter-toggle" id="filterToggle"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 1H1M15 5H5M15 9H9M15 13H3"/></svg>Фильтры<span class="arrow">▼</span></button>
+
+    <div class="filter-content" id="filterContent">
+
+      <div class="filter-pills" id="filterPills">
+
+        <button class="filter-pill active" data-category="all">Все</button>
+
+        <button class="filter-pill" data-category="perviy">Первый 0%</button>
+
+        <button class="filter-pill" data-category="na-kartu">На карту</button>
+
+        <button class="filter-pill" data-category="srochno">Срочно</button>
+
+      </div>
+
+      <input type="text" class="filter-search" id="searchInput" placeholder="Поиск...">
+
+    </div>
+
+  </div></div>
+
+  <section class="section"><div class="container">
+
+    <div class="grid-4" id="catalogGrid">
+      <!-- Vivus -->
+      <div class="offer-card" data-category="perviy" data-name="Vivus Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/vivus.svg" alt="Vivus" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Vivus</span><span class="offer-badge badge-hit">ХИТ</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Займ онлайн</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">1 – 30 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 30 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1110&erid=Kra23r5Mt" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-1" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- еКапуста -->
+      <div class="offer-card" data-category="perviy" data-name="еКапуста Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/ekapusta.svg" alt="еКапуста" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">еКапуста</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Займ без отказа</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">7 – 21 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">до 30 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=2000&erid=2SDnje7Q1Nr&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-2" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- MoneyMan -->
+      <div class="offer-card" data-category="perviy" data-name="MoneyMan Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/moneyman.svg" alt="MoneyMan" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">MoneyMan</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">MoneyMan</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">до 15 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">до 15 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1253&erid=2SDnjdTrs6M" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-3" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Быстроденьги -->
+      <div class="offer-card" data-category="srochno" data-name="Быстроденьги Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/bystrodengi.svg" alt="Быстроденьги" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Быстроденьги</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Экспресс-займ</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">до 180 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">до 100 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1839&erid=2SDnjcrSm9t" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-4" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Займер -->
+      <div class="offer-card" data-category="perviy" data-name="Займер Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/zaimer.svg" alt="Займер" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Займер</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Займер</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">7 – 30 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">2 000 – 30 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1346&erid=2SDnje11YaL&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-5" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Деньги Сразу -->
+      <div class="offer-card" data-category="perviy" data-name="Деньги Сразу Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/dengi-srazu.svg" alt="Деньги Сразу" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Деньги Сразу</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Деньги Сразу</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">16 – 180 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 100 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=2266&erid=2SDnjcrE8zn" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-6" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- 495 Кредит -->
+      <div class="offer-card" data-category="perviy" data-name="495 Кредит Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/495.svg" alt="495 Кредит" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">495 Кредит</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">495 Кредит</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">10 – 15 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">2 000 – 20 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1134&erid=2SDnjc491tc" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-7" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Webbankir -->
+      <div class="offer-card" data-category="na-kartu" data-name="Webbankir Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/webbankir.svg" alt="Webbankir" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Webbankir</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Webbankir</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">7 – 365 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 100 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1639&erid=2SDnjc3GiTC" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-8" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- OneClickMoney -->
+      <div class="offer-card" data-category="perviy" data-name="OneClickMoney Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo" style="border-radius:8px;overflow:hidden"><img src="assets/img/oneclickmoney.svg" alt="OneClickMoney" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">OneClickMoney</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">OneClickMoney</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">до 292%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">6 – 60 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">500 – 30 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">97%</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1746&erid=2SDnjbstvYw" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-9" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Деньга -->
+      <div class="offer-card" data-category="na-kartu" data-name="Деньга Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/denga.svg" alt="Деньга" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Деньга</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Деньга</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">до 365 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">500 – 100 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1086&erid=2SDnjf3cK1c" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-10" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Hurmacredit -->
+      <div class="offer-card" data-category="perviy" data-name="Hurmacredit Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/hurmacredit.svg" alt="Hurmacredit" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Hurmacredit</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Hurmacredit</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">5 – 31 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 50 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1490&erid=2SDnjcq7uDj&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-14" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Joymoney -->
+      <div class="offer-card" data-category="perviy" data-name="Joymoney Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/joymoney.svg" alt="Joymoney" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Joymoney</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Joymoney</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">до 30 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">до 30 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1345&erid=Kra23k98b" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-15" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Krediska -->
+      <div class="offer-card" data-category="perviy" data-name="Krediska Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/krediska.svg" alt="Krediska" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Krediska</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Krediska</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">5 – 31 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 50 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1329&erid=2SDnjefdJsj&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-16" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Кэшмагнит -->
+      <div class="offer-card" data-category="perviy" data-name="Кэшмагнит Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/cashmagnit.svg" alt="Кэшмагнит" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Кэшмагнит</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Кэшмагнит</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">—</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">5 – 30 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">5 000 – 30 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">2 мин</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=2309&erid=2SDnjf4BE8X" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-17" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- БериБеру -->
+      <div class="offer-card" data-category="perviy" data-name="БериБеру Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/beriberu.svg" alt="БериБеру" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">БериБеру</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">БериБеру</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">5 – 31 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 50 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=2292&erid=2SDnjcLhRnZ&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-18" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Давака -->
+      <div class="offer-card" data-category="perviy" data-name="Давака Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/davaka.svg" alt="Давака" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Давака</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Давака</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">5 – 31 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 50 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1591&erid=2SDnjdo6Dmz&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-19" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Snapcredit -->
+      <div class="offer-card" data-category="perviy" data-name="Snapcredit Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/snapcredit.svg" alt="Snapcredit" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Snapcredit</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Snapcredit</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">до 30 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 20 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=2675&erid=2SDnjdBQcLS" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-20" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- ДоброЗайм -->
+      <div class="offer-card" data-category="perviy" data-name="ДоброЗайм Займ" data-rate="0">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/dobrozaim.svg" alt="ДоброЗайм" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">ДоброЗайм</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">ДоброЗайм</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">от 1 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">до 100 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=2665&erid=2SDnjdSo1Hk" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-21" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Деньги Ок -->
+      <div class="offer-card" data-category="na-kartu" data-name="Деньги Ок Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/dengi-ok.svg" alt="Деньги Ок" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Деньги Ок</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Деньги Ок</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">10 – 15 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">2 000 – 20 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1888&erid=2SDnjbrUYhH" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-22" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- СМС ФИНАНС -->
+      <div class="offer-card" data-category="na-kartu" data-name="СМС ФИНАНС Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/smsfinance.svg" alt="СМС ФИНАНС" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">СМС ФИНАНС</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">СМС ФИНАНС</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">1 – 30 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 30 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">Высокое</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1286&erid=Kra23ojDc" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-23" class="btn-ghost">Подробнее</a></div>
+      </div>
+      <!-- Zaymigo -->
+      <div class="offer-card" data-category="perviy" data-name="Zaymigo Займ" data-rate="0.8">
+        <div class="offer-card-header"><div class="offer-bank-logo"><img src="assets/img/zaymigo.svg" alt="Zaymigo" style="width:100%;height:100%;object-fit:contain"></div><span class="brand-name">Zaymigo</span></div>
+        <div class="offer-card-body">
+          <div class="offer-card-title">Zaymigo</div>
+          <div class="offer-params-col">
+<div class="offer-param-row"><span class="label">Ставка (от):</span><span class="value">0,8%</span></div>
+<div class="offer-param-row"><span class="label">Срок:</span><span class="value">5 – 30 дн.</span></div>
+<div class="offer-param-row"><span class="label">Сумма:</span><span class="value">1 000 – 50 000 ₽</span></div>
+<div class="offer-param-row"><span class="label">Одобрение:</span><span class="value">95%</span></div>
+          </div>
+        </div>
+        <div class="offer-card-footer"><a href="https://trk.ppdu.ru/click?uid=346517&oid=1373&erid=2SDnjbw3s5a&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary">Получить деньги →</a><a href="zaym-24" class="btn-ghost">Подробнее</a></div>
+      </div>
+<div id="emptyState" style="display:none;text-align:center;padding:80px 0"><div style="font-size:3rem;margin-bottom:16px">🔍</div><h3 style="font-size:1.25rem;font-weight:600;margin-bottom:8px">Ничего не найдено</h3></div>
+
+  </div>
+  </div></section>
+
+  <section class="section"><div class="container"><div class="article-layout"><div class="article-content">
+
+    <h1 style="font-size:clamp(1.75rem,4vw,2.5rem);margin-bottom:10px">Займ онлайн в Челябинске: математика долговой спирали и выход из неё</h1>
+    <div class="article-meta"><span>Автор: Финансовый отдел Все-Банки</span><span>·</span><span>Анализ моделей поведения заёмщиков</span><span>·</span><span>14 августа 2026</span><span>·</span><span>11 мин</span></div>
+
+    <p>Микрозайм как финансовый инструмент нейтрален — проблему создаёт не сам займ, а модель его использования. По данным СРО «Микрофинансирование», около 35% клиентов МФО находятся в состоянии повторного заимствования. Это явление называется долговой спиралью, и у него есть чёткая математическая структура.</p>
+
+    <h2>Что такое долговая спираль</h2>
+    <p>Долговая спираль — это цикл, при котором заёмщик берёт новый займ не для покрытия реальной потребности, а для погашения предыдущего. Каждый следующий займ крупнее предыдущего за счёт накопленных процентов и пролонгаций. При неизменном уровне дохода долг растёт геометрически.</p>
+    <p>Ключевой признак спирали: <strong>займ берётся для закрытия займа</strong>, а не для покупки товара или услуги. Как только это происходит, заёмщик перестаёт быть потребителем кредита и становится генератором процентного дохода для МФО.</p>
+
+    <h2>Анатомия спирали: 5 последовательных займов</h2>
+    <p>Разберём типичный сценарий на примере заёмщика, который начинает с 10 000 ₽ под 0,8% в день и не может закрыть долг вовремя.</p>
+
+    <div class="spiral-card">
+      <div class="spiral-header">
+        <div class="spiral-step">1</div>
+        <div class="spiral-title-wrap">
+          <div class="spiral-title">Первый займ — реальная потребность</div>
+          <div class="spiral-sub">10 000 ₽ на 15 дней, 0% по акции</div>
+        </div>
+      </div>
+      <div class="spiral-body">
+        <p>Заёмщик берёт деньги на срочную покупку (лекарства, ремонт, оплата ЖКУ). Возврат — 10 000 ₽, переплата 0 ₽. Кредитная история чистая.</p>
+      </div>
+    </div>
+
+    <div class="spiral-card">
+      <div class="spiral-header">
+        <div class="spiral-step">2</div>
+        <div class="spiral-title-wrap">
+          <div class="spiral-title">Второй займ — кассовый разрыв</div>
+          <div class="spiral-sub">10 000 ₽ на 15 дней, 0,8% в день</div>
+        </div>
+      </div>
+      <div class="spiral-body">
+        <p>К следующему сроку платежа денег не хватает. Заёмщик берёт повторный займ. Возврат: 10 000 ₽ + 1 200 ₽ процентов = 11 200 ₽.</p>
+        <div class="math-block">
+          <div class="row"><span>Тело займа:</span><span>10 000 ₽</span></div>
+          <div class="row"><span>Проценты 0,8% × 15 дней:</span><span>1 200 ₽</span></div>
+          <div class="row total"><span>К возврату:</span><span>11 200 ₽</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spiral-card">
+      <div class="spiral-header">
+        <div class="spiral-step">3</div>
+        <div class="spiral-title-wrap">
+          <div class="spiral-title">Третий займ — рефинансирование долга</div>
+          <div class="spiral-sub">15 000 ₽ на 15 дней, 0,8% в день</div>
+        </div>
+      </div>
+      <div class="spiral-body">
+        <p>Чтобы закрыть 11 200 ₽ и оставить себе часть денег на текущие расходы, заёмщик берёт 15 000 ₽. Спираль запускается.</p>
+        <div class="math-block">
+          <div class="row"><span>Тело займа:</span><span>15 000 ₽</span></div>
+          <div class="row"><span>Проценты 0,8% × 15 дней:</span><span>1 800 ₽</span></div>
+          <div class="row total"><span>К возврату:</span><span>16 800 ₽</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spiral-card">
+      <div class="spiral-header">
+        <div class="spiral-step">4</div>
+        <div class="spiral-title-wrap">
+          <div class="spiral-title">Четвёртый займ — рост тела</div>
+          <div class="spiral-sub">20 000 ₽ на 15 дней, 0,8% в день</div>
+        </div>
+      </div>
+      <div class="spiral-body">
+        <p>Сумма долга выросла, и нужен более крупный займ. Тело увеличивается, проценты начисляются на большую сумму.</p>
+        <div class="math-block">
+          <div class="row"><span>Тело займа:</span><span>20 000 ₽</span></div>
+          <div class="row"><span>Проценты 0,8% × 15 дней:</span><span>2 400 ₽</span></div>
+          <div class="row total"><span>К возврату:</span><span>22 400 ₽</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spiral-card">
+      <div class="spiral-header">
+        <div class="spiral-step">5</div>
+        <div class="spiral-title-wrap">
+          <div class="spiral-title">Пятый займ — потолок</div>
+          <div class="spiral-sub">30 000 ₽ на 30 дней, 0,8% в день</div>
+        </div>
+      </div>
+      <div class="spiral-body">
+        <p>Заёмщик достигает потолка МФО (100 000 ₽) и начинает обращаться в другие компании. Параллельные долги умножают нагрузку.</p>
+        <div class="math-block">
+          <div class="row"><span>Тело займа:</span><span>30 000 ₽</span></div>
+          <div class="row"><span>Проценты 0,8% × 30 дней:</span><span>7 200 ₽</span></div>
+          <div class="row total"><span>К возврату:</span><span>37 200 ₽</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout-warning"><strong>Итог за 3 месяца:</strong> Начальная потребность — 10 000 ₽. Суммарный долг — 37 200 ₽. Переплата — 27 200 ₽, то есть в 2,7 раза больше изначальной суммы. И это без учёта пролонгаций, комиссий и штрафов.</div>
+
+    <h2>Почему МФО одобряют новые займы при долгах</h2>
+    <p>Это кажется нелогичным: зачем давать деньги тому, кто не может вернуть старые? Но это фундамент бизнес-модели большинства МФО.</p>
+    <ul>
+      <li><strong>LTV (Lifetime Value) клиента в спирали в 15–20 раз выше,</strong> чем у разового заёмщика</li>
+      <li>Каждая пролонгация генерирует чистую прибыль без затрат на привлечение</li>
+      <li>Клиент с долгом психологически «привязан» к компании — не уходит к конкурентам</li>
+      <li>Правило 130% от тела займа гарантирует, что долг не выйдет за рамки</li>
+    </ul>
+    <p>МФО экономически выгодно держать клиента в состоянии постоянного долга — пока он платит проценты, компания зарабатывает.</p>
+
+    <h2>7 признаков того, что вы в спирали</h2>
+    <div class="danger-sign">
+      <h3>Красные флаги — проверьте себя</h3>
+      <ul>
+        <li>Вы берёте новый займ, чтобы погасить старый (3+ раза подряд)</li>
+        <li>Вы не помните, на что именно были потрачены первые деньги</li>
+        <li>Количество действующих МФО-займов больше 2</li>
+        <li>Вы регулярно пользуетесь пролонгацией</li>
+        <li>Ежемесячные платежи по займам превышают 30% дохода</li>
+        <li>Вы ищете новую МФО после отказа в старой</li>
+        <li>Вы скрываете наличие долгов от семьи</li>
+      </ul>
+      <p>Если совпадает 3 и более пунктов — вы в спирали. Чем раньше это признать, тем легче выйти.</p>
+    </div>
+
+    <h2>4 стратегии выхода из долговой спирали</h2>
+
+    <div class="strategy-card">
+      <div class="strategy-header">
+        <div class="strategy-badge">Стратегия 1</div>
+        <div class="strategy-name">«Снежный ком» (Dave Ramsey)</div>
+      </div>
+      <div class="strategy-body">
+        <p><strong>Принцип:</strong> все долги платятся минимальными платежами, кроме самого маленького. На него направляется весь свободный ресурс. После закрытия — переход к следующему.</p>
+        <ul>
+          <li><strong>Плюсы:</strong> психологические победы каждые 1–2 месяца, быстрая видимая прогрессия</li>
+          <li><strong>Минусы:</strong> математически не оптимально — дорогие долги могут расти быстрее</li>
+          <li><strong>Когда работает:</strong> при долгах менее 150 000 ₽ и наличии свободных 5 000–10 000 ₽ в месяц</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="strategy-card">
+      <div class="strategy-header">
+        <div class="strategy-badge">Стратегия 2</div>
+        <div class="strategy-name">«Лавина» (математический подход)</div>
+      </div>
+      <div class="strategy-body">
+        <p><strong>Принцип:</strong> сначала гасятся долги с самой высокой ставкой (МФО под 292%), независимо от суммы. Остальные — минимальными платежами.</p>
+        <ul>
+          <li><strong>Плюсы:</strong> минимальная общая переплата, математически оптимально</li>
+          <li><strong>Минусы:</strong> первый результат виден через 3–6 месяцев, психологически тяжело</li>
+          <li><strong>Когда работает:</strong> при нескольких крупных долгах с разными ставками</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="strategy-card">
+      <div class="strategy-header">
+        <div class="strategy-badge">Стратегия 3</div>
+        <div class="strategy-name">Рефинансирование через потребкредит</div>
+      </div>
+      <div class="strategy-body">
+        <p><strong>Принцип:</strong> берётся один банковский кредит под 18–25% годовых, на который закрываются все МФО-займы под 292%. Один платёж вместо пяти, ставка в 10–15 раз ниже.</p>
+        <ul>
+          <li><strong>Плюсы:</strong> радикальное снижение переплаты, одна дата платежа, улучшение КИ</li>
+          <li><strong>Минусы:</strong> банки отказывают при высокой текущей нагрузке, нужны справки</li>
+          <li><strong>Когда работает:</strong> при стабильном официальном доходе и долге 100 000–500 000 ₽</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="strategy-card">
+      <div class="strategy-header">
+        <div class="strategy-badge">Стратегия 4</div>
+        <div class="strategy-name">Банкротство физлица (127-ФЗ)</div>
+      </div>
+      <div class="strategy-body">
+        <p><strong>Принцип:</strong> юридическое списание долгов через арбитражный суд (платно, от 100 000 ₽) или через МФЦ (бесплатно, при условиях).</p>
+        <ul>
+          <li><strong>Судебное банкротство:</strong> долг от 500 000 ₽, просрочка от 3 месяцев, стоимость 100 000–150 000 ₽</li>
+          <li><strong>Внесудебное через МФЦ:</strong> долг 25 000–1 000 000 ₽, завершённое исполнительное производство по 46-ФЗ (у пристава нет имущества для взыскания)</li>
+          <li><strong>Последствия:</strong> 5 лет — уведомлять банки о статусе банкрота, 3 года — запрет занимать руководящие должности</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Сравнительная матрица стратегий</h2>
+    <div class="table-wrap"><table class="compare">
+      <thead><tr><th>Параметр</th><th>Снежный ком</th><th>Лавина</th><th>Рефинанс</th><th>Банкротство</th></tr></thead>
+      <tbody>
+        <tr><td>Сумма долга</td><td>до 150 тыс.</td><td>до 500 тыс.</td><td>100–500 тыс.</td><td>от 500 тыс.</td></tr>
+        <tr><td>Срок выхода</td><td>6–18 мес.</td><td>12–24 мес.</td><td>1–3 дня</td><td>6–12 мес.</td></tr>
+        <tr><td>Переплата</td><td>Средняя</td><td>Минимальная</td><td>Низкая</td><td>0 ₽</td></tr>
+        <tr><td>Влияние на КИ</td><td>+ постепенно</td><td>+ постепенно</td><td>++ сразу</td><td>−− на 7 лет</td></tr>
+        <tr><td>Нужен доход</td><td>да</td><td>да</td><td>официальный</td><td>любой</td></tr>
+        <tr><td>Стоимость</td><td>0 ₽</td><td>0 ₽</td><td>0–3 000 ₽</td><td>0–150 000 ₽</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>Переговоры с МФО: что можно требовать</h2>
+    <p>Если выход через стратегии невозможен, остаётся прямой диалог с кредитором. МФО часто идут навстречу, потому что списание долга через банкротство для них хуже реструктуризации.</p>
+    <ul>
+      <li><strong>Кредитные каникулы</strong> — пауза в платежах на 1–3 месяца без штрафов</li>
+      <li><strong>Реструктуризация</strong> — увеличение срока с уменьшением ежемесячного платежа</li>
+      <li><strong>Списание неустойки</strong> — часто МФО прощают пени при разовом полном погашении тела</li>
+      <li><strong>Фиксация долга</strong> — соглашение о прекращении начисления процентов при регулярной оплате</li>
+    </ul>
+    <p>Все переговоры фиксируются письменно. Устные обещания менеджера не имеют юридической силы.</p>
+
+    <h2>Что делать при угрозах и коллекторах</h2>
+    <p>Если МФО передало долг коллекторам или угрожает, важно знать свои права по 230-ФЗ:</p>
+    <ul>
+      <li>Звонки — не чаще 1 раза в сутки, 2 раз в неделю, 8 раз в месяц</li>
+      <li>Запрещены звонки с 22:00 до 8:00 в будни и с 20:00 до 9:00 в выходные</li>
+      <li>Запрещены контакты с родственниками и работодателем без вашего согласия</li>
+      <li>Запрещены угрозы, оскорбления, введение в заблуждение о судебной перспективе</li>
+    </ul>
+    <p>При нарушениях — жалоба в ФССП (контролирует коллекторов) и ЦБ РФ. Штрафы для агентств достигают 500 000 ₽.</p>
+
+    <h2>Профилактика: правило 72 часов</h2>
+    <p>Перед подачей заявки на займ сделайте паузу 72 часа. За это время:</p>
+    <ul>
+      <li>Оцените, действительно ли нужна сумма или это импульс</li>
+      <li>Проверьте альтернативы (кредитка, овердрафт, займ у знакомых)</li>
+      <li>Посчитайте реальную переплату с учётом всех комиссий</li>
+      <li>Убедитесь, что есть источник возврата через 15–30 дней</li>
+    </ul>
+    <p>Если через 72 часов потребность сохраняется и альтернатив нет — подавайте заявку. Этот простой фильтр предотвращает до 60% импульсивных займов, которые становятся первым шагом в спираль.</p>
+
+    <h2>Частые вопросы</h2>
+    <div class="faq-item"><button class="faq-question">Что такое долговая спираль в МФО?<span class="arrow">▼</span></button><div class="faq-answer">Это цикл, при котором заёмщик берёт новый займ, чтобы погасить старый. Каждый следующий займ крупнее предыдущего за счёт накопленных процентов. Долг растёт геометрически при сохранении прежнего уровня дохода.</div></div>
+    <div class="faq-item"><button class="faq-question">Через сколько займов начинается спираль?<span class="arrow">▼</span></button><div class="faq-answer">Эмпирический порог — третий-четвёртый последовательный займ. Первые два обычно связаны с реальной потребностью. С третьего начинается рефинансирование долга, а не закрытие потребности.</div></div>
+    <div class="faq-item"><button class="faq-question">Почему МФО одобряют новые займы при просрочках?<span class="arrow">▼</span></button><div class="faq-answer">Это бизнес-модель. МФО зарабатывают на пролонгациях и повторных займах больше, чем на разовых выдачах. Клиент в спирали генерирует стабильный процентный доход месяцами.</div></div>
+    <div class="faq-item"><button class="faq-question">Можно ли выйти из спирали без банкротства?<span class="arrow">▼</span></button><div class="faq-answer">Да, если общий долг менее 300 000 ₽. Рабочие методы: стратегия «снежный ком» (сначала мелкие долги), «лавина» (сначала дорогие), рефинансирование в потребкредите, переговоры о реструктуризации.</div></div>
+    <div class="faq-item"><button class="faq-question">Когда стоит подавать на банкротство?<span class="arrow">▼</span></button><div class="faq-answer">По 127-ФЗ — при долге от 500 000 ₽ и просрочке от 3 месяцев. Упрощённое бесплатное банкротство через МФЦ доступно при долге 25 000–1 000 000 ₽ и завершённом исполнительном производстве.</div></div>
+    <div class="faq-item"><button class="faq-question">Что делать, если МФО угрожает судом?<span class="arrow">▼</span></button><div class="faq-answer">Суд — это нормальная процедура, а не угроза. В суде можно заявить о снижении неустойки по 333 ГК РФ и применить правило 130% от тела займа по 353-ФЗ. Часто суд уменьшает долг в 2–3 раза.</div></div>
+
+    <div style="background:var(--bg-card);border:1px solid var(--bronze);border-radius:12px;padding:24px;margin-top:32px"><h3 style="margin-bottom:8px">Займер — дисциплинированный выбор</h3><p style="margin-bottom:12px;color:var(--text-secondary)">0% на первый займ, до 30 000 ₽, срок 7–30 дней. Используйте только при наличии источника возврата.</p><a href="https://trk.ppdu.ru/click?uid=346517&oid=1346&erid=2SDnje11YaL&siteId=25376" target="_blank" rel="nofollow noopener" class="btn-primary" style="font-size:1rem;padding:16px 32px">Оформить займ →</a></div>
+  </div>
+  <aside class="article-sidebar" style="position:sticky;top:80px"><div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:20px"><h4 style="margin-bottom:12px">Соседние регионы</h4><ul style="display:flex;flex-direction:column;gap:8px;font-size:0.875rem"><li><a href="zaym-online-magnitogorsk" style="color:var(--bronze)">Магнитогорск</a></li><li><a href="zaym-online-kurgan" style="color:var(--bronze)">Курган</a></li><li><a href="zaym-online-miass" style="color:var(--bronze)">Миасс</a></li></ul></div></aside>
+
+  </div></div></section>
+
+  <section class="section section-secondary">
+    <div class="container">
+      <div class="cta-banner"><h2>⚠️ Важно о микрозаймах</h2><p>Микрозаймы — дорогой кредит. Используйте только в крайних случаях и погашайте в срок. Переплата — до 365% годовых.</p></div>
+    </div>
+  </section>
+</div>
+
+<div class="ai-banner"><div class="container"><div class="ai-banner-text">Этот сайт-витрина создан автономным агентом с искусственным интеллектом</div><div class="ai-banner-actions"><a href="statya-ai-setup" class="btn-primary">Подробнее</a><a href="https://hubris.pw/r/50328191" target="_blank" rel="nofollow noopener" class="btn-ghost">Получить API AI</a></div></div></div>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><h4>Продукты</h4><ul><li><a href="kredity">Кредиты</a></li><li><a href="karty">Карты</a></li><li><a href="vklady">Вклады</a></li><li><a href="investitsii">Инвестиции</a></li><li><a href="zaymy">Займы</a></li><li><a href="ipoteka">Ипотека</a></li><li><a href="strahovanie">Страхование</a></li><li><a href="rko">РКО</a></li></ul></div><div><h4>Калькуляторы</h4><ul><li><a href="calc-kredit">Кредитный</a></li><li><a href="calc-odobreniya">Проверка одобрения</a></li><li><a href="calc-ipoteka">Ипотечный</a></li><li><a href="calc-vklad">Депозитный</a></li></ul></div><div><h4>Информация</h4><ul><li><a href="katalog">Каталог</a></li><li><a href="faq">FAQ</a></li><li><a href="blog">Блог</a></li><li><a href="svg-ikonki-mfo">SVG иконки</a></li><li><a href="karta-sajta">Карта сайта</a></li><li><a href="sravnenie-kreditov">Сравнение кредитов</a></li><li><a href="sravnenie-vkladov">Сравнение вкладов</a></li><li><a href="sravnenie-kart">Сравнение карт</a></li><li><a href="rejting-bankov">Рейтинг банков</a></li><li><a href="nakopitelnye-scheta">Накопительные счета</a></li><li><a href="statya-ai-setup">Как установить ИИ-инструменты</a></li></ul></div><div><h4>Банки</h4><ul><li><a href="banki">Все лицензии</a></li><li><span>495 Кредит</span></li><li><span>Ozon Банк</span></li><li><span>Альфа Банк</span></li><li><span>Альфа-Банк</span></li><li><span>Банки.ру</span></li><li><span>ВТБ</span></li><li><span>ЛОКО-Банк</span></li><li><span>Сбербанк</span></li><li><span>Совком</span></li><li><span>Т-Банк</span></li><li><span>Точка</span></li><li><span>Уралсиб</span></li><li><span>Финуслуги</span></li><li><span>Яндекс Сейвы</span></li></ul></div><div><h4>Страхование</h4><ul><li><a href="strahovanie">Все лицензии</a></li><li><span>Cherehapa</span></li><li><span>Mafin</span></li><li><span>Zetta</span></li><li><span>АльфаСтрахование</span></li><li><span>Банки.ру</span></li><li><span>Ингосстрах</span></li><li><span>КАПИТАЛ LIFE</span></li><li><span>Полис812</span></li><li><span>СК ПАРИ</span></li><li><span>Согласие</span></li><li><span>Сравни</span></li><li><span>Т-Банк</span></li></ul></div><div><h4>МФО</h4><ul><li><a href="mfo">Все лицензии</a></li><li><span>Hurmacredit</span></li><li><span>Joymoney</span></li><li><span>Krediska</span></li><li><span>Kviku</span></li><li><span>MoneyMan</span></li><li><span>OneClickMoney</span></li><li><span>Snapcredit</span></li><li><span>Vivus</span></li><li><span>Webbankir</span></li><li><span>Zaymigo</span></li><li><span>Банки.ру</span></li><li><span>БериБеру</span></li><li><span>Быстроденьги</span></li><li><span>Давака</span></li><li><span>Деньга</span></li><li><span>Деньги Ок</span></li><li><span>Деньги Сразу</span></li><li><span>Доброзайм</span></li><li><span>Займер</span></li><li><span>Кэшмагнит</span></li><li><span>МигКредит</span></li><li><span>СМС ФИНАНС</span></li><li><span>Турбозайм</span></li><li><span>е Капуста</span></li></ul></div></div><div class="footer-bottom"><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%"><div class="footer-logo"><img src="assets/img/logo.svg" alt="Все-Банки" style="height:32px;width:auto;border-radius:6px;vertical-align:middle;margin-right:6px">ВСЕ<span>-</span>БАНКИ</div><div style="font-size:0.75rem;color:var(--text-muted);line-height:1.5">Сайт не несёт ответственности за качество предоставляемых услуг организациями, представленными на сайте. Все организации имеют лицензии ЦБ РФ. Сайт оказывает рекламные услуги и не является офертой.</div><div class="footer-copyright" style="margin-left:auto">© 2026</div></div></div></div></footer>
+
+<script src="assets/js/main.js?v=2"></script>
+<!-- FAQ toggler -->
+<script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      if (!btn) return;
+
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  })();
+</script>
+</body>
+</html>
