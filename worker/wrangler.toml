@@ -1,0 +1,9 @@
+account_id = "3d735a66c4d587a9d810375620bd2543"
+name = "all-banki-api"
+main = "worker.js"
+compatibility_date = "2026-04-24"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ALLOWED_ORIGIN = "https://kaylas000.github.io/all-banki-site"
+GROK_API_URL = "https://api.x.ai/v1/chat/completions"

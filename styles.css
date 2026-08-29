@@ -1,0 +1,521 @@
+/* ------------------------------------------------------------------ */
+/* Все Банки — SOTA 2026 High-Density Financial Dashboard             */
+/* OKLCH токены, Container Queries (cqw), Cascade Layers @layer       */
+/* ------------------------------------------------------------------ */
+
+@layer reset, design-tokens, layout, components, utilities;
+
+@layer design-tokens {
+  :root {
+    /* OKLCH Perceptual Colors */
+    --color-bg-dark: oklch(0.12 0.02 260);
+    --color-bg-card: oklch(0.16 0.03 260);
+    --color-bg-subtle: oklch(0.20 0.03 260);
+    --color-gold: oklch(0.78 0.22 85);
+    --color-gold-glow: color-mix(in oklch, var(--color-gold) 25%, transparent);
+    --color-green: oklch(0.68 0.18 140);
+    --color-red: oklch(0.58 0.22 25);
+    --color-text-bright: oklch(0.98 0.005 80);
+    --color-text-muted: color-mix(in oklch, var(--color-text-bright) 65%, transparent);
+    --color-border: color-mix(in oklch, var(--color-text-bright) 18%, transparent);
+
+    /* Safe Area Insets (HIG / Material) */
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-left: env(safe-area-inset-left, 0px);
+    --safe-right: env(safe-area-inset-right, 0px);
+
+    /* Touch Targets */
+    --touch-target-min: 44px;
+
+    /* Easing */
+    --cb-brake: cubic-bezier(0.16, 1, 0.3, 1);
+    --cb-snap: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer reset {
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  html {
+    background: var(--color-bg-dark);
+    color: var(--color-text-bright);
+    font-family: 'Jost', sans-serif;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+@layer layout {
+  .container-ctx {
+    container-type: inline-size;
+    container-name: page-container;
+  }
+
+  .main-wrap {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: max(1rem, var(--safe-left));
+    padding-right: max(1rem, var(--safe-right));
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* Зернистая текстура */
+  .grain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  /* 🎬 КИНОЗАСТАВКА МАТРИЦА */
+  .intro-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #0c0b08;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.6s var(--cb-brake);
+
+    &.is-done {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .intro-canvas-container {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+  }
+
+  /* Шапка сайта */
+  .hud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: max(0.85rem, var(--safe-top)) max(1.25rem, var(--safe-right)) 0.85rem max(1.25rem, var(--safe-left));
+    background: var(--color-bg-card);
+    border-bottom: 2px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .brand-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.35rem;
+    color: var(--color-gold);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .brand-badge {
+    background: var(--color-gold);
+    color: var(--color-bg-dark);
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+  }
+
+  .hud-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+
+  .led-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-green);
+    box-shadow: 0 0 10px var(--color-green);
+  }
+
+  .mega-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: clamp(1.6rem, 6vw, 3.8rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--color-text-bright);
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
+  }
+
+  /* Сетка карточек каталога — 100% Mobile Overflow Safe */
+  .catalog-grid, #catalogGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .offer-card, .card-item, .credit-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: clamp(1rem, 3.5vw, 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    transition: transform 0.2s var(--cb-brake), border-color 0.2s var(--cb-brake);
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-gold);
+    }
+  }
+
+  .offer-card-header, .card-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  /* ЛОГОТИПЫ БАНКОВ И МФО — СТРОГО 48x48px (БЕЗ ВЫПАДЕНИЯ И ИСКАЖЕНИЯ) */
+  .offer-bank-logo, .card-logo, .brand-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    position: relative;
+  }
+
+  .offer-bank-logo img, .card-logo img, .brand-icon img,
+  .offer-bank-logo svg, .card-logo svg, .brand-icon svg {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  .card-title, .offer-card-title {
+    font-family: 'Unbounded', sans-serif;
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    color: var(--color-text-bright);
+    line-height: 1.25;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  .card-bank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--color-gold);
+    text-transform: uppercase;
+  }
+
+  .offer-badge {
+    display: inline-block;
+    padding: 0.2rem 0.45rem;
+    background: color-mix(in oklch, var(--color-gold) 20%, transparent);
+    color: var(--color-gold);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .offer-params-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.85rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .offer-param-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+
+    & .label {
+      color: var(--color-text-muted);
+      overflow-wrap: break-word;
+      max-width: 60%;
+    }
+
+    & .value {
+      font-weight: 700;
+      color: #fff;
+      overflow-wrap: break-word;
+      text-align: right;
+    }
+  }
+
+  .offer-card-footer, .card-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--touch-target-min);
+    padding: 0.75rem 1rem;
+    background: var(--color-gold);
+    color: var(--color-bg-dark);
+    font-family: 'Unbounded', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.15s var(--cb-brake), background-color 0.15s var(--cb-brake);
+
+    &:hover {
+      background: oklch(0.85 0.24 85);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--touch-target-min);
+    padding: 0.5rem 0.85rem;
+    background: transparent;
+    color: var(--color-text-bright);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.2s var(--cb-brake);
+
+    &:hover {
+      background: var(--color-border);
+    }
+  }
+
+  /* Калькулятор Выгоды */
+  .calc-box {
+    background: var(--color-bg-card);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    padding: clamp(1rem, 3.5vw, 2rem);
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Табы Категорий */
+  .tab-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--touch-target-min);
+    padding: 0.6rem 1.1rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: var(--color-text-muted);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.2s var(--cb-brake), transform 0.2s var(--cb-brake), background-color 0.2s var(--cb-brake), color 0.2s var(--cb-brake);
+
+    &:hover, &.active {
+      background: var(--color-gold);
+      color: var(--color-bg-dark);
+      border-color: var(--color-gold);
+      font-weight: 700;
+    }
+  }
+
+  /* Модальное окно */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s var(--cb-brake);
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  .modal-content {
+    background: var(--color-bg-card);
+    border: 2px solid var(--color-gold);
+    border-radius: 12px;
+    padding: clamp(1.25rem, 4vw, 2rem);
+    max-width: 560px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 1.75rem;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* 📱 МОБИЛЬНАЯ АДАПТАЦИЯ (320px - 768px) — 100% OVERFLOW SAFE */
+@media (max-width: 768px) {
+  .hud-status {
+    display: none;
+  }
+
+  .catalog-grid, #catalogGrid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .offer-card, .card-item, .credit-card {
+    padding: 1rem !important;
+  }
+
+  .offer-bank-logo, .card-logo, .brand-icon {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+  }
+
+  .offer-card-footer, .card-actions {
+    flex-direction: column !important;
+  }
+
+  .offer-card-footer .btn-primary,
+  .offer-card-footer .btn-ghost,
+  .card-actions .btn-primary,
+  .card-actions .btn-ghost {
+    width: 100% !important;
+  }
+
+  .offer-param-row .label {
+    max-width: 50% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-wrap {
+    padding-left: max(0.75rem, var(--safe-left));
+    padding-right: max(0.75rem, var(--safe-right));
+  }
+
+  .calc-box {
+    padding: 0.85rem !important;
+  }
+}
+
+/* Адаптивность к reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .intro-overlay {
+    display: none !important;
+  }
+}
