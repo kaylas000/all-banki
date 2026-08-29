@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-/* Microservice 3: Page Compiler & CEH Studio Unique Layout Engine for vse-banki.site */
+/* Microservice 3: Page Compiler & CEH Studio Unique Layout Engine for vse-banki.site (Clean URLs without .html) */
 
 const siteDir = "/home/user/all-banki";
 const dataDir = "/home/user/all-banki/assets/data";
@@ -185,7 +185,7 @@ export function compileUniquePage(phraseObj, seoObj) {
     "@type": "FinancialService",
     "name": "${title}",
     "description": "${seoP1.slice(0, 150)}",
-    "url": "https://все-банки.site/${slug}.html"
+    "url": "https://все-банки.site/${slug}"
   }
   </script>
 </head>
@@ -200,7 +200,7 @@ export function compileUniquePage(phraseObj, seoObj) {
   </div>
 
   <header class="hud-header">
-    <a class="brand-title" href="index.html" data-analytics-event="logo_click">
+    <a class="brand-title" href="index" data-analytics-event="logo_click">
       <span>ВСЕ БАНКИ</span>
       <span class="brand-badge">2026</span>
     </a>
@@ -213,7 +213,7 @@ export function compileUniquePage(phraseObj, seoObj) {
 
   <main class="main-wrap" style="padding-top: 2rem;">
     <nav style="font-size:0.85rem; color:var(--color-text-muted, #a0a0a0); margin-bottom:1.5rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-      <a href="index.html" style="color:var(--color-gold, #e0a91c);" data-analytics-event="breadcrumb_home">Главная</a>
+      <a href="index" style="color:var(--color-gold, #e0a91c);" data-analytics-event="breadcrumb_home">Главная</a>
       <span>/</span>
       <span>${title}</span>
     </nav>
@@ -337,10 +337,10 @@ export function compileUniquePage(phraseObj, seoObj) {
       </div>
       <div>
         <nav style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <a href="kredity.html" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_kredity">Кредиты</a>
-          <a href="mfo.html" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_mfo">Займы МФО</a>
-          <a href="karty.html" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_karty">Карты</a>
-          <a href="vklady.html" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_vklady">Вклады</a>
+          <a href="kredity" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_kredity">Кредиты</a>
+          <a href="mfo" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_mfo">Займы МФО</a>
+          <a href="karty" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_karty">Карты</a>
+          <a href="vklady" style="color:var(--color-gold, #e0a91c);" data-analytics-event="footer_vklady">Вклады</a>
         </nav>
       </div>
     </div>
