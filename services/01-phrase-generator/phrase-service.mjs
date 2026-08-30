@@ -1,98 +1,46 @@
 import fs from "node:fs";
 
 /* 
- * Microservice 1: Low-Frequency (НЧ) Cluster Synthesizer (SOTA 2026 MFO Protocol)
- * Implements Block 1..5 Parameter Matrix, Assembly Formulas, Non-Round Amounts, Anti-Patterns, and Self-Check.
+ * Microservice 1: Low-Frequency (НЧ) Exact User List Generator v3.3
+ * Implements 30 exact user-provided long-tail keywords (Batch 3: Treatment, Repair, Self-Employed, Refinancing, etc.).
  */
 
-const GEOS = [
-  "в Текстильщиках", "в Норильске", "центр Екатеринбурга", "в Марьино", 
-  "в Химках", "в Балашихе", "в Чертаново", "в Туле", "в Уфе", "в Казани"
+const USER_EXACT_KEYWORDS_BATCH3 = [
+  { keyword: "займ на лечение срочно онлайн", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ НА ЛЕЧЕНИЕ", "СРОЧНО ОНЛАЙН", "НА КАРТУ МИР", "ОДОБРЕНИЕ 98%"] },
+  { keyword: "деньги в долг на ремонт квартиры", cat: "mfo", sum: "30 000 ₽", lines: ["ДЕНЬГИ В ДОЛГ", "НА РЕМОНТ", "БЕЗ СПРАВОК", "ОДОБРЕНИЕ 98%"] },
+  { keyword: "займ на покупку техники в рассрочку", cat: "mfo", sum: "20 000 ₽", lines: ["ЗАЙМ НА ТЕХНИКУ", "В РАССРОЧКУ 0%", "ПО ПАСПОРТУ", "НА КАРТУ МИР"] },
+  { keyword: "микрозайм на отпуск без справок", cat: "mfo", sum: "25 000 ₽", lines: ["МИКРОЗАЙМ НА ОТПУСК", "БЕЗ СПРАВОК", "ОНЛАЙН 24/7", "РЕШЕНИЕ 2 МИН"] },
+  { keyword: "займ на подарок к празднику онлайн", cat: "mfo", sum: "10 000 ₽", lines: ["ЗАЙМ НА ПОДАРОК", "К ПРАЗДНИКУ 0%", "ОНЛАЙН 24/7", "ПО СБП ЗА 2 МИН"] },
+  { keyword: "займ мамам в декрете условия", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ В ДЕКРЕТЕ", "МАМАМ УСЛОВИЯ", "ПО ПАСПОРТУ", "ОДОБРЕНИЕ 98%"] },
+  { keyword: "микрозайм многодетным семьям на льготных условиях", cat: "mfo", sum: "20 000 ₽", lines: ["МИКРОЗАЙМ СЕМЬЯМ", "ЛЬГОТНЫЕ УСЛОВИЯ", "ПО ПАСПОРТУ", "НА КАРТУ МИР"] },
+  { keyword: "займ инвалидам без подтверждения занятости", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ ИНВАЛИДАМ", "БЕЗ ЗАНЯТОСТИ", "ПО ПАСПОРТУ", "ОДОБРЕНИЕ 98%"] },
+  { keyword: "займы для самозанятых граждан 2026", cat: "mfo", sum: "30 000 ₽", lines: ["ЗАЙМЫ СAМОЗАНЯТЫМ", "РЕЕСТР 2026", "БЕЗ 2-НДФЛ", "НА КАРТУ МИР"] },
+  { keyword: "займ с минимальным пакетом документов", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ ПО ПАСПОРТУ", "МИНИМУМ ДОКУМЕНТОВ", "ОНЛАЙН 24/7", "РЕШЕНИЕ 2 МИН"] },
+  { keyword: "микрозайм с упрощенной идентификацией личности", cat: "mfo", sum: "12 000 ₽", lines: ["МИКРОЗАЙМ 24/7", "УПРОЩЕННАЯ ИДЕНТИФИКАЦИЯ", "ПО ПАСПОРТУ", "НА КАРТУ МИР"] },
+  { keyword: "займ с быстрой верификацией номера телефона", cat: "mfo", sum: "10 000 ₽", lines: ["ЗАЙМ ПО СМС", "БЫСТРАЯ ВЕРИФИКАЦИЯ", "РЕШЕНИЕ 2 МИН", "ПО СБП ЗА 2 МИН"] },
+  { keyword: "взять займ без регистрации личного кабинета", cat: "mfo", sum: "15 000 ₽", lines: ["ВЗЯТЬ ЗАЙМ", "БЕЗ РЕГИСТРАЦИИ", "БЫСТРЫЙ ПЕРЕВОД", "НА КАРТУ МИР"] },
+  { keyword: "новые займы 2026 года условия", cat: "mfo", sum: "15 000 ₽", lines: ["НОВЫЕ ЗАЙМЫ 2026", "ОФИЦИАЛЬНЫЙ РЕЕСТР", "УСЛОВИЯ 0%", "НА КАРТУ МИР"] },
+  { keyword: "займы через мобильное приложение без комиссии", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ В ПРИЛОЖЕНИИ", "БЕЗ КОМИССИИ", "ПЕРЕВОД ПО СБП", "ОДОБРЕНИЕ 98%"] },
+  { keyword: "микрозайм с решением за 5 минут", cat: "mfo", sum: "15 000 ₽", lines: ["МИКРОЗАЙМ 24/7", "РЕШЕНИЕ ЗА 5 МИН", "ПО ПАСПОРТУ", "НА КАРТУ МИР"] },
+  { keyword: "займ для клиентов с закрытой судимостью", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ ДЛЯ КЛИЕНТОВ", "ЛОЯЛЬНЫЙ СКОРИНГ", "ПО ПАСПОРТУ", "ОДОБРЕНИЕ 98%"] },
+  { keyword: "где взять займ дешевле проценты онлайн", cat: "mfo", sum: "15 000 ₽", lines: ["ГДЕ ВЗЯТЬ ЗАЙМ", "ДЕШЕВЛЕ ПРОЦЕНТЫ", "СРАВНЕНИЕ 0%", "НА КАРТУ МИР"] },
+  { keyword: "займ с минимальной переплатой в день", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ С МИНИМАЛЬНОЙ", "ПЕРЕПЛАТОЙ В ДЕНЬ", "СТАВКА 0%", "НА КАРТУ МИР"] },
+  { keyword: "сравнить условия займов разных МФО таблица", cat: "mfo", sum: "15 000 ₽", lines: ["СРАВНИТЬ ЗАЙМЫ", "РАЗНЫХ МФО", "ТАБЛИЦА СТАВОК", "ТОП ЛИЦЕНЗИЙ"] },
+  { keyword: "займ с самой низкой ставкой в сутки", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ С НИЗКОЙ", "СТАВКОЙ В СУТКИ", "0% ПЕРВЫЙ ЗАЙМ", "НА КАРТУ МИР"] },
+  { keyword: "займ онлайн при нестабильном доходе", cat: "mfo", sum: "12 000 ₽", lines: ["ЗАЙМ ОНЛАЙН", "ПРИ НЕСТАБИЛЬНОМ", "ДОХОДЕ 24/7", "ПО ПАСПОРТУ"] },
+  { keyword: "микрозайм при исполнительном производстве приставов", cat: "mfo", sum: "10 000 ₽", lines: ["МИКРОЗАЙМ 24/7", "ПРИ ИСПОЛНИТЕЛЬНОМ", "ПРОИЗВОДСТВЕ", "НА КАРТУ МИР"] },
+  { keyword: "займ при наличии алиментных обязательств", cat: "mfo", sum: "12 000 ₽", lines: ["ЗАЙМ ПО ПАСПОРТУ", "ПРИ АЛИМЕНТАХ", "ЛОЯЛЬНЫЙ СКОРИНГ", "ОДОБРЕНИЕ 98%"] },
+  { keyword: "взять займ повторно постоянным клиентам", cat: "mfo", sum: "25 000 ₽", lines: ["ВЗЯТЬ ЗАЙМ", "ПОВТОРНО КЛИЕНТАМ", "ПОВЫШЕННЫЙ ЛИМИТ", "НА КАРТУ МИР"] },
+  { keyword: "займ под залог птс без справок", cat: "mfo", sum: "100 000 ₽", lines: ["ЗАЙМ ПОД ПТС", "АВТО ОСТАЕТСЯ", "БЕЗ СПРАВОК", "ДО 1 МЛН ₽"] },
+  { keyword: "займ под залог недвижимости физлицу", cat: "mfo", sum: "500 000 ₽", lines: ["ЗАЙМ ПОД ЗАЛОГ", "НЕДВИЖИМОСТИ", "ФИЗЛИЦАМ 2026", "НИЗКИЙ ПРОЦЕНТ"] },
+  { keyword: "рефинансирование займов в МФО условия", cat: "mfo", sum: "50 000 ₽", lines: ["РЕФИНАНСИРОВАНИЕ", "ЗАЙМОВ В МФО", "СНИЖЕНИЕ СТАВКИ", "ОДИН ПЛАТЕЖ"] },
+  { keyword: "займ с досрочным погашением без штрафов", cat: "mfo", sum: "20 000 ₽", lines: ["ЗАЙМ С ДОСРОЧНЫМ", "ПОГАШЕНИЕМ", "БЕЗ ШТРАФОВ", "ПЕРЕСЧЕТ %"] },
+  { keyword: "займ с автоматическим продлением срока", cat: "mfo", sum: "15 000 ₽", lines: ["ЗАЙМ С ПРОДЛЕНИЕМ", "СРОКА ОНЛАЙН", "БЕЗ ШТРАФОВ", "НА КАРТУ МИР"] }
 ];
 
-const URGENCY = [
-  "прямо сейчас", "ночью", "за 5 минут", "сегодня", "в выходной день"
-];
-
-const NON_ROUND_AMOUNTS = [
-  1400, 1800, 2300, 2700, 3100, 3600, 4100, 4500, 5200, 5900, 
-  6200, 6800, 7200, 7700, 8300, 8900, 9100, 9600, 11300, 12800
-];
-
-const CONDITIONS = [
-  "без фото паспорта", "с плохой историей", "на заблокированную карту", 
-  "без звонков оператора", "безработному", "без поручителей и справок"
-];
-
-const SOURCES = [
-  "на карту МИР", "на Киви кошелек", "на ЮMoney", "на карту Маэстро", "зачислением по СБП"
-];
-
-const ROOT_STARTERS = [
-  "Взять", "Получить", "Оформить", "Перевод", "Выдача", "Микрозайм", "Заем", "Зачисление", "Деньги"
-];
-
-export function synthesizeMfoNchClusters() {
-  const cluster1 = [];
-  const cluster2 = [];
-
-  // Formula 1: [Сумма] [Условие] в [Район]
-  for (let i = 0; i < 4; i++) {
-    const amt = NON_ROUND_AMOUNTS[i % NON_ROUND_AMOUNTS.length];
-    const cond = CONDITIONS[i % CONDITIONS.length];
-    const geo = GEOS[i % GEOS.length];
-    const starter = ROOT_STARTERS[i % ROOT_STARTERS.length];
-    cluster1.push(`${starter} ${amt} рублей ${cond} ${geo}`);
-  }
-
-  // Formula 2: [Время] взять [Сумма] на [Кошелек]
-  for (let i = 4; i < 8; i++) {
-    const amt = NON_ROUND_AMOUNTS[i % NON_ROUND_AMOUNTS.length];
-    const urg = URGENCY[i % URGENCY.length];
-    const src = SOURCES[i % SOURCES.length];
-    cluster1.push(`Взять ${amt} рублей ${urg} ${src}`);
-  }
-
-  // Formula 3: [Сумма] без [Документ] сегодня
-  for (let i = 8; i < 12; i++) {
-    const amt = NON_ROUND_AMOUNTS[i % NON_ROUND_AMOUNTS.length];
-    const cond = CONDITIONS[(i + 1) % CONDITIONS.length];
-    const urg = URGENCY[i % URGENCY.length];
-    cluster2.push(`Микрозайм ${amt} рублей ${cond} ${urg}`);
-  }
-
-  // Formula 4: [Статус] получить [Сумма] на карту
-  for (let i = 12; i < 16; i++) {
-    const amt = NON_ROUND_AMOUNTS[i % NON_ROUND_AMOUNTS.length];
-    const src = SOURCES[i % SOURCES.length];
-    const geo = GEOS[(i + 2) % GEOS.length];
-    cluster2.push(`Безработному одобрили ${amt} рублей ${src} ${geo}`);
-  }
-
-  return {
-    cluster_1: cluster1,
-    cluster_2: cluster2
-  };
-}
-
-export function generateLowFrequencyPhrases(count = 10) {
-  const clusters = synthesizeMfoNchClusters();
-  const allPhrases = [...clusters.cluster_1, ...clusters.cluster_2];
-
-  const result = allPhrases.slice(0, count).map((phrase, idx) => {
-    // Extract amount
-    const amtMatch = phrase.match(/(\d+)/);
-    const sumVal = amtMatch ? `${parseInt(amtMatch[1], 10).toLocaleString("ru-RU")} ₽` : "5 000 ₽";
-
-    // Format 4-line matrix text for SK-17 Video Intro
-    const words = phrase.toUpperCase().split(" ");
-    const line1 = words.slice(0, 2).join(" ");
-    const line2 = words.slice(2, 4).join(" ") || "ОНЛАЙН 24/7";
-    const line3 = words.slice(4, 6).join(" ") || "НА КАРТУ МИР";
-    const line4 = "ОДОБРЕНИЕ 98%";
-
-    // Transliterate slug
-    const slug = phrase
+export function generateLowFrequencyPhrases(count = 30) {
+  const result = USER_EXACT_KEYWORDS_BATCH3.slice(0, count).map(obj => {
+    const slug = obj.keyword
       .toLowerCase()
       .replace(/а/g, "a").replace(/б/g, "b").replace(/в/g, "v").replace(/г/g, "g")
       .replace(/д/g, "d").replace(/е/g, "e").replace(/ё/g, "e").replace(/ж/g, "zh")
@@ -105,11 +53,11 @@ export function generateLowFrequencyPhrases(count = 10) {
       .replace(/я/g, "ya").replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
 
     return {
-      keyword: phrase,
-      category: "mfo",
-      slug,
-      matrixLines: [line1, line2, line3, line4],
-      targetSum: sumVal,
+      keyword: obj.keyword,
+      category: obj.cat,
+      slug: slug,
+      matrixLines: obj.lines,
+      targetSum: obj.sum,
       targetRate: "0%"
     };
   });
@@ -118,6 +66,9 @@ export function generateLowFrequencyPhrases(count = 10) {
 }
 
 if (process.argv[1].endsWith("phrase-service.mjs")) {
-  const output = synthesizeMfoNchClusters();
-  console.log(JSON.stringify(output, null, 2));
+  const testPhrases = generateLowFrequencyPhrases(30);
+  console.log("User New Batch 3 (30 Exact Keywords) Phrases count:", testPhrases.length);
+  testPhrases.forEach((p, idx) => {
+    console.log(`${idx + 1}. [${p.slug}.html] -> "${p.keyword}"`);
+  });
 }
